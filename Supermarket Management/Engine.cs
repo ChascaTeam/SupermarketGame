@@ -5,14 +5,14 @@ namespace Supermarket_Management
     public class Engine
     {
         private SupermarketManager manager;
-        private List<IClient> clients;
+        private List<ICustomer> customers;
         private StockExchange stockExchange;
         private LaborExchange laborExchange;
 
         public Engine()
         {
             this.manager = new SupermarketManager(new Warehouse(), 10000);
-            this.clients = new List<IClient>();
+            this.customers = new List<ICustomer>();
             this.stockExchange = new StockExchange(new List<IStock>());
             this.laborExchange = new LaborExchange(new List<IWorkForce>());
         }

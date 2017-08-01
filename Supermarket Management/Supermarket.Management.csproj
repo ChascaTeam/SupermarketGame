@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B5092814-38C4-4F4A-A380-4A8301FDD51E}</ProjectGuid>
+    <ProjectGuid>{B07CB34E-7DEC-4387-B904-D738085FDA6D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Supermarket.Management</RootNamespace>
     <AssemblyName>Supermarket.Management</AssemblyName>
@@ -42,26 +42,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientTypes\AverageClient.cs" />
-    <Compile Include="ClientTypes\Client.cs" />
-    <Compile Include="ClientTypes\PoorClient.cs" />
-    <Compile Include="ClientTypes\RichClient.cs" />
+    <Compile Include="CustomerTypes\AverageCustomer.cs" />
+    <Compile Include="CustomerTypes\Customer.cs" />
+    <Compile Include="CustomerTypes\PoorCustomer.cs" />
+    <Compile Include="CustomerTypes\RichCustomer.cs" />
     <Compile Include="Engine.cs" />
-    <Compile Include="Market\LaborExchange.cs" />
+    <Compile Include="Generator.cs" />
     <Compile Include="Management\SupermarketManager.cs" />
-    <Compile Include="ClientTypes\VeryPoorClient.cs" />
-    <Compile Include="ClientTypes\VeryRichClient.cs" />
-    <Compile Include="IClient.cs" />
-    <Compile Include="IStock.cs" />
+    <Compile Include="CustomerTypes\VeryPoorCustomer.cs" />
+    <Compile Include="CustomerTypes\VeryRichCustomer.cs" />
+    <Compile Include="Interfaces\ICustomer.cs" />
+    <Compile Include="Interfaces\IStock.cs" />
+    <Compile Include="Market\LaborExchange.cs" />
+    <Compile Include="Market\StockExchange.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Generator.cs" />
-    <Compile Include="Market\StockExchange.cs" />
     <Compile Include="StockTypes\Alcohol.cs" />
     <Compile Include="StockTypes\DairyProducts.cs" />
     <Compile Include="StockTypes\Stock.cs" />
     <Compile Include="WorkerTypes\AverageWorker.cs" />
-    <Compile Include="IWorkForce.cs" />
+    <Compile Include="Interfaces\IWorkForce.cs" />
     <Compile Include="StockTypes\Meat.cs" />
     <Compile Include="StockTypes\Sweets.cs" />
     <Compile Include="StockTypes\Vegetables.cs" />

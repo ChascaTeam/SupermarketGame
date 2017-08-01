@@ -2,13 +2,14 @@
 
 namespace Supermarket_Management
 {
-    public interface IClient
+    public interface ICustomer
+
     {
         //Money can be random(to some extent) or hard coded
         decimal MoneyInCash { get; }
         decimal MoneyInCard { get; }
 
-        //Look at Client for info
+        //Look at Customer for info
         List<IStock> WantedProducts { get; }
 
         //Should return total cost for the products that the client can and "want" to buy.

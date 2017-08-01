@@ -3,7 +3,7 @@
     public abstract class Worker : IWorkForce
     {
         public string Name { get; }
-        public int ClientsPerDay { get; }
+        public int CustomersPerDay { get; }
         public decimal SalaryPerDay { get; }
     }
 }

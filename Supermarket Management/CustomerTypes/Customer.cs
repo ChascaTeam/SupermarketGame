@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 
 
-namespace Supermarket_Management.ClientTypes
+namespace Supermarket_Management.CustomerTypes
 {
-   public abstract class Client : Generator, IClient
+   public abstract class Customer : Generator, ICustomer
     {
         public decimal MoneyInCash { get; }
         public decimal MoneyInCard { get; }

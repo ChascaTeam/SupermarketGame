@@ -1,46 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Supermarket_Management.ClientTypes.AverageClient" Collapsed="true">
+  <Class Name="Supermarket_Management.CustomerTypes.AverageCustomer" Collapsed="true">
     <Position X="3" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ClientTypes\AverageClient.cs</FileName>
+      <FileName>CustomerTypes\AverageCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Supermarket_Management.ClientTypes.Client" Collapsed="true">
+  <Class Name="Supermarket_Management.CustomerTypes.Customer" Collapsed="true">
     <Position X="7.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAABAAAAABAAAAAAAAAAAAAAAAAIAAAAAAQAA=</HashCode>
-      <FileName>ClientTypes\Client.cs</FileName>
+      <FileName>CustomerTypes\Customer.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Supermarket_Management.ClientTypes.PoorClient" Collapsed="true">
+  <Class Name="Supermarket_Management.CustomerTypes.PoorCustomer" Collapsed="true">
     <Position X="5.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ClientTypes\PoorClient.cs</FileName>
+      <FileName>CustomerTypes\PoorCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Supermarket_Management.ClientTypes.RichClient" Collapsed="true">
+  <Class Name="Supermarket_Management.CustomerTypes.RichCustomer" Collapsed="true">
     <Position X="7.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ClientTypes\RichClient.cs</FileName>
+      <FileName>CustomerTypes\RichCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Supermarket_Management.ClientTypes.VeryPoorClient" Collapsed="true">
+  <Class Name="Supermarket_Management.CustomerTypes.VeryPoorCustomer" Collapsed="true">
     <Position X="9.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ClientTypes\VeryPoorClient.cs</FileName>
+      <FileName>CustomerTypes\VeryPoorCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Supermarket_Management.ClientTypes.VeryRichClient" Collapsed="true">
+  <Class Name="Supermarket_Management.CustomerTypes.VeryRichCustomer" Collapsed="true">
     <Position X="12" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ClientTypes\VeryRichClient.cs</FileName>
+      <FileName>CustomerTypes\VeryRichCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Supermarket_Management.Engine" Collapsed="true">
@@ -171,11 +171,11 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="Supermarket_Management.IClient" Collapsed="true">
+  <Interface Name="Supermarket_Management.ICustomer" Collapsed="true">
     <Position X="16.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAABAAAAABAAAAAAAAAAAAAAAAAIAAAAAAQAA=</HashCode>
-      <FileName>IClient.cs</FileName>
+      <FileName>ICustomer.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Supermarket_Management.IStock" Collapsed="true">
