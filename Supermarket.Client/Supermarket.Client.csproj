@@ -45,14 +45,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="InfoMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="InfoMenu.Designer.cs">
+      <DependentUpon>InfoMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaborMaretMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaborMaretMenu.Designer.cs">
+      <DependentUpon>LaborMaretMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPlay.Designer.cs">
+      <DependentUpon>MenuPlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuStart.Designer.cs">
+      <DependentUpon>MenuStart.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockMarketMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockMarketMenu.Designer.cs">
+      <DependentUpon>StockMarketMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse.Designer.cs">
+      <DependentUpon>Warehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkforceMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkforceMenu.Designer.cs">
+      <DependentUpon>WorkforceMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="InfoMenu.resx">
+      <DependentUpon>InfoMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaborMaretMenu.resx">
+      <DependentUpon>LaborMaretMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPlay.resx">
+      <DependentUpon>MenuPlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuStart.resx">
+      <DependentUpon>MenuStart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +110,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StockMarketMenu.resx">
+      <DependentUpon>StockMarketMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse.resx">
+      <DependentUpon>Warehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkforceMenu.resx">
+      <DependentUpon>WorkforceMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

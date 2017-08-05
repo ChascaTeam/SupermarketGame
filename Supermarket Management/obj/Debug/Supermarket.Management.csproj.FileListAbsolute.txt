@@ -1,0 +1,6 @@
+C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket Management\bin\Debug\Supermarket.Management.exe.config
+C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket Management\bin\Debug\Supermarket.Management.exe
+C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket Management\bin\Debug\Supermarket.Management.pdb
+C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket Management\obj\Debug\Supermarket.Management.csprojResolveAssemblyReference.cache
+C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket Management\obj\Debug\Supermarket.Management.exe
+C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket Management\obj\Debug\Supermarket.Management.pdb

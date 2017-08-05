@@ -1,0 +1,5 @@
+C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket.Data\bin\Debug\Supermarket.Data.dll
+C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket.Data\bin\Debug\Supermarket.Data.pdb
+C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket.Data\obj\Debug\Supermarket.Data.csprojResolveAssemblyReference.cache
+C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket.Data\obj\Debug\Supermarket.Data.dll
+C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket.Data\obj\Debug\Supermarket.Data.pdb
