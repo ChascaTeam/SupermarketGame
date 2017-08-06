@@ -1,6 +1,6 @@
 ﻿namespace Supermarket.Client
 {
-    partial class LaborMaretMenu
+    partial class LaborMarketMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LaborMaretMenu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LaborMarketMenu));
             this.BackButton = new System.Windows.Forms.Button();
             this.StockMarketLabel = new System.Windows.Forms.Label();
             this.FirstWorkerText = new System.Windows.Forms.TextBox();

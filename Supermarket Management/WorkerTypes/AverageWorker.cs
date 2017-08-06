@@ -1,6 +1,6 @@
 ﻿namespace Supermarket_Management.WorkerTypes
 {
-    class AverageWorker : Worker
+    public class AverageWorker : Worker
     {      
     }
 }

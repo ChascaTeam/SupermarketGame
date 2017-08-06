@@ -45,5 +45,15 @@
     <Compile Include="StockServices.cs" />
     <Compile Include="WorkForceServices.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Supermarket Management\Supermarket.Management.csproj">
+      <Project>{B07CB34E-7DEC-4387-B904-D738085FDA6D}</Project>
+      <Name>Supermarket.Management</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Supermarket.Data\Supermarket.Data.csproj">
+      <Project>{11ec0f8f-4625-4291-98b7-be0ad4376528}</Project>
+      <Name>Supermarket.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

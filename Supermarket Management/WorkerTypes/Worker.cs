@@ -2,8 +2,8 @@
 {
     public abstract class Worker : IWorkForce
     {
-        public string Name { get; }
-        public int CustomersPerDay { get; }
-        public decimal SalaryPerDay { get; }
+        public string Name { get; set; }
+        public int CustomersPerDay { get; set; }
+        public decimal SalaryPerDay { get; set; }
     }
 }

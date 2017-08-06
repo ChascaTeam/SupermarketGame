@@ -40,10 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockData.cs" />
+    <Compile Include="WorkerData.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Import\" />
+    <ProjectReference Include="..\Supermarket Management\Supermarket.Management.csproj">
+      <Project>{B07CB34E-7DEC-4387-B904-D738085FDA6D}</Project>
+      <Name>Supermarket.Management</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
