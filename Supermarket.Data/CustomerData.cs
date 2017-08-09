@@ -1,11 +1,21 @@
-﻿using Supermarket_Management.CustomerTypes;
-using System.Collections.Generic;
-using Supermarket_Management;
+﻿using System.Collections.Generic;
+using Supermarket.Models.Interfaces;
 
 namespace Supermarket.Data
 {
-    public class CustomerData
+    public class CustomerData : ICustomerData
     {
-        public static IList<ICustomer> Customers = new List<ICustomer>();
+        private IList<ICustomer> customers;
+
+        public CustomerData()
+        {
+            this.Customers = new List<ICustomer>();
+        }
+        public IList<ICustomer> Customers
+        {
+            get { return customers; }
+            set { customers = value; }
+        }
+
     }
 }

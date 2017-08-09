@@ -1,10 +1,21 @@
 ﻿using System.Collections.Generic;
-using Supermarket_Management;
+using Supermarket.Models.Interfaces;
 
 namespace Supermarket.Data
 {
-    public class WorkerData
+    public class WorkerData : IWorkerData
     {
-        public static IList<IWorkForce> Workers = new List<IWorkForce>();
+        private IList<IWorkForce> workers;
+
+        public WorkerData()
+        {
+            this.Workers = new List<IWorkForce>();
+        }
+        public IList<IWorkForce> Workers
+        {
+            get { return workers; }
+            set { workers = value; }
+        }
+
     }
 }

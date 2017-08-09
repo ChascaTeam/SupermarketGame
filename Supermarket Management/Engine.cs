@@ -1,20 +1,28 @@
 ﻿using System.Collections.Generic;
+using Supermarket.Data;
+using Supermarket.Models.Interfaces;
 
 namespace Supermarket_Management
 {
-    public class Engine
+    public class Engine : Generator
     {
         private SupermarketManager manager;
-        private List<ICustomer> customers;
+        private IList<ICustomer> customers;
         private StockExchange stockExchange;
         private LaborExchange laborExchange;
+        private IList<IWorkForce> workers;
 
         public Engine()
         {
+            ICustomerData cd = new CustomerData();
+            IStockData sd = new StockData();
+            IWorkerData wd = new WorkerData();
+
             this.manager = new SupermarketManager(new Warehouse(), 10000);
-            this.customers = new List<ICustomer>();
+            this.customers = cd.Customers;
             this.stockExchange = new StockExchange(new List<IStock>());
             this.laborExchange = new LaborExchange(new List<IWorkForce>());
+            this.workers = wd.Workers;
         }
 
         public void Run()

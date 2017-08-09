@@ -1,4 +1,6 @@
-﻿namespace Supermarket_Management.StockTypes
+﻿using Supermarket.Models.Interfaces;
+
+namespace Supermarket.Models.StockTypes
 {
     public abstract class Stock : IStock
     {

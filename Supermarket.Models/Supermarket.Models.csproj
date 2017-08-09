@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B07CB34E-7DEC-4387-B904-D738085FDA6D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Supermarket.Management</RootNamespace>
-    <AssemblyName>Supermarket.Management</AssemblyName>
+    <ProjectGuid>{AA6344D6-D96E-42A6-9305-9DAF5A1AB375}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Supermarket.Models</RootNamespace>
+    <AssemblyName>Supermarket.Models</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,29 +45,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Engine.cs" />
-    <Compile Include="Generator.cs" />
-    <Compile Include="Management\SupermarketManager.cs" />
-    <Compile Include="Market\LaborExchange.cs" />
-    <Compile Include="Market\StockExchange.cs" />
-    <Compile Include="StartUp.cs" />
+    <Compile Include="CustomerTypes\AverageCustomer.cs" />
+    <Compile Include="CustomerTypes\Customer.cs" />
+    <Compile Include="CustomerTypes\PoorCustomer.cs" />
+    <Compile Include="CustomerTypes\RichCustomer.cs" />
+    <Compile Include="CustomerTypes\VeryPoorCustomer.cs" />
+    <Compile Include="CustomerTypes\VeryRichCustomer.cs" />
+    <Compile Include="Interfaces\ICustomer.cs" />
+    <Compile Include="Interfaces\IStock.cs" />
+    <Compile Include="Interfaces\IWorkForce.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Management\Warehouse.cs" />
+    <Compile Include="StockTypes\Alcohol.cs" />
+    <Compile Include="StockTypes\DairyProducts.cs" />
+    <Compile Include="StockTypes\Meat.cs" />
+    <Compile Include="StockTypes\Stock.cs" />
+    <Compile Include="StockTypes\Sweets.cs" />
+    <Compile Include="StockTypes\Vegetables.cs" />
+    <Compile Include="WorkerTypes\AverageWorker.cs" />
+    <Compile Include="WorkerTypes\Expert.cs" />
+    <Compile Include="WorkerTypes\Intern.cs" />
+    <Compile Include="WorkerTypes\LazyWorker.cs" />
+    <Compile Include="WorkerTypes\Worker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
-    <None Include="ClassDiagram2.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Supermarket.Data\Supermarket.Data.csproj">
-      <Project>{11ec0f8f-4625-4291-98b7-be0ad4376528}</Project>
-      <Name>Supermarket.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Supermarket.Models\Supermarket.Models.csproj">
-      <Project>{aa6344d6-d96e-42a6-9305-9daf5a1ab375}</Project>
-      <Name>Supermarket.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

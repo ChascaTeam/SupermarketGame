@@ -1,4 +1,4 @@
-﻿namespace Supermarket_Management.StockTypes
+﻿namespace Supermarket.Models.StockTypes
 {
     public class DairyProducts : Stock
     {      

@@ -1,4 +1,4 @@
-﻿namespace Supermarket_Management
+﻿namespace Supermarket.Models.Interfaces
 {
     public interface IStock
     {

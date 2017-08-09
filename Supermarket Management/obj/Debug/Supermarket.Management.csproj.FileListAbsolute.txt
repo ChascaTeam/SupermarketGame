@@ -4,3 +4,9 @@ C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket Man
 C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket Management\obj\Debug\Supermarket.Management.csprojResolveAssemblyReference.cache
 C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket Management\obj\Debug\Supermarket.Management.exe
 C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket Management\obj\Debug\Supermarket.Management.pdb
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.exe.config
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.exe
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.pdb
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.exe
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.pdb

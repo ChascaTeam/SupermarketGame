@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Supermarket.Data</RootNamespace>
     <AssemblyName>Supermarket.Data</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,14 +42,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerData.cs" />
+    <Compile Include="Interfaces\ICustomerData.cs" />
+    <Compile Include="Interfaces\IStockData.cs" />
+    <Compile Include="Interfaces\IWorkerData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StockData.cs" />
     <Compile Include="WorkerData.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Supermarket Management\Supermarket.Management.csproj">
-      <Project>{B07CB34E-7DEC-4387-B904-D738085FDA6D}</Project>
-      <Name>Supermarket.Management</Name>
+    <ProjectReference Include="..\Supermarket.Models\Supermarket.Models.csproj">
+      <Project>{aa6344d6-d96e-42a6-9305-9daf5a1ab375}</Project>
+      <Name>Supermarket.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

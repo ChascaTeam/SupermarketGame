@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Supermarket.Models.Interfaces;
 
-
-namespace Supermarket_Management.CustomerTypes
+namespace Supermarket.Models.CustomerTypes
 {
    public abstract class Customer : Generator, ICustomer
     {
