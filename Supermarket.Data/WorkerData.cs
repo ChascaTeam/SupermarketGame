@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Supermarket.Data.Interfaces;
 using Supermarket.Models.Interfaces;
 
 namespace Supermarket.Data

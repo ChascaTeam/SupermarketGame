@@ -7,3 +7,12 @@ C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Models\bin\De
 C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Client.exe.config
 C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.dll
 C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.pdb
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Models.dll.config
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Models.dll
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Models.pdb
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Client.exe
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Client.pdb
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Client.exe.config
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.dll
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.pdb

@@ -1,6 +1,6 @@
-﻿namespace Supermarket.Client
+﻿namespace Supermarket.Client.Forms
 {
-    partial class Warehouse
+    partial class WarehouseForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Warehouse));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WarehouseForm));
             this.WarehouseLabel = new System.Windows.Forms.Label();
             this.AlcoholText = new System.Windows.Forms.TextBox();
             this.AlcoholLabel = new System.Windows.Forms.Label();
@@ -272,7 +272,7 @@
             this.label8.TabIndex = 42;
             this.label8.Text = "Left Space";
             // 
-            // Warehouse
+            // WarehouseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -302,8 +302,8 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(375, 409);
             this.MinimumSize = new System.Drawing.Size(375, 409);
-            this.Name = "Warehouse";
-            this.Text = "Warehouse";
+            this.Name = "WarehouseForm";
+            this.Text = "WarehouseForm";
             ((System.ComponentModel.ISupportInitialize)(this.StartMenuImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

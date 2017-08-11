@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using Supermarket.Data;
-using Supermarket.Management.Management;
+using Supermarket.Data.Interfaces;
 using Supermarket.Management.Market;
 using Supermarket.Models.Interfaces;
+using Supermarket.Models.Management;
 using Supermarket.Models.WorkerTypes;
 
 namespace Supermarket.Management

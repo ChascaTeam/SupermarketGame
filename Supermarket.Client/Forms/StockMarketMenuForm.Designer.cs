@@ -1,6 +1,6 @@
-﻿namespace Supermarket.Client
+﻿namespace Supermarket.Client.Forms
 {
-    partial class StockMarketMenu
+    partial class StockMarketMenuForm
     {
         /// <summary>
         /// Required designer variable.
@@ -447,7 +447,7 @@
             this.CurrentWarehouseSpaceLabel.TabIndex = 79;
             this.CurrentWarehouseSpaceLabel.Text = "Current warhouse space";
             // 
-            // StockMarketMenu
+            // StockMarketMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -496,7 +496,7 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(375, 409);
             this.MinimumSize = new System.Drawing.Size(375, 409);
-            this.Name = "StockMarketMenu";
+            this.Name = "StockMarketMenuForm";
             this.Text = "Stock Market Menu";
             this.ResumeLayout(false);
             this.PerformLayout();

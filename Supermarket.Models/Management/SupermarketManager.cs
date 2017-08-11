@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http.Headers;
 using System.Text;
 using Supermarket.Models.Interfaces;
 using Supermarket.Models.StockTypes;
 using Supermarket.Models.WorkerTypes;
 
-
-namespace Supermarket.Management.Management
+namespace Supermarket.Models.Management
 {
     public class SupermarketManager
     {

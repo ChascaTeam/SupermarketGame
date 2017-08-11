@@ -1,6 +1,6 @@
-﻿namespace Supermarket.Client
+﻿namespace Supermarket.Client.Forms
 {
-    partial class MenuPlay
+    partial class MenuPlayForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPlay));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPlayForm));
             this.NextDayButton = new System.Windows.Forms.Button();
             this.LaborMarketButton = new System.Windows.Forms.Button();
             this.WorkforceButton = new System.Windows.Forms.Button();
@@ -98,7 +98,7 @@
             this.WarehouseButton.Name = "WarehouseButton";
             this.WarehouseButton.Size = new System.Drawing.Size(121, 28);
             this.WarehouseButton.TabIndex = 7;
-            this.WarehouseButton.Text = "Warehouse";
+            this.WarehouseButton.Text = "WarehouseForm";
             this.WarehouseButton.UseVisualStyleBackColor = true;
             // 
             // StockMarketButton
@@ -240,7 +240,7 @@
             this.pictureBox3.TabIndex = 26;
             this.pictureBox3.TabStop = false;
             // 
-            // MenuPlay
+            // MenuPlayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -267,8 +267,8 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(375, 409);
             this.MinimumSize = new System.Drawing.Size(375, 409);
-            this.Name = "MenuPlay";
-            this.Text = "MenuPlay";
+            this.Name = "MenuPlayForm";
+            this.Text = "MenuPlayForm";
             ((System.ComponentModel.ISupportInitialize)(this.StartMenuImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

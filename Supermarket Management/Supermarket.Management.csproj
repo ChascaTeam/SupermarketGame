@@ -44,12 +44,10 @@
   <ItemGroup>
     <Compile Include="Engine.cs" />
     <Compile Include="Generator.cs" />
-    <Compile Include="Management\SupermarketManager.cs" />
     <Compile Include="Market\LaborExchange.cs" />
     <Compile Include="Market\StockExchange.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Management\Warehouse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -57,10 +55,6 @@
     <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Supermarket.Client\Supermarket.Client.csproj">
-      <Project>{69f27ffb-e213-4748-a299-c534a3fbebbd}</Project>
-      <Name>Supermarket.Client</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Supermarket.Data\Supermarket.Data.csproj">
       <Project>{11ec0f8f-4625-4291-98b7-be0ad4376528}</Project>
       <Name>Supermarket.Data</Name>

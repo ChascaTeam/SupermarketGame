@@ -1,6 +1,6 @@
-﻿namespace Supermarket.Client
+﻿namespace Supermarket.Client.Forms
 {
-    partial class InfoMenu
+    partial class InfoMenuForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoMenu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoMenuForm));
             this.GameInfoLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.CurrentMoneyText = new System.Windows.Forms.TextBox();
@@ -77,7 +77,7 @@
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
             // 
-            // InfoMenu
+            // InfoMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,7 +90,7 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(375, 409);
             this.MinimumSize = new System.Drawing.Size(375, 409);
-            this.Name = "InfoMenu";
+            this.Name = "InfoMenuForm";
             this.Text = "Supermarket Simulator";
             this.ResumeLayout(false);
             this.PerformLayout();

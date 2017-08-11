@@ -54,6 +54,8 @@
     <Compile Include="Interfaces\ICustomer.cs" />
     <Compile Include="Interfaces\IStock.cs" />
     <Compile Include="Interfaces\IWorkForce.cs" />
+    <Compile Include="Management\SupermarketManager.cs" />
+    <Compile Include="Management\Warehouse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StockTypes\Alcohol.cs" />
     <Compile Include="StockTypes\DairyProducts.cs" />

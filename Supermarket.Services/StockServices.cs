@@ -3,7 +3,6 @@ using System.Linq;
 using Supermarket.Data;
 using Supermarket.Models.Interfaces;
 using Supermarket.Models.StockTypes;
-using Supermarket.Management.Management;
 
 namespace Supermarket.Services
 {

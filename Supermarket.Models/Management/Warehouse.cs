@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using Supermarket.Models.Interfaces;
 using Supermarket.Models.StockTypes;
 
-namespace Supermarket.Management.Management
+namespace Supermarket.Models.Management
 {
     public class Warehouse
     {
@@ -42,26 +44,9 @@ namespace Supermarket.Management.Management
             return stockInStore;
         }
 
-        public void AddStock(Stock stock)
+        public void AddStock(IStock stock)
         {
-            switch (stock.ProductName)
-            {
-                case "Alcohol":
-                    this.StoredProducts[0].Quantity += stock.Quantity;
-                    break;
-                case "DairyProducts":
-                    this.StoredProducts[1].Quantity += stock.Quantity;
-                    break;
-                case "Meat":
-                    this.StoredProducts[2].Quantity += stock.Quantity;
-                    break;
-                case "Sweets":
-                    this.StoredProducts[3].Quantity += stock.Quantity;
-                    break;
-                case "Vegetables":
-                    this.StoredProducts[4].Quantity += stock.Quantity;
-                    break;
-            }
+            this.StoredProducts.First(x => x.GetType() == stock.GetType()).Quantity += stock.Quantity;
         }
     }
 }

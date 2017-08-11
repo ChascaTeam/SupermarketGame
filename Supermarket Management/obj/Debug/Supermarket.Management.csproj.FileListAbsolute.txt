@@ -24,3 +24,8 @@ C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket Management\bi
 C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Data.pdb
 C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Models.pdb
 C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Models.dll.config
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Data.dll
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Models.dll
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Data.pdb
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Models.pdb
+C:\Users\USER\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Models.dll.config

@@ -45,61 +45,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\InfoMenu.cs">
+    <Compile Include="Forms\InfoMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\InfoMenu.Designer.cs">
-      <DependentUpon>InfoMenu.cs</DependentUpon>
+    <Compile Include="Forms\InfoMenuForm.Designer.cs">
+      <DependentUpon>InfoMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\LaborMarketMenu.cs">
+    <Compile Include="Forms\LaborMarketMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\LaborMarketMenu.Designer.cs">
-      <DependentUpon>LaborMarketMenu.cs</DependentUpon>
+    <Compile Include="Forms\LaborMarketMenuForm.Designer.cs">
+      <DependentUpon>LaborMarketMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MenuPlay.cs">
+    <Compile Include="Forms\MenuPlayForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MenuPlay.Designer.cs">
-      <DependentUpon>MenuPlay.cs</DependentUpon>
+    <Compile Include="Forms\MenuPlayForm.Designer.cs">
+      <DependentUpon>MenuPlayForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MenuStart.cs">
+    <Compile Include="Forms\MenuStartForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MenuStart.Designer.cs">
-      <DependentUpon>MenuStart.cs</DependentUpon>
+    <Compile Include="Forms\MenuStartForm.Designer.cs">
+      <DependentUpon>MenuStartForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Forms\StockMarketMenu.cs">
+    <Compile Include="Forms\StockMarketMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\StockMarketMenu.Designer.cs">
-      <DependentUpon>StockMarketMenu.cs</DependentUpon>
+    <Compile Include="Forms\StockMarketMenuForm.Designer.cs">
+      <DependentUpon>StockMarketMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Warehouse.cs">
+    <Compile Include="Forms\WarehouseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Warehouse.Designer.cs">
-      <DependentUpon>Warehouse.cs</DependentUpon>
+    <Compile Include="Forms\WarehouseForm.Designer.cs">
+      <DependentUpon>WarehouseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\WorkforceMenu.cs">
+    <Compile Include="Forms\WorkforceMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\WorkforceMenu.Designer.cs">
-      <DependentUpon>WorkforceMenu.cs</DependentUpon>
+    <Compile Include="Forms\WorkforceMenuForm.Designer.cs">
+      <DependentUpon>WorkforceMenuForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\InfoMenu.resx">
-      <DependentUpon>InfoMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\InfoMenuForm.resx">
+      <DependentUpon>InfoMenuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\LaborMarketMenu.resx">
-      <DependentUpon>LaborMarketMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\LaborMarketMenuForm.resx">
+      <DependentUpon>LaborMarketMenuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MenuPlay.resx">
-      <DependentUpon>MenuPlay.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MenuPlayForm.resx">
+      <DependentUpon>MenuPlayForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MenuStart.resx">
-      <DependentUpon>MenuStart.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MenuStartForm.resx">
+      <DependentUpon>MenuStartForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -110,14 +110,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\StockMarketMenu.resx">
-      <DependentUpon>StockMarketMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\StockMarketMenuForm.resx">
+      <DependentUpon>StockMarketMenuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Warehouse.resx">
-      <DependentUpon>Warehouse.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\WarehouseForm.resx">
+      <DependentUpon>WarehouseForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\WorkforceMenu.resx">
-      <DependentUpon>WorkforceMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\WorkforceMenuForm.resx">
+      <DependentUpon>WorkforceMenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -131,6 +131,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Supermarket.Models\Supermarket.Models.csproj">
+      <Project>{aa6344d6-d96e-42a6-9305-9daf5a1ab375}</Project>
+      <Name>Supermarket.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,6 @@
-﻿namespace Supermarket.Client
+﻿namespace Supermarket.Client.Forms
 {
-    partial class MenuStart
+    partial class MenuStartForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuStart));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuStartForm));
             this.StartMenuImg = new System.Windows.Forms.PictureBox();
             this.StartButton = new System.Windows.Forms.Button();
             this.GameInfo = new System.Windows.Forms.Button();
@@ -86,7 +86,7 @@
             this.QuitButton.Text = "Quit";
             this.QuitButton.UseVisualStyleBackColor = false;
             // 
-            // MenuStart
+            // MenuStartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
