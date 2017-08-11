@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Supermarket.Models.Interfaces;
 
-namespace Supermarket_Management
+namespace Supermarket.Management.Management
 {
    public class Warehouse
     {

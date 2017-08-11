@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
-using Supermarket_Management.StockTypes;
-using Supermarket_Management.WorkerTypes;
+using Supermarket.Models.Interfaces;
+using Supermarket.Models.StockTypes;
+using Supermarket.Models.WorkerTypes;
 
-namespace Supermarket_Management
+
+namespace Supermarket.Management.Management
 {
     public class SupermarketManager
     {

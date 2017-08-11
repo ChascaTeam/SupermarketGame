@@ -16,7 +16,9 @@ namespace Supermarket.Models.WorkerTypes
         }
 
         public string Name { get { return this.name; } set { this.name = value; } }
+
         public int CustomersPerDay { get { return this.customersPerDay; } set { this.customersPerDay = value; } }
+
         public decimal SalaryPerDay { get { return this.salaryPerDay; } set { this.salaryPerDay = value; } }
     }
 }

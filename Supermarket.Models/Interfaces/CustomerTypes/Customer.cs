@@ -4,7 +4,7 @@ using Supermarket.Models.Interfaces;
 
 namespace Supermarket.Models.CustomerTypes
 {
-   public abstract class Customer : Generator, ICustomer
+   public abstract class Customer : ICustomer
     {
         public decimal MoneyInCash { get; }
         public decimal MoneyInCard { get; }

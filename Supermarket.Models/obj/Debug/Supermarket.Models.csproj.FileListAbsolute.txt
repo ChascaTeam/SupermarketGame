@@ -1,0 +1,9 @@
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.csprojResolveAssemblyReference.cache
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Models.dll.config
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Models.dll
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Models.pdb
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Client.exe
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Client.pdb
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Client.exe.config
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.dll
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.pdb

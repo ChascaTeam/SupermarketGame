@@ -1,25 +1,25 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Supermarket.Data;
-using Supermarket_Management;
+using Supermarket.Models.Interfaces;
+
 
 namespace Supermarket.Services
 {
-    public class WorkForceServices
+    public class WorkForceServices : WorkerData
     {
+       
+
         //Hire worker
         public void AddWorker(IWorkForce worker)
         {
-            WorkerData.Workers.Add(worker);
+            Workers.Add(worker);
         }
 
         //Fire worker
         public void RemoveWorker(IWorkForce worker)
         {
-            WorkerData.Workers.Remove(worker);
+            Workers.Remove(worker);
         }
 
         public void IncreaseSalary(IWorkForce worker, decimal increaseBy)
@@ -34,7 +34,8 @@ namespace Supermarket.Services
 
         public IList<IWorkForce> GetAllWorkers()
         {
-            return WorkerData.Workers;
+
+            return Workers;
         }
     }
 }

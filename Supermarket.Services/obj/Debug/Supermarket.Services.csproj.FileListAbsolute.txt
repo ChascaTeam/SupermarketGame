@@ -3,3 +3,6 @@ C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket.Ser
 C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket.Services\obj\Debug\Supermarket.Services.csprojResolveAssemblyReference.cache
 C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket.Services\obj\Debug\Supermarket.Services.dll
 C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket.Services\obj\Debug\Supermarket.Services.pdb
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Services\obj\Debug\Supermarket.Services.csprojResolveAssemblyReference.cache
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Services\obj\Debug\Supermarket.Services.dll
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Services\obj\Debug\Supermarket.Services.pdb

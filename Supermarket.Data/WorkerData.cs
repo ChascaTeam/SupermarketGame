@@ -11,6 +11,7 @@ namespace Supermarket.Data
         {
             this.Workers = new List<IWorkForce>();
         }
+
         public IList<IWorkForce> Workers
         {
             get { return workers; }

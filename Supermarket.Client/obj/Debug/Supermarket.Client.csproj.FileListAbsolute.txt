@@ -20,3 +20,18 @@ C:\Users\Desislava\Desktop\New folder (2)\SupermarketGame-master\Supermarket.Cli
 C:\Users\Desislava\Desktop\New folder (3)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Client.exe.config
 C:\Users\Desislava\Desktop\New folder (3)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.exe
 C:\Users\Desislava\Desktop\New folder (3)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.pdb
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Client.exe.config
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Client.exe
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Client.pdb
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.csprojResolveAssemblyReference.cache
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.InfoMenu.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.LaborMarketMenu.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.MenuPlay.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.MenuStart.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Properties.Resources.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.StockMarketMenu.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Warehouse.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.WorkforceMenu.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.csproj.GenerateResource.Cache
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.exe
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.pdb

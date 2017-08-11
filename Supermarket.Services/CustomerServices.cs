@@ -1,24 +1,27 @@
 ﻿using System.Collections.Generic;
 using Supermarket.Data;
-using Supermarket_Management;
+using Supermarket.Models.Interfaces;
+
 
 namespace Supermarket.Services
 {
-    public class CustomerServices
+    public class CustomerServices : CustomerData
     {
+        
+
         public void AddCustomer(ICustomer customer)
         {
-            CustomerData.Customers.Add(customer);
+            Customers.Add(customer);
         }
 
         public void RemoveCustomer(ICustomer customer)
         {
-            CustomerData.Customers.Remove(customer);
+            Customers.Remove(customer);
         }
 
         public IList<ICustomer> GetAllCustomers()
         {
-            return CustomerData.Customers;
+            return Customers;
         }
     }
 }

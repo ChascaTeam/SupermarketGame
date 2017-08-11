@@ -1,0 +1,15 @@
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\bin\Release\Supermarket.Client.exe.config
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\bin\Release\Supermarket.Client.exe
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\bin\Release\Supermarket.Client.pdb
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Release\Supermarket.Client.csprojResolveAssemblyReference.cache
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Release\Supermarket.Client.InfoMenu.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Release\Supermarket.Client.LaborMarketMenu.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Release\Supermarket.Client.MenuPlay.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Release\Supermarket.Client.MenuStart.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Release\Supermarket.Client.Properties.Resources.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Release\Supermarket.Client.StockMarketMenu.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Release\Supermarket.Client.Warehouse.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Release\Supermarket.Client.WorkforceMenu.resources
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Release\Supermarket.Client.csproj.GenerateResource.Cache
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Release\Supermarket.Client.exe
+C:\Users\vasko\Desktop\Shop Management\SupermarketGame\Supermarket.Client\obj\Release\Supermarket.Client.pdb

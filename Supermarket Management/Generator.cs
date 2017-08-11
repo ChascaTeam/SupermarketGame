@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Supermarket.Models.Interfaces;
 
-namespace Supermarket_Management
+namespace Supermarket.Management
 {
    public class Generator
     {

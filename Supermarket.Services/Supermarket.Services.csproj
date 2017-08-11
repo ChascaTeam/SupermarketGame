@@ -47,12 +47,16 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Supermarket Management\Supermarket.Management.csproj">
-      <Project>{B07CB34E-7DEC-4387-B904-D738085FDA6D}</Project>
+      <Project>{b07cb34e-7dec-4387-b904-d738085fda6d}</Project>
       <Name>Supermarket.Management</Name>
     </ProjectReference>
     <ProjectReference Include="..\Supermarket.Data\Supermarket.Data.csproj">
       <Project>{11ec0f8f-4625-4291-98b7-be0ad4376528}</Project>
       <Name>Supermarket.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Supermarket.Models\Supermarket.Models.csproj">
+      <Project>{AA6344D6-D96E-42A6-9305-9DAF5A1AB375}</Project>
+      <Name>Supermarket.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

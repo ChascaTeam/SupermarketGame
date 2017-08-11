@@ -1,8 +1,11 @@
 ﻿using System.Collections.Generic;
 using Supermarket.Data;
+using Supermarket.Management.Management;
+using Supermarket.Management.Market;
 using Supermarket.Models.Interfaces;
+using Supermarket.Models.WorkerTypes;
 
-namespace Supermarket_Management
+namespace Supermarket.Management
 {
     public class Engine : Generator
     {
@@ -27,6 +30,7 @@ namespace Supermarket_Management
 
         public void Run()
         {
+            this.workers.Add(new AverageWorker("pesho"));
             //Mananger work. (buy stock, hire/fire workers)
             //Start of day. (calculate net income)
             //End of day (add net income to capital)
