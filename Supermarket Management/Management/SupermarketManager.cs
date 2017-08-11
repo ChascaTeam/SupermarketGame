@@ -28,9 +28,13 @@ namespace Supermarket.Management.Management
             this.Warehouse.IncreaseVolume(amount);
         }
 
-        public void HireWorker(Worker worker)
+        public void HireWorker(List<Worker> workers)
         {
-            this.Workers.Add(worker);
+            foreach (var worker in workers)
+            {
+                this.Workers.Add(worker);
+            }
+            
         }
 
         public void FireWorker(Worker worker)
@@ -44,12 +48,27 @@ namespace Supermarket.Management.Management
             return this.Workers.Sum(w => w.SalaryPerDay) + (decimal)this.Warehouse.WarehouseRent;
         }
 
-        public void RestockWarehouse(params IStock[] stocks)
+        public void RestockWarehouse(List<Stock> stocks)
         {
+            int stocksVolume = 0;
+
             foreach (var stock in stocks)
             {
-                this.Warehouse.AddStock(stock);
+                stocksVolume += stock.Quantity;
             }
+
+            if (this.Warehouse.WarehouseVolume - this.Warehouse.FilledVolume() - stocksVolume >= 0)
+            {
+                foreach (var stock in stocks)
+                {
+                    this.Warehouse.AddStock(stock);
+                }
+            }
+            else
+            {
+                throw new ArgumentException("Warehouse doesn't have enough space!");
+            }
+            
         }
 
         public string CheckCurrentStockInWarehouse()

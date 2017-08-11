@@ -61,6 +61,14 @@
             this.TotalPriceLabel = new System.Windows.Forms.Label();
             this.WarehouseText = new System.Windows.Forms.TextBox();
             this.WarehouseSpaceLabel = new System.Windows.Forms.Label();
+            this.AlcoholBuyText = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.VegetablesBuyText = new System.Windows.Forms.TextBox();
+            this.SweetsBuyText = new System.Windows.Forms.TextBox();
+            this.MeatBuyText = new System.Windows.Forms.TextBox();
+            this.DairyBuyText = new System.Windows.Forms.TextBox();
+            this.CurrentWarehouseSpsaceText = new System.Windows.Forms.TextBox();
+            this.CurrentWarehouseSpaceLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // StockMarketLabel
@@ -195,7 +203,7 @@
             // PriceLabel
             // 
             this.PriceLabel.AutoSize = true;
-            this.PriceLabel.Location = new System.Drawing.Point(288, 78);
+            this.PriceLabel.Location = new System.Drawing.Point(251, 78);
             this.PriceLabel.Name = "PriceLabel";
             this.PriceLabel.Size = new System.Drawing.Size(31, 13);
             this.PriceLabel.TabIndex = 52;
@@ -205,6 +213,7 @@
             // 
             this.AlcoholQuantityText.Location = new System.Drawing.Point(206, 92);
             this.AlcoholQuantityText.Name = "AlcoholQuantityText";
+            this.AlcoholQuantityText.ReadOnly = true;
             this.AlcoholQuantityText.Size = new System.Drawing.Size(39, 20);
             this.AlcoholQuantityText.TabIndex = 53;
             this.AlcoholQuantityText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -213,6 +222,7 @@
             // 
             this.DairyQuantityText.Location = new System.Drawing.Point(206, 118);
             this.DairyQuantityText.Name = "DairyQuantityText";
+            this.DairyQuantityText.ReadOnly = true;
             this.DairyQuantityText.Size = new System.Drawing.Size(39, 20);
             this.DairyQuantityText.TabIndex = 54;
             this.DairyQuantityText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -221,6 +231,7 @@
             // 
             this.MeatQuantityText.Location = new System.Drawing.Point(206, 144);
             this.MeatQuantityText.Name = "MeatQuantityText";
+            this.MeatQuantityText.ReadOnly = true;
             this.MeatQuantityText.Size = new System.Drawing.Size(39, 20);
             this.MeatQuantityText.TabIndex = 55;
             this.MeatQuantityText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -229,6 +240,7 @@
             // 
             this.SweetsQuantityText.Location = new System.Drawing.Point(206, 170);
             this.SweetsQuantityText.Name = "SweetsQuantityText";
+            this.SweetsQuantityText.ReadOnly = true;
             this.SweetsQuantityText.Size = new System.Drawing.Size(39, 20);
             this.SweetsQuantityText.TabIndex = 56;
             this.SweetsQuantityText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -237,13 +249,14 @@
             // 
             this.VegetablesQuantityText.Location = new System.Drawing.Point(206, 196);
             this.VegetablesQuantityText.Name = "VegetablesQuantityText";
+            this.VegetablesQuantityText.ReadOnly = true;
             this.VegetablesQuantityText.Size = new System.Drawing.Size(39, 20);
             this.VegetablesQuantityText.TabIndex = 57;
             this.VegetablesQuantityText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // AlcoholPriceText
             // 
-            this.AlcoholPriceText.Location = new System.Drawing.Point(291, 92);
+            this.AlcoholPriceText.Location = new System.Drawing.Point(251, 92);
             this.AlcoholPriceText.Name = "AlcoholPriceText";
             this.AlcoholPriceText.ReadOnly = true;
             this.AlcoholPriceText.Size = new System.Drawing.Size(39, 20);
@@ -252,7 +265,7 @@
             // 
             // DiaryPriceText
             // 
-            this.DiaryPriceText.Location = new System.Drawing.Point(291, 118);
+            this.DiaryPriceText.Location = new System.Drawing.Point(251, 118);
             this.DiaryPriceText.Name = "DiaryPriceText";
             this.DiaryPriceText.ReadOnly = true;
             this.DiaryPriceText.Size = new System.Drawing.Size(39, 20);
@@ -261,7 +274,7 @@
             // 
             // MeatPriceText
             // 
-            this.MeatPriceText.Location = new System.Drawing.Point(291, 144);
+            this.MeatPriceText.Location = new System.Drawing.Point(251, 147);
             this.MeatPriceText.Name = "MeatPriceText";
             this.MeatPriceText.ReadOnly = true;
             this.MeatPriceText.Size = new System.Drawing.Size(39, 20);
@@ -270,7 +283,7 @@
             // 
             // SweetsPriceText
             // 
-            this.SweetsPriceText.Location = new System.Drawing.Point(291, 170);
+            this.SweetsPriceText.Location = new System.Drawing.Point(251, 170);
             this.SweetsPriceText.Name = "SweetsPriceText";
             this.SweetsPriceText.ReadOnly = true;
             this.SweetsPriceText.Size = new System.Drawing.Size(39, 20);
@@ -279,7 +292,7 @@
             // 
             // VegetablesPriceText
             // 
-            this.VegetablesPriceText.Location = new System.Drawing.Point(290, 196);
+            this.VegetablesPriceText.Location = new System.Drawing.Point(251, 196);
             this.VegetablesPriceText.Name = "VegetablesPriceText";
             this.VegetablesPriceText.ReadOnly = true;
             this.VegetablesPriceText.Size = new System.Drawing.Size(39, 20);
@@ -314,6 +327,7 @@
             // 
             this.TotalPriceText.Location = new System.Drawing.Point(237, 251);
             this.TotalPriceText.Name = "TotalPriceText";
+            this.TotalPriceText.ReadOnly = true;
             this.TotalPriceText.Size = new System.Drawing.Size(61, 20);
             this.TotalPriceText.TabIndex = 65;
             this.TotalPriceText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -352,6 +366,7 @@
             // 
             this.WarehouseText.Location = new System.Drawing.Point(237, 277);
             this.WarehouseText.Name = "WarehouseText";
+            this.WarehouseText.ReadOnly = true;
             this.WarehouseText.Size = new System.Drawing.Size(61, 20);
             this.WarehouseText.TabIndex = 70;
             this.WarehouseText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -359,17 +374,92 @@
             // WarehouseSpaceLabel
             // 
             this.WarehouseSpaceLabel.AutoSize = true;
-            this.WarehouseSpaceLabel.Location = new System.Drawing.Point(143, 280);
+            this.WarehouseSpaceLabel.Location = new System.Drawing.Point(119, 280);
             this.WarehouseSpaceLabel.Name = "WarehouseSpaceLabel";
-            this.WarehouseSpaceLabel.Size = new System.Drawing.Size(88, 13);
+            this.WarehouseSpaceLabel.Size = new System.Drawing.Size(112, 13);
             this.WarehouseSpaceLabel.TabIndex = 71;
-            this.WarehouseSpaceLabel.Text = "Warhouse space";
+            this.WarehouseSpaceLabel.Text = "Total warhouse space";
+            // 
+            // AlcoholBuyText
+            // 
+            this.AlcoholBuyText.Location = new System.Drawing.Point(296, 92);
+            this.AlcoholBuyText.Name = "AlcoholBuyText";
+            this.AlcoholBuyText.Size = new System.Drawing.Size(39, 20);
+            this.AlcoholBuyText.TabIndex = 72;
+            this.AlcoholBuyText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(299, 78);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(25, 13);
+            this.label3.TabIndex = 73;
+            this.label3.Text = "Buy";
+            // 
+            // VegetablesBuyText
+            // 
+            this.VegetablesBuyText.Location = new System.Drawing.Point(296, 196);
+            this.VegetablesBuyText.Name = "VegetablesBuyText";
+            this.VegetablesBuyText.Size = new System.Drawing.Size(39, 20);
+            this.VegetablesBuyText.TabIndex = 74;
+            this.VegetablesBuyText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // SweetsBuyText
+            // 
+            this.SweetsBuyText.Location = new System.Drawing.Point(296, 170);
+            this.SweetsBuyText.Name = "SweetsBuyText";
+            this.SweetsBuyText.Size = new System.Drawing.Size(39, 20);
+            this.SweetsBuyText.TabIndex = 75;
+            this.SweetsBuyText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // MeatBuyText
+            // 
+            this.MeatBuyText.Location = new System.Drawing.Point(296, 147);
+            this.MeatBuyText.Name = "MeatBuyText";
+            this.MeatBuyText.Size = new System.Drawing.Size(39, 20);
+            this.MeatBuyText.TabIndex = 76;
+            this.MeatBuyText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // DairyBuyText
+            // 
+            this.DairyBuyText.Location = new System.Drawing.Point(296, 118);
+            this.DairyBuyText.Name = "DairyBuyText";
+            this.DairyBuyText.Size = new System.Drawing.Size(39, 20);
+            this.DairyBuyText.TabIndex = 77;
+            this.DairyBuyText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // CurrentWarehouseSpsaceText
+            // 
+            this.CurrentWarehouseSpsaceText.Location = new System.Drawing.Point(237, 303);
+            this.CurrentWarehouseSpsaceText.Name = "CurrentWarehouseSpsaceText";
+            this.CurrentWarehouseSpsaceText.ReadOnly = true;
+            this.CurrentWarehouseSpsaceText.Size = new System.Drawing.Size(61, 20);
+            this.CurrentWarehouseSpsaceText.TabIndex = 78;
+            this.CurrentWarehouseSpsaceText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // CurrentWarehouseSpaceLabel
+            // 
+            this.CurrentWarehouseSpaceLabel.AutoSize = true;
+            this.CurrentWarehouseSpaceLabel.Location = new System.Drawing.Point(109, 306);
+            this.CurrentWarehouseSpaceLabel.Name = "CurrentWarehouseSpaceLabel";
+            this.CurrentWarehouseSpaceLabel.Size = new System.Drawing.Size(122, 13);
+            this.CurrentWarehouseSpaceLabel.TabIndex = 79;
+            this.CurrentWarehouseSpaceLabel.Text = "Current warhouse space";
             // 
             // StockMarketMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 370);
+            this.ClientSize = new System.Drawing.Size(359, 371);
+            this.Controls.Add(this.CurrentWarehouseSpaceLabel);
+            this.Controls.Add(this.CurrentWarehouseSpsaceText);
+            this.Controls.Add(this.DairyBuyText);
+            this.Controls.Add(this.MeatBuyText);
+            this.Controls.Add(this.SweetsBuyText);
+            this.Controls.Add(this.VegetablesBuyText);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.AlcoholBuyText);
             this.Controls.Add(this.WarehouseSpaceLabel);
             this.Controls.Add(this.WarehouseText);
             this.Controls.Add(this.TotalPriceLabel);
@@ -448,5 +538,13 @@
         private System.Windows.Forms.Label TotalPriceLabel;
         private System.Windows.Forms.TextBox WarehouseText;
         private System.Windows.Forms.Label WarehouseSpaceLabel;
+        private System.Windows.Forms.TextBox AlcoholBuyText;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox VegetablesBuyText;
+        private System.Windows.Forms.TextBox SweetsBuyText;
+        private System.Windows.Forms.TextBox MeatBuyText;
+        private System.Windows.Forms.TextBox DairyBuyText;
+        private System.Windows.Forms.TextBox CurrentWarehouseSpsaceText;
+        private System.Windows.Forms.Label CurrentWarehouseSpaceLabel;
     }
 }

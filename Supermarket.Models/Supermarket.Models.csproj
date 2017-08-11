@@ -45,12 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\CustomerTypes\AverageCustomer.cs" />
-    <Compile Include="Interfaces\CustomerTypes\Customer.cs" />
-    <Compile Include="Interfaces\CustomerTypes\PoorCustomer.cs" />
-    <Compile Include="Interfaces\CustomerTypes\RichCustomer.cs" />
-    <Compile Include="Interfaces\CustomerTypes\VeryPoorCustomer.cs" />
-    <Compile Include="Interfaces\CustomerTypes\VeryRichCustomer.cs" />
+    <Compile Include="CustomerTypes\AverageCustomer.cs" />
+    <Compile Include="CustomerTypes\Customer.cs" />
+    <Compile Include="CustomerTypes\PoorCustomer.cs" />
+    <Compile Include="CustomerTypes\RichCustomer.cs" />
+    <Compile Include="CustomerTypes\VeryPoorCustomer.cs" />
+    <Compile Include="CustomerTypes\VeryRichCustomer.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
     <Compile Include="Interfaces\IStock.cs" />
     <Compile Include="Interfaces\IWorkForce.cs" />

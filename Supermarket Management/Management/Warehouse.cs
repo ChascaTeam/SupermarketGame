@@ -1,30 +1,67 @@
-﻿using System;
-using System.Collections.Generic;
-using Supermarket.Models.Interfaces;
+﻿using System.Collections.Generic;
+using Supermarket.Models.StockTypes;
 
 namespace Supermarket.Management.Management
 {
-   public class Warehouse
+    public class Warehouse
     {
-        public readonly List<IStock> StoredProducts;
+        private decimal warehouseRent;
+
+        private List<Stock> storedProducts;
 
         public Warehouse()
         {
-            this.StoredProducts = new List<IStock>();
+            this.StoredProducts = new List<Stock> { new Alcohol(), new DairyProducts(), new Meat(), new Sweets(), new Vegetables() };
+            this.WarehouseRent = 50m;
         }
 
-        public int WarehouseVolume { get; private set; }
-        public double WarehouseRent { get; }
+        public List<Stock> StoredProducts { get; protected set; }
+
+        public int WarehouseVolume { get; protected set; }
+
+        public decimal WarehouseRent
+        {
+            get { return this.warehouseRent; }
+           protected set { this.warehouseRent = value; }
+        }
 
         public void IncreaseVolume(int volume)
         {
             this.WarehouseVolume += volume;
         }
 
-        public void AddStock(IStock stock)
+        public int FilledVolume()
         {
-            //Add checks about volume
-            this.StoredProducts.Add(stock);
+            int stockInStore = 0;
+
+            foreach (var product in this.StoredProducts)
+            {
+                stockInStore += product.Quantity;
+            }
+
+            return stockInStore;
+        }
+
+        public void AddStock(Stock stock)
+        {
+            switch (stock.ProductName)
+            {
+                case "Alcohol":
+                    this.StoredProducts[0].Quantity += stock.Quantity;
+                    break;
+                case "DairyProducts":
+                    this.StoredProducts[1].Quantity += stock.Quantity;
+                    break;
+                case "Meat":
+                    this.StoredProducts[2].Quantity += stock.Quantity;
+                    break;
+                case "Sweets":
+                    this.StoredProducts[3].Quantity += stock.Quantity;
+                    break;
+                case "Vegetables":
+                    this.StoredProducts[4].Quantity += stock.Quantity;
+                    break;
+            }
         }
     }
 }
