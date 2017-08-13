@@ -98,7 +98,7 @@
             this.WarehouseButton.Name = "WarehouseButton";
             this.WarehouseButton.Size = new System.Drawing.Size(121, 28);
             this.WarehouseButton.TabIndex = 7;
-            this.WarehouseButton.Text = "WarehouseForm";
+            this.WarehouseButton.Text = "Warehouse";
             this.WarehouseButton.UseVisualStyleBackColor = true;
             // 
             // StockMarketButton

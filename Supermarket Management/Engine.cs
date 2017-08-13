@@ -4,11 +4,11 @@ using Supermarket.Data.Interfaces;
 using Supermarket.Management.Market;
 using Supermarket.Models.Interfaces;
 using Supermarket.Models.Management;
-using Supermarket.Models.WorkerTypes;
+using Supermarket.Models.RandomGenerators;
 
 namespace Supermarket.Management
 {
-    public class Engine : Generator
+    public class Engine
     {
         private SupermarketManager manager;
         private IList<ICustomer> customers;
@@ -32,12 +32,23 @@ namespace Supermarket.Management
 
         public void Run()
         {
-            this.workers.Add(new AverageWorker("pesho"));
+            this.CreateLaborMarketData();
+                  this.CreateCustomersList();    
             //Mananger work. (buy stock, hire/fire workers)
             //Start of day. (calculate net income)
             //End of day (add net income to capital)
             //Check if goal is meet(enough capital or bankruptcy)
             //else Repeat
+        }
+
+        private void CreateLaborMarketData()
+        {
+            this.workers = new Generator().GenerateWorkersForHire();
+        }
+
+        private void CreateCustomersList()
+        {
+            this.customers = new Generator().GenerateCustomers();
         }
     }
 }

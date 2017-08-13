@@ -4,8 +4,8 @@
     {
         public Expert(string name) : base(name)
         {
-            this.SalaryPerDay += 10;
-            this.CustomersPerDay += 15;
+            this.SalaryPerDay = 80;
+            this.CustomersPerDay = 20;
         }
     }
 }

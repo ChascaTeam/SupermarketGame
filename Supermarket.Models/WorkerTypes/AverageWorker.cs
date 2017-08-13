@@ -4,6 +4,8 @@
     {
         public AverageWorker(string name) : base(name)
         {
+            this.SalaryPerDay = 50;
+            this.CustomersPerDay = 15;
         }
     }
 }

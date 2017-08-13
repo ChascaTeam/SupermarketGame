@@ -4,8 +4,8 @@
     {
         public LazyWorker(string name) : base(name)
         {
-            this.SalaryPerDay -= 5;
-            this.CustomersPerDay -= 10;
+            this.SalaryPerDay = 50;
+            this.CustomersPerDay = 7;
         }
     }
 }

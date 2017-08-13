@@ -4,8 +4,8 @@
     {
         public Intern(string name) : base(name)
         {
-            this.SalaryPerDay -= 10;
-            this.CustomersPerDay -= 20;
+            this.SalaryPerDay = 25;
+            this.CustomersPerDay = 5;
         }
     }
 }

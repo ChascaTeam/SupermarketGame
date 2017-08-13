@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Supermarket.Models.StockTypes;
 
 namespace Supermarket.Models.Interfaces
 {
@@ -6,17 +7,19 @@ namespace Supermarket.Models.Interfaces
 
     {
         //Money can be random(to some extent) or hard coded
-        decimal MoneyInCash { get; }
-        decimal MoneyInCard { get; }
+        decimal Money { get; }
+
+        //How much a current client is willing to pay for a product.
+        decimal PriceTolerance { get; }
 
         //Look at Customer for info
         List<IStock> WantedProducts { get; }
 
         //Should return total cost for the products that the client can and "want" to buy.
-        decimal BuyWantedProducts();
+        void BuyWantedProducts(List<IStock> productsInStore);
 
-        //How much a current client (above or below the preset price) is willing to pay.
-        void PriceTolerance();
+        
+       
 
 
     }

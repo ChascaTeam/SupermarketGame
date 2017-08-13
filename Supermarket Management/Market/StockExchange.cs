@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Supermarket.Models.Interfaces;
+using Supermarket.Models.RandomGenerators;
 
 namespace Supermarket.Management.Market
 {
