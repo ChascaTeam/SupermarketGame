@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarket.Management", "Supermarket Management\Supermarket.Management.csproj", "{B07CB34E-7DEC-4387-B904-D738085FDA6D}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarket.Services", "Supermarket.Services\Supermarket.Services.csproj", "{D0EA8841-AD72-4428-A7E6-31CB8E1F43DA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarket.Models", "Supermarket.Models\Supermarket.Models.csproj", "{AA6344D6-D96E-42A6-9305-9DAF5A1AB375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarket.Forms", "Supermarket.Forms\Supermarket.Forms.csproj", "{3C0F354A-929E-4393-A037-F82507830D45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{AA6344D6-D96E-42A6-9305-9DAF5A1AB375}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA6344D6-D96E-42A6-9305-9DAF5A1AB375}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA6344D6-D96E-42A6-9305-9DAF5A1AB375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C0F354A-929E-4393-A037-F82507830D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0F354A-929E-4393-A037-F82507830D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0F354A-929E-4393-A037-F82507830D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0F354A-929E-4393-A037-F82507830D45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

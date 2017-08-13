@@ -45,70 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\InfoMenuForm.cs">
+    <Compile Include="MenuStartForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\InfoMenuForm.Designer.cs">
-      <DependentUpon>InfoMenuForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\LaborMarketMenuForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\LaborMarketMenuForm.Designer.cs">
-      <DependentUpon>LaborMarketMenuForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\MenuPlayForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MenuPlayForm.Designer.cs">
-      <DependentUpon>MenuPlayForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\MenuStartForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MenuStartForm.Designer.cs">
+    <Compile Include="MenuStartForm.Designer.cs">
       <DependentUpon>MenuStartForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\SummaryForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\SummaryForm.Designer.cs">
-      <DependentUpon>SummaryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Forms\StockMarketMenuForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\StockMarketMenuForm.Designer.cs">
-      <DependentUpon>StockMarketMenuForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\WarehouseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\WarehouseForm.Designer.cs">
-      <DependentUpon>WarehouseForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\WorkforceMenuForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\WorkforceMenuForm.Designer.cs">
-      <DependentUpon>WorkforceMenuForm.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Forms\InfoMenuForm.resx">
-      <DependentUpon>InfoMenuForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\LaborMarketMenuForm.resx">
-      <DependentUpon>LaborMarketMenuForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MenuPlayForm.resx">
-      <DependentUpon>MenuPlayForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MenuStartForm.resx">
+    <EmbeddedResource Include="MenuStartForm.resx">
       <DependentUpon>MenuStartForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SummaryForm.resx">
-      <DependentUpon>SummaryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,15 +65,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\StockMarketMenuForm.resx">
-      <DependentUpon>StockMarketMenuForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\WarehouseForm.resx">
-      <DependentUpon>WarehouseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\WorkforceMenuForm.resx">
-      <DependentUpon>WorkforceMenuForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -142,6 +79,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Supermarket Management\Supermarket.Management.csproj">
+      <Project>{b07cb34e-7dec-4387-b904-d738085fda6d}</Project>
+      <Name>Supermarket.Management</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Supermarket.Forms\Supermarket.Forms.csproj">
+      <Project>{3c0f354a-929e-4393-a037-f82507830d45}</Project>
+      <Name>Supermarket.Forms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Supermarket.Models\Supermarket.Models.csproj">
       <Project>{aa6344d6-d96e-42a6-9305-9daf5a1ab375}</Project>
       <Name>Supermarket.Models</Name>

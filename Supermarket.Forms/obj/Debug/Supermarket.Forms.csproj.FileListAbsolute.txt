@@ -1,0 +1,13 @@
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Forms\bin\Debug\Supermarket.Forms.dll
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Forms\bin\Debug\Supermarket.Forms.pdb
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Forms\obj\Debug\Supermarket.Forms.csprojResolveAssemblyReference.cache
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Forms\obj\Debug\Supermarket.Forms.Forms.InfoMenuForm.resources
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Forms\obj\Debug\Supermarket.Forms.Forms.LaborMarketMenuForm.resources
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Forms\obj\Debug\Supermarket.Forms.Forms.MenuPlayForm.resources
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Forms\obj\Debug\Supermarket.Forms.Forms.StockMarketMenuForm.resources
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Forms\obj\Debug\Supermarket.Forms.Forms.SummaryForm.resources
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Forms\obj\Debug\Supermarket.Forms.Forms.WarehouseForm.resources
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Forms\obj\Debug\Supermarket.Forms.Forms.WorkforceMenuForm.resources
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Forms\obj\Debug\Supermarket.Forms.csproj.GenerateResource.Cache
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Forms\obj\Debug\Supermarket.Forms.dll
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Forms\obj\Debug\Supermarket.Forms.pdb

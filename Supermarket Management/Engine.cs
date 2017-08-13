@@ -5,7 +5,8 @@ using Supermarket.Management.Market;
 using Supermarket.Models.Interfaces;
 using Supermarket.Models.Management;
 using Supermarket.Models.RandomGenerators;
-
+using System;
+using Supermarket.Models.StockTypes;
 namespace Supermarket.Management
 {
     public class Engine
@@ -33,8 +34,10 @@ namespace Supermarket.Management
         public void Run()
         {
             this.CreateLaborMarketData();
-                  this.CreateCustomersList();    
-            //Mananger work. (buy stock, hire/fire workers)
+                  this.CreateCustomersList();
+                  
+                  
+            //Manager work. (buy stock, hire/fire workers)
             //Start of day. (calculate net income)
             //End of day (add net income to capital)
             //Check if goal is meet(enough capital or bankruptcy)
