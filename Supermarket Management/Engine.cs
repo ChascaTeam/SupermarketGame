@@ -15,6 +15,7 @@ namespace Supermarket.Management
         private StockExchange stockExchange;
         private LaborExchange laborExchange;
         private IList<IWorkForce> workers;
+        private int daysPassed;
 
         public Engine()
         {

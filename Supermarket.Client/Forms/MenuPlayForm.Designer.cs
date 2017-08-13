@@ -142,6 +142,7 @@
             // 
             // IncomeText
             // 
+            this.IncomeText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.IncomeText.Location = new System.Drawing.Point(12, 64);
             this.IncomeText.Name = "IncomeText";
             this.IncomeText.ReadOnly = true;
@@ -244,7 +245,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 370);
+            this.ClientSize = new System.Drawing.Size(359, 371);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);

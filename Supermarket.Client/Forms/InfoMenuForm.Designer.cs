@@ -33,6 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.CurrentMoneyText = new System.Windows.Forms.TextBox();
             this.BackButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // GameInfoLabel
@@ -77,11 +79,23 @@
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(131, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(90, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            // 
             // InfoMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 370);
+            this.ClientSize = new System.Drawing.Size(359, 371);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.CurrentMoneyText);
             this.Controls.Add(this.label1);
@@ -92,6 +106,7 @@
             this.MinimumSize = new System.Drawing.Size(375, 409);
             this.Name = "InfoMenuForm";
             this.Text = "Supermarket Simulator";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,5 +118,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox CurrentMoneyText;
         private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -325,6 +325,7 @@
             // 
             // TotalPriceText
             // 
+            this.TotalPriceText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TotalPriceText.Location = new System.Drawing.Point(237, 251);
             this.TotalPriceText.Name = "TotalPriceText";
             this.TotalPriceText.ReadOnly = true;
