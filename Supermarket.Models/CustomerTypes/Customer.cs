@@ -9,7 +9,7 @@ namespace Supermarket.Models.CustomerTypes
     public abstract class Customer : ICustomer
     {
         private decimal money;
-        private List<IStock> wantedProducts = new List<IStock>();
+        private List<IStock> wantedProducts;
         private decimal priceTolerance;
 
         protected Customer(decimal money, List<IStock> wantedProducts, decimal priceTolerance)

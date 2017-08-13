@@ -5,7 +5,7 @@ using Supermarket.Models.RandomGenerators;
 
 namespace Supermarket.Management.Market
 {
-    public class StockExchange : Generator
+    public class StockExchange : RNDGenerator
     {
         public StockExchange(List<IStock> availableProducts)
         {

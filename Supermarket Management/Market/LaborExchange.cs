@@ -5,7 +5,7 @@ using Supermarket.Models.RandomGenerators;
 
 namespace Supermarket.Management.Market
 {
-  public class LaborExchange : Generator
+  public class LaborExchange : RNDGenerator
     {
         public LaborExchange(List<IWorkForce> availableProducts)
         {

@@ -43,12 +43,12 @@ namespace Supermarket.Management
 
         private void CreateLaborMarketData()
         {
-            this.workers = new Generator().GenerateWorkersForHire();
+            this.workers = new WorkForceGenerator().GenerateWorkersForHire();
         }
 
         private void CreateCustomersList()
         {
-            this.customers = new Generator().GenerateCustomers();
+            this.customers = new CustomerGenerator().GenerateCustomers();
         }
     }
 }

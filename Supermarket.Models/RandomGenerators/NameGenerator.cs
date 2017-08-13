@@ -10,7 +10,7 @@ namespace Supermarket.Models.RandomGenerators
 
         public string GenerateName()
         {            
-            var name = this.namePool[base.rnd(0,this.namePool.Count-1)];
+            var name = this.namePool[base.Rnd(0,this.namePool.Count-1)];
             this.namePool.Remove(name);
 
             return name;

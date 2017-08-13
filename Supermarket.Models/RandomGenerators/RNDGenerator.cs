@@ -7,9 +7,9 @@ namespace Supermarket.Models.RandomGenerators
     {
         private readonly Random random = new Random();
 
-        public int rnd(int start, int end)
+        public int Rnd(int start, int end)
         {            
-            var num = int.Parse(random.Next(start, end).ToString());
+            var num = random.Next(start, end);
 
             return num;
         }

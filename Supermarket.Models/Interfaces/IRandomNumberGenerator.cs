@@ -8,6 +8,6 @@ namespace Supermarket.Models.Interfaces
 {
     public interface IRandomNumberGenerator
     {
-        int rnd(int start, int end);
+        int Rnd(int start, int end);
     }
 }

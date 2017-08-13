@@ -1,10 +1,10 @@
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.csprojResolveAssemblyReference.cache
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Client.exe.config
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Client.exe
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Client.pdb
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Models.dll
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Models.pdb
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Models.dll.config
-C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.csprojResolveAssemblyReference.cache
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.InfoMenuForm.resources
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.LaborMarketMenuForm.resources
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.MenuPlayForm.resources
