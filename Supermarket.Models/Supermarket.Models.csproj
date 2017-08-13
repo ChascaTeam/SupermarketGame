@@ -80,11 +80,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Supermarket.Client\Supermarket.Client.csproj">
-      <Project>{69f27ffb-e213-4748-a299-c534a3fbebbd}</Project>
-      <Name>Supermarket.Client</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
