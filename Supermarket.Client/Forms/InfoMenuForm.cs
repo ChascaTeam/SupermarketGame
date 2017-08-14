@@ -8,5 +8,11 @@ namespace Supermarket.Client.Forms
         {
             InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, System.EventArgs e)
+        {
+            var mainForm = (MainForm)(this).Parent.Parent;
+            mainForm.SetContentHolderForm(new MenuStartForm());
+        }
     }
 }

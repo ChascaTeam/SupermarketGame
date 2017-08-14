@@ -37,11 +37,11 @@
             this.FourthWorkerText = new System.Windows.Forms.TextBox();
             this.FifthWorkerText = new System.Windows.Forms.TextBox();
             this.HireWorkersButton = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // BackButton
@@ -55,6 +55,7 @@
             this.BackButton.TabIndex = 64;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // StockMarketLabel
             // 
@@ -124,71 +125,66 @@
             this.HireWorkersButton.Text = "Hire Workers";
             this.HireWorkersButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // checkBox1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(130, 36);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(81, 17);
-            this.radioButton1.TabIndex = 80;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Worker Info";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(130, 36);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(81, 17);
+            this.checkBox1.TabIndex = 99;
+            this.checkBox1.Text = "Worker info";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // checkBox2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(130, 90);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(81, 17);
-            this.radioButton2.TabIndex = 81;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Worker Info";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(130, 252);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(81, 17);
+            this.checkBox2.TabIndex = 100;
+            this.checkBox2.Text = "Worker info";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // checkBox3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(130, 144);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(81, 17);
-            this.radioButton3.TabIndex = 82;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Worker Info";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(130, 144);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(81, 17);
+            this.checkBox3.TabIndex = 101;
+            this.checkBox3.Text = "Worker info";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // checkBox4
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(130, 198);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(81, 17);
-            this.radioButton4.TabIndex = 83;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Worker Info";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(130, 196);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(81, 17);
+            this.checkBox4.TabIndex = 102;
+            this.checkBox4.Text = "Worker info";
+            this.checkBox4.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // checkBox5
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(130, 252);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(81, 17);
-            this.radioButton5.TabIndex = 84;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Worker Info";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(130, 90);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(81, 17);
+            this.checkBox5.TabIndex = 103;
+            this.checkBox5.Text = "Worker info";
+            this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // LaborMarketMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 370);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.ClientSize = new System.Drawing.Size(375, 409);
+            this.Controls.Add(this.checkBox5);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.HireWorkersButton);
             this.Controls.Add(this.FifthWorkerText);
             this.Controls.Add(this.FourthWorkerText);
@@ -221,10 +217,10 @@
         private System.Windows.Forms.TextBox FourthWorkerText;
         private System.Windows.Forms.TextBox FifthWorkerText;
         private System.Windows.Forms.Button HireWorkersButton;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox5;
     }
 }

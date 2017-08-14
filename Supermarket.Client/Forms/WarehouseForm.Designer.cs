@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WarehouseForm));
             this.WarehouseLabel = new System.Windows.Forms.Label();
-            this.AlcoholText = new System.Windows.Forms.TextBox();
+            this.TotalSpaceText = new System.Windows.Forms.TextBox();
             this.AlcoholLabel = new System.Windows.Forms.Label();
             this.StartMenuImg = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,10 +49,10 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.AlcoholTxt = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.LeftSpaceText = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.RentPerDayText = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.QuantityLabel = new System.Windows.Forms.Label();
             this.PriceLabel = new System.Windows.Forms.Label();
@@ -86,14 +86,14 @@
             this.WarehouseLabel.TabIndex = 21;
             this.WarehouseLabel.Text = "Warehose";
             // 
-            // AlcoholText
+            // TotalSpaceText
             // 
-            this.AlcoholText.Location = new System.Drawing.Point(311, 48);
-            this.AlcoholText.Name = "AlcoholText";
-            this.AlcoholText.ReadOnly = true;
-            this.AlcoholText.Size = new System.Drawing.Size(39, 20);
-            this.AlcoholText.TabIndex = 23;
-            this.AlcoholText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TotalSpaceText.Location = new System.Drawing.Point(311, 48);
+            this.TotalSpaceText.Name = "TotalSpaceText";
+            this.TotalSpaceText.ReadOnly = true;
+            this.TotalSpaceText.Size = new System.Drawing.Size(39, 20);
+            this.TotalSpaceText.TabIndex = 23;
+            this.TotalSpaceText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // AlcoholLabel
             // 
@@ -108,7 +108,7 @@
             // 
             this.StartMenuImg.Image = ((System.Drawing.Image)(resources.GetObject("StartMenuImg.Image")));
             this.StartMenuImg.InitialImage = ((System.Drawing.Image)(resources.GetObject("StartMenuImg.InitialImage")));
-            this.StartMenuImg.Location = new System.Drawing.Point(35, 145);
+            this.StartMenuImg.Location = new System.Drawing.Point(45, 145);
             this.StartMenuImg.Name = "StartMenuImg";
             this.StartMenuImg.Size = new System.Drawing.Size(64, 65);
             this.StartMenuImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -130,7 +130,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(100, 145);
+            this.pictureBox1.Location = new System.Drawing.Point(102, 145);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 65);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -141,7 +141,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(222, 145);
+            this.pictureBox2.Location = new System.Drawing.Point(213, 145);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(64, 65);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,7 +152,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(283, 145);
+            this.pictureBox3.Location = new System.Drawing.Point(270, 145);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(64, 65);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -163,7 +163,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(158, 145);
+            this.pictureBox4.Location = new System.Drawing.Point(152, 145);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(64, 65);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -181,7 +181,7 @@
             // 
             // DairyText
             // 
-            this.DairyText.Location = new System.Drawing.Point(116, 232);
+            this.DairyText.Location = new System.Drawing.Point(105, 229);
             this.DairyText.Name = "DairyText";
             this.DairyText.ReadOnly = true;
             this.DairyText.Size = new System.Drawing.Size(39, 20);
@@ -190,7 +190,7 @@
             // 
             // MeatText
             // 
-            this.MeatText.Location = new System.Drawing.Point(172, 229);
+            this.MeatText.Location = new System.Drawing.Point(161, 229);
             this.MeatText.Name = "MeatText";
             this.MeatText.ReadOnly = true;
             this.MeatText.Size = new System.Drawing.Size(39, 20);
@@ -209,7 +209,7 @@
             // SweetsLabel
             // 
             this.SweetsLabel.AutoSize = true;
-            this.SweetsLabel.Location = new System.Drawing.Point(292, 213);
+            this.SweetsLabel.Location = new System.Drawing.Point(283, 213);
             this.SweetsLabel.Name = "SweetsLabel";
             this.SweetsLabel.Size = new System.Drawing.Size(42, 13);
             this.SweetsLabel.TabIndex = 34;
@@ -218,7 +218,7 @@
             // VegetablesLabel
             // 
             this.VegetablesLabel.AutoSize = true;
-            this.VegetablesLabel.Location = new System.Drawing.Point(226, 213);
+            this.VegetablesLabel.Location = new System.Drawing.Point(217, 213);
             this.VegetablesLabel.Name = "VegetablesLabel";
             this.VegetablesLabel.Size = new System.Drawing.Size(60, 13);
             this.VegetablesLabel.TabIndex = 35;
@@ -226,7 +226,7 @@
             // 
             // SweetsText
             // 
-            this.SweetsText.Location = new System.Drawing.Point(295, 229);
+            this.SweetsText.Location = new System.Drawing.Point(286, 229);
             this.SweetsText.Name = "SweetsText";
             this.SweetsText.ReadOnly = true;
             this.SweetsText.Size = new System.Drawing.Size(39, 20);
@@ -235,7 +235,7 @@
             // 
             // VegetablesText
             // 
-            this.VegetablesText.Location = new System.Drawing.Point(229, 229);
+            this.VegetablesText.Location = new System.Drawing.Point(220, 229);
             this.VegetablesText.Name = "VegetablesText";
             this.VegetablesText.ReadOnly = true;
             this.VegetablesText.Size = new System.Drawing.Size(39, 20);
@@ -253,6 +253,7 @@
             this.BackButton.TabIndex = 38;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // label7
             // 
@@ -271,16 +272,17 @@
             this.AlcoholTxt.Size = new System.Drawing.Size(39, 20);
             this.AlcoholTxt.TabIndex = 40;
             this.AlcoholTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.AlcoholTxt.TextChanged += new System.EventHandler(this.AlcoholTxt_TextChanged);
             // 
-            // textBox6
+            // LeftSpaceText
             // 
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.textBox6.Location = new System.Drawing.Point(308, 74);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(39, 20);
-            this.textBox6.TabIndex = 41;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.LeftSpaceText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.LeftSpaceText.Location = new System.Drawing.Point(308, 74);
+            this.LeftSpaceText.Name = "LeftSpaceText";
+            this.LeftSpaceText.ReadOnly = true;
+            this.LeftSpaceText.Size = new System.Drawing.Size(39, 20);
+            this.LeftSpaceText.TabIndex = 41;
+            this.LeftSpaceText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label8
             // 
@@ -300,15 +302,15 @@
             this.label1.TabIndex = 43;
             this.label1.Text = "Rent per day";
             // 
-            // textBox1
+            // RentPerDayText
             // 
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.textBox1.Location = new System.Drawing.Point(311, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(39, 20);
-            this.textBox1.TabIndex = 44;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.RentPerDayText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RentPerDayText.Location = new System.Drawing.Point(311, 22);
+            this.RentPerDayText.Name = "RentPerDayText";
+            this.RentPerDayText.ReadOnly = true;
+            this.RentPerDayText.Size = new System.Drawing.Size(39, 20);
+            this.RentPerDayText.TabIndex = 44;
+            this.RentPerDayText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
@@ -347,7 +349,7 @@
             // 
             // DairyPriceText
             // 
-            this.DairyPriceText.Location = new System.Drawing.Point(116, 271);
+            this.DairyPriceText.Location = new System.Drawing.Point(105, 271);
             this.DairyPriceText.Name = "DairyPriceText";
             this.DairyPriceText.Size = new System.Drawing.Size(39, 20);
             this.DairyPriceText.TabIndex = 49;
@@ -355,7 +357,7 @@
             // 
             // MeatPriceText
             // 
-            this.MeatPriceText.Location = new System.Drawing.Point(172, 271);
+            this.MeatPriceText.Location = new System.Drawing.Point(161, 271);
             this.MeatPriceText.Name = "MeatPriceText";
             this.MeatPriceText.Size = new System.Drawing.Size(39, 20);
             this.MeatPriceText.TabIndex = 50;
@@ -363,7 +365,7 @@
             // 
             // VegetablesPriceText
             // 
-            this.VegetablesPriceText.Location = new System.Drawing.Point(229, 271);
+            this.VegetablesPriceText.Location = new System.Drawing.Point(220, 271);
             this.VegetablesPriceText.Name = "VegetablesPriceText";
             this.VegetablesPriceText.Size = new System.Drawing.Size(39, 20);
             this.VegetablesPriceText.TabIndex = 51;
@@ -371,7 +373,7 @@
             // 
             // SweetsPriceText
             // 
-            this.SweetsPriceText.Location = new System.Drawing.Point(295, 271);
+            this.SweetsPriceText.Location = new System.Drawing.Point(286, 271);
             this.SweetsPriceText.Name = "SweetsPriceText";
             this.SweetsPriceText.Size = new System.Drawing.Size(39, 20);
             this.SweetsPriceText.TabIndex = 52;
@@ -388,6 +390,7 @@
             this.ChangePricesButton.TabIndex = 53;
             this.ChangePricesButton.Text = "Change Prices";
             this.ChangePricesButton.UseVisualStyleBackColor = true;
+            this.ChangePricesButton.Click += new System.EventHandler(this.ChangePricesButton_Click);
             // 
             // IncreaseSpaceButton
             // 
@@ -462,7 +465,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 370);
+            this.ClientSize = new System.Drawing.Size(375, 409);
             this.Controls.Add(this.RentInceraseText);
             this.Controls.Add(this.BonusSpaceText);
             this.Controls.Add(this.CostText);
@@ -479,10 +482,10 @@
             this.Controls.Add(this.PriceLabel);
             this.Controls.Add(this.QuantityLabel);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.RentPerDayText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.LeftSpaceText);
             this.Controls.Add(this.AlcoholTxt);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.BackButton);
@@ -501,7 +504,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.StartMenuImg);
             this.Controls.Add(this.AlcoholLabel);
-            this.Controls.Add(this.AlcoholText);
+            this.Controls.Add(this.TotalSpaceText);
             this.Controls.Add(this.WarehouseLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -523,7 +526,7 @@
         #endregion
 
         private System.Windows.Forms.Label WarehouseLabel;
-        private System.Windows.Forms.TextBox AlcoholText;
+        private System.Windows.Forms.TextBox TotalSpaceText;
         private System.Windows.Forms.Label AlcoholLabel;
         private System.Windows.Forms.PictureBox StartMenuImg;
         private System.Windows.Forms.Label label2;
@@ -542,10 +545,10 @@
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox AlcoholTxt;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox LeftSpaceText;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox RentPerDayText;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label QuantityLabel;
         private System.Windows.Forms.Label PriceLabel;

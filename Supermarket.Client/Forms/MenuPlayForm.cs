@@ -21,7 +21,7 @@ namespace Supermarket.Client.Forms
                 Engine.daysPassed++;               
                 Engine.manager.CurrentCapital += Engine.income;
                 Engine.manager.CurrentCapital -= (Engine.manager.Warehouse.WarehouseRent+Engine.manager.SalaryCostsPerDay());
-                mainForm.SetContentHolderForm(new MenuPlayForm());
+                mainForm.SetContentHolderForm(new SummaryForm());
             }
             else
             {
@@ -51,6 +51,16 @@ namespace Supermarket.Client.Forms
         {
             var mainForm = (MainForm)(this).Parent.Parent;
             mainForm.SetContentHolderForm(new LaborMarketMenuForm());
+        }
+
+        private void CurrentMoneyText_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

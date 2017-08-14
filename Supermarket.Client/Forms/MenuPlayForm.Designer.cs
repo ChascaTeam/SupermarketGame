@@ -135,6 +135,7 @@
             this.CurrentMoneyText.Size = new System.Drawing.Size(100, 20);
             this.CurrentMoneyText.TabIndex = 10;
             this.CurrentMoneyText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CurrentMoneyText.TextChanged += new System.EventHandler(this.CurrentMoneyText_TextChanged);
             // 
             // IncomeLabel
             // 
@@ -201,6 +202,7 @@
             this.textBox1.Size = new System.Drawing.Size(32, 20);
             this.textBox1.TabIndex = 22;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // StartMenuImg
             // 

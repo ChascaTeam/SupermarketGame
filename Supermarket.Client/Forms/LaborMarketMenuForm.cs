@@ -29,5 +29,11 @@ namespace Supermarket.Client.Forms
         {
 
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            var mainForm = (MainForm)(this).Parent.Parent;
+            mainForm.SetContentHolderForm(new MenuPlayForm());
+        }
     }
 }

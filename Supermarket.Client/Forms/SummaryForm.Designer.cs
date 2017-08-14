@@ -62,6 +62,7 @@
             this.ContinueButton.TabIndex = 14;
             this.ContinueButton.Text = "Continue";
             this.ContinueButton.UseVisualStyleBackColor = true;
+            this.ContinueButton.Click += new System.EventHandler(this.ContinueButton_Click);
             // 
             // RevenuesLabel
             // 
@@ -190,6 +191,7 @@
             this.UnsatisfiedClientsText.Size = new System.Drawing.Size(35, 20);
             this.UnsatisfiedClientsText.TabIndex = 32;
             this.UnsatisfiedClientsText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.UnsatisfiedClientsText.TextChanged += new System.EventHandler(this.UnsatisfiedClientsText_TextChanged);
             // 
             // SatisfiedClientsText
             // 
@@ -246,7 +248,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 370);
+            this.ClientSize = new System.Drawing.Size(375, 409);
             this.Controls.Add(this.DayText);
             this.Controls.Add(this.ForLabel);
             this.Controls.Add(this.pictureBox1);
@@ -273,6 +275,7 @@
             this.Name = "SummaryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SummaryForm";
+            this.Load += new System.EventHandler(this.SummaryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

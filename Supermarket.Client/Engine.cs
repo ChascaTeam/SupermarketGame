@@ -21,10 +21,10 @@ namespace Supermarket.Client
         private StockExchange stockExchange;
         private LaborExchange laborExchange;
         private IList<IWorkForce> workers;
-        private IClientCounter counter = new ClientsMood();
 
         internal static decimal income;
         internal static int daysPassed = 1;
+        internal static IClientCounter counter = new ClientsMood();
         internal static SupermarketManager manager = new SupermarketManager(new Warehouse(), 1000);
 
         public Engine()
@@ -93,7 +93,7 @@ namespace Supermarket.Client
 
             if (numOfClients < this.customers.Count)
             {
-                this.counter.UnsatisfiedNumber += this.customers.Count - numOfClients;
+                counter.UnsatisfiedNumber += this.customers.Count - numOfClients;
                 if (numOfClients == 0)
                 {
                     this.customers.Clear();
@@ -133,11 +133,11 @@ namespace Supermarket.Client
 
                 if (customer.HasShoped)
                 {
-                    this.counter.AddSatisfied();
+                    counter.AddSatisfied();
                 }
                 else
                 {
-                    this.counter.AddUnsatisfied();
+                    counter.AddUnsatisfied();
                 }
             }
         }

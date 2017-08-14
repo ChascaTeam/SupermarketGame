@@ -57,6 +57,7 @@
             this.TryAgainButton.TabIndex = 29;
             this.TryAgainButton.Text = "Try Again";
             this.TryAgainButton.UseVisualStyleBackColor = true;
+            this.TryAgainButton.Click += new System.EventHandler(this.TryAgainButton_Click);
             // 
             // QuitButton
             // 
@@ -69,12 +70,13 @@
             this.QuitButton.TabIndex = 30;
             this.QuitButton.Text = "Quit";
             this.QuitButton.UseVisualStyleBackColor = true;
+            this.QuitButton.Click += new System.EventHandler(this.QuitButton_Click);
             // 
             // GameOverForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 370);
+            this.ClientSize = new System.Drawing.Size(375, 409);
             this.Controls.Add(this.QuitButton);
             this.Controls.Add(this.TryAgainButton);
             this.Controls.Add(this.pictureBox1);

@@ -108,6 +108,7 @@
             this.AlcoholTxt.Size = new System.Drawing.Size(39, 20);
             this.AlcoholTxt.TabIndex = 41;
             this.AlcoholTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.AlcoholTxt.TextChanged += new System.EventHandler(this.AlcoholTxt_TextChanged);
             // 
             // DairyLabel
             // 
@@ -310,6 +311,7 @@
             this.BackButton.TabIndex = 63;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // CalcTotalPriceButton
             // 
@@ -452,7 +454,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 370);
+            this.ClientSize = new System.Drawing.Size(375, 409);
             this.Controls.Add(this.CurrentWarehouseSpaceLabel);
             this.Controls.Add(this.CurrentWarehouseSpsaceText);
             this.Controls.Add(this.DairyBuyText);

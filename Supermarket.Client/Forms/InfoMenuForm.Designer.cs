@@ -78,6 +78,7 @@
             this.BackButton.TabIndex = 13;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // pictureBox1
             // 
@@ -94,7 +95,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 370);
+            this.ClientSize = new System.Drawing.Size(375, 409);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.CurrentMoneyText);
