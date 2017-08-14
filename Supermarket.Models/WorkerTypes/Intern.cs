@@ -2,10 +2,8 @@
 {
     public class Intern : Worker
     {
-        public Intern(string name) : base(name)
+        public Intern(string name, int customersPerDay, decimal salaryPerDay) : base(name, customersPerDay, salaryPerDay)
         {
-            this.SalaryPerDay = 25;
-            this.CustomersPerDay = 5;
         }
     }
 }

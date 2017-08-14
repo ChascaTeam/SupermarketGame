@@ -6,7 +6,6 @@
         string ProductName { get; }
         int Quantity { get;}
         decimal Price { get; }
-        int DaysTillExpiration { get; }
         void ChangePrice(decimal newPrice);
     }
 }

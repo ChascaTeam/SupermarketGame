@@ -4,3 +4,9 @@ C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Models\bin\Debu
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.csprojResolveAssemblyReference.cache
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.dll
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.pdb
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Models.dll.config
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Models.dll
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Models.pdb
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.csprojResolveAssemblyReference.cache
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.dll
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.pdb

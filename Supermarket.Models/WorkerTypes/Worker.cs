@@ -8,11 +8,11 @@ namespace Supermarket.Models.WorkerTypes
         private int customersPerDay;
         private decimal salaryPerDay;
 
-        protected Worker(string name)
+        protected Worker(string name, int customersPerDay, decimal salaryPerDay)
         {
             this.Name = name;
-            this.CustomersPerDay = 50;
-            this.SalaryPerDay = 20;
+            this.CustomersPerDay = customersPerDay;
+            this.SalaryPerDay = salaryPerDay;
         }
 
         public string Name { get { return this.name; } set { this.name = value; } }

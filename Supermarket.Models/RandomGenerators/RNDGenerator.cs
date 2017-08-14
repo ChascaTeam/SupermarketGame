@@ -9,7 +9,7 @@ namespace Supermarket.Models.RandomGenerators
 
         public int Rnd(int start, int end)
         {            
-            var num = random.Next(start, end);
+            var num = this.random.Next(start, end);
 
             return num;
         }

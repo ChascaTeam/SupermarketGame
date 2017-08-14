@@ -2,10 +2,8 @@
 {
     public class AverageWorker : Worker
     {
-        public AverageWorker(string name) : base(name)
+        public AverageWorker(string name, int customersPerDay, decimal salaryPerDay) : base(name, customersPerDay, salaryPerDay)
         {
-            this.SalaryPerDay = 50;
-            this.CustomersPerDay = 15;
         }
     }
 }

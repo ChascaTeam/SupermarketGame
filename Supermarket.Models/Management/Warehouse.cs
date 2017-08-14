@@ -9,8 +9,6 @@ namespace Supermarket.Models.Management
     {
         private decimal warehouseRent;
 
-        private List<Stock> storedProducts;
-
         public Warehouse()
         {
             this.StoredProducts = new List<Stock> { new Alcohol(), new DairyProducts(), new Meat(), new Sweets(), new Vegetables() };
@@ -24,7 +22,7 @@ namespace Supermarket.Models.Management
         public decimal WarehouseRent
         {
             get { return this.warehouseRent; }
-           protected set { this.warehouseRent = value; }
+            set { this.warehouseRent = value; }
         }
 
         public void IncreaseVolume(int volume)

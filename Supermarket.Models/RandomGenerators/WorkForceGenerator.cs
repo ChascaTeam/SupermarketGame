@@ -4,10 +4,10 @@ using Supermarket.Models.Interfaces;
 
 namespace Supermarket.Models.RandomGenerators
 {
-   public class WorkForceGenerator : RNDGenerator
+   public class WorkForceGenerator
     {
         private WorkerFactory workerFactory = new WorkerFactory();
-        private DecimalGenerator generator = new DecimalGenerator();
+        private IntGenerator generator = new IntGenerator();
 
         public List<IWorkForce> GenerateWorkersForHire()
         {           
@@ -15,7 +15,7 @@ namespace Supermarket.Models.RandomGenerators
 
             for (int i = 0; i < 5; i++)
             {
-                workersForHire.Add(this.workerFactory.Get(base.Rnd(0, 3)));
+                workersForHire.Add(this.workerFactory.Get(this.generator.Rnd(0, 3)));
             }
             return workersForHire;
         }

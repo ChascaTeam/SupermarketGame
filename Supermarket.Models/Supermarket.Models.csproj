@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client Counter\ClientsMood.cs" />
+    <Compile Include="Interfaces\IClientCounter.cs" />
     <Compile Include="CustomerTypes\AverageCustomer.cs" />
     <Compile Include="CustomerTypes\Customer.cs" />
     <Compile Include="CustomerTypes\PoorCustomer.cs" />
@@ -52,7 +54,6 @@
     <Compile Include="CustomerTypes\VeryPoorCustomer.cs" />
     <Compile Include="CustomerTypes\VeryRichCustomer.cs" />
     <Compile Include="Factories\CustomerFactory.cs" />
-    <Compile Include="Factories\StockFactory.cs" />
     <Compile Include="Factories\WorkerFactory.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
     <Compile Include="Interfaces\IStock.cs" />
@@ -60,7 +61,7 @@
     <Compile Include="Interfaces\IRandomNumberGenerator.cs" />
     <Compile Include="Management\SupermarketManager.cs" />
     <Compile Include="Management\Warehouse.cs" />
-    <Compile Include="RandomGenerators\DecimalGenerator.cs" />
+    <Compile Include="RandomGenerators\IntGenerator.cs" />
     <Compile Include="RandomGenerators\CustomerGenerator.cs" />
     <Compile Include="RandomGenerators\WorkForceGenerator.cs" />
     <Compile Include="RandomGenerators\StockGenerator.cs" />
@@ -82,5 +83,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

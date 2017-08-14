@@ -2,10 +2,8 @@
 {
     public class LazyWorker : Worker
     {
-        public LazyWorker(string name) : base(name)
+        public LazyWorker(string name, int customersPerDay, decimal salaryPerDay) : base(name, customersPerDay, salaryPerDay)
         {
-            this.SalaryPerDay = 50;
-            this.CustomersPerDay = 7;
         }
     }
 }

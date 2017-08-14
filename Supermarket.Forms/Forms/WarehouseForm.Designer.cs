@@ -62,6 +62,13 @@
             this.VegetablesPriceText = new System.Windows.Forms.TextBox();
             this.SweetsPriceText = new System.Windows.Forms.TextBox();
             this.ChangePricesButton = new System.Windows.Forms.Button();
+            this.IncreaseSpaceButton = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.CostLabel = new System.Windows.Forms.Label();
+            this.CostText = new System.Windows.Forms.TextBox();
+            this.BonusSpaceText = new System.Windows.Forms.TextBox();
+            this.RentInceraseText = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.StartMenuImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -73,7 +80,7 @@
             // 
             this.WarehouseLabel.AutoSize = true;
             this.WarehouseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.WarehouseLabel.Location = new System.Drawing.Point(132, 9);
+            this.WarehouseLabel.Location = new System.Drawing.Point(141, 4);
             this.WarehouseLabel.Name = "WarehouseLabel";
             this.WarehouseLabel.Size = new System.Drawing.Size(90, 20);
             this.WarehouseLabel.TabIndex = 21;
@@ -81,7 +88,7 @@
             // 
             // AlcoholText
             // 
-            this.AlcoholText.Location = new System.Drawing.Point(308, 48);
+            this.AlcoholText.Location = new System.Drawing.Point(311, 48);
             this.AlcoholText.Name = "AlcoholText";
             this.AlcoholText.ReadOnly = true;
             this.AlcoholText.Size = new System.Drawing.Size(39, 20);
@@ -112,7 +119,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(128, 102);
+            this.label2.Location = new System.Drawing.Point(131, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 20);
             this.label2.TabIndex = 26;
@@ -287,7 +294,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 55);
+            this.label1.Location = new System.Drawing.Point(237, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 43;
@@ -296,7 +303,7 @@
             // textBox1
             // 
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.textBox1.Location = new System.Drawing.Point(86, 55);
+            this.textBox1.Location = new System.Drawing.Point(311, 22);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(39, 20);
@@ -306,7 +313,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(131, 58);
+            this.label3.Location = new System.Drawing.Point(119, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(13, 13);
             this.label3.TabIndex = 45;
@@ -382,11 +389,87 @@
             this.ChangePricesButton.Text = "Change Prices";
             this.ChangePricesButton.UseVisualStyleBackColor = true;
             // 
+            // IncreaseSpaceButton
+            // 
+            this.IncreaseSpaceButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IncreaseSpaceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.IncreaseSpaceButton.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.IncreaseSpaceButton.Location = new System.Drawing.Point(12, 82);
+            this.IncreaseSpaceButton.Name = "IncreaseSpaceButton";
+            this.IncreaseSpaceButton.Size = new System.Drawing.Size(120, 28);
+            this.IncreaseSpaceButton.TabIndex = 54;
+            this.IncreaseSpaceButton.Text = "Increase Space";
+            this.IncreaseSpaceButton.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(-1, 59);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 13);
+            this.label4.TabIndex = 55;
+            this.label4.Text = "Rent Increase";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(-1, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 13);
+            this.label5.TabIndex = 56;
+            this.label5.Text = "Bonus Space";
+            // 
+            // CostLabel
+            // 
+            this.CostLabel.AutoSize = true;
+            this.CostLabel.Location = new System.Drawing.Point(42, 7);
+            this.CostLabel.Name = "CostLabel";
+            this.CostLabel.Size = new System.Drawing.Size(28, 13);
+            this.CostLabel.TabIndex = 57;
+            this.CostLabel.Text = "Cost";
+            // 
+            // CostText
+            // 
+            this.CostText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CostText.Location = new System.Drawing.Point(76, 4);
+            this.CostText.Name = "CostText";
+            this.CostText.ReadOnly = true;
+            this.CostText.Size = new System.Drawing.Size(39, 20);
+            this.CostText.TabIndex = 58;
+            this.CostText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BonusSpaceText
+            // 
+            this.BonusSpaceText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BonusSpaceText.Location = new System.Drawing.Point(76, 30);
+            this.BonusSpaceText.Name = "BonusSpaceText";
+            this.BonusSpaceText.ReadOnly = true;
+            this.BonusSpaceText.Size = new System.Drawing.Size(39, 20);
+            this.BonusSpaceText.TabIndex = 59;
+            this.BonusSpaceText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // RentInceraseText
+            // 
+            this.RentInceraseText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RentInceraseText.Location = new System.Drawing.Point(76, 56);
+            this.RentInceraseText.Name = "RentInceraseText";
+            this.RentInceraseText.ReadOnly = true;
+            this.RentInceraseText.Size = new System.Drawing.Size(39, 20);
+            this.RentInceraseText.TabIndex = 60;
+            this.RentInceraseText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // WarehouseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(359, 371);
+            this.Controls.Add(this.RentInceraseText);
+            this.Controls.Add(this.BonusSpaceText);
+            this.Controls.Add(this.CostText);
+            this.Controls.Add(this.CostLabel);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.IncreaseSpaceButton);
             this.Controls.Add(this.ChangePricesButton);
             this.Controls.Add(this.SweetsPriceText);
             this.Controls.Add(this.VegetablesPriceText);
@@ -470,5 +553,12 @@
         private System.Windows.Forms.TextBox VegetablesPriceText;
         private System.Windows.Forms.TextBox SweetsPriceText;
         private System.Windows.Forms.Button ChangePricesButton;
+        private System.Windows.Forms.Button IncreaseSpaceButton;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label CostLabel;
+        private System.Windows.Forms.TextBox CostText;
+        private System.Windows.Forms.TextBox BonusSpaceText;
+        private System.Windows.Forms.TextBox RentInceraseText;
     }
 }

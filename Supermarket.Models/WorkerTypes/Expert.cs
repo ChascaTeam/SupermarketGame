@@ -2,10 +2,8 @@
 {
     public class Expert : Worker
     {
-        public Expert(string name) : base(name)
+        public Expert(string name, int customersPerDay, decimal salaryPerDay) : base(name, customersPerDay, salaryPerDay)
         {
-            this.SalaryPerDay = 80;
-            this.CustomersPerDay = 20;
         }
     }
 }

@@ -9,6 +9,9 @@ namespace Supermarket.Forms.Forms
             InitializeComponent();
         }
 
-     
+        private void MenuPlayForm_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

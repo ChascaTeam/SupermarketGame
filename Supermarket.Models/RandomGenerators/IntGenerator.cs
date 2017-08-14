@@ -1,6 +1,6 @@
 ﻿namespace Supermarket.Models.RandomGenerators
 {
-    public class DecimalGenerator: RNDGenerator
+    public class IntGenerator: RNDGenerator
     {
     }
 }

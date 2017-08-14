@@ -7,20 +7,14 @@ namespace Supermarket.Models.Interfaces
 
     {
         //Money can be random(to some extent) or hard coded
-        decimal Money { get; }
+        decimal Money { get; set; }
 
         //How much a current client is willing to pay for a product.
-        decimal PriceTolerance { get; }
+        decimal PriceTolerance { get; set; }
 
         //Look at Customer for info
-        List<IStock> WantedProducts { get; }
+        List<Stock> WantedProducts { get; set; }
 
-        //Should return total cost for the products that the client can and "want" to buy.
-        void BuyWantedProducts(List<IStock> productsInStore);
-
-        
-       
-
-
+        bool HasShoped { get; set; }
     }
 }

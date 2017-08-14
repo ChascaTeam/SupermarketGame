@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using Supermarket.Models.CustomerTypes;
-using Supermarket.Models.Interfaces;
+﻿using Supermarket.Models.CustomerTypes;
 using Supermarket.Models.RandomGenerators;
 
 namespace Supermarket.Models.Factories
@@ -10,19 +8,20 @@ namespace Supermarket.Models.Factories
 
         public Customer Get(int id)
         {
-            RNDGenerator genarator = new DecimalGenerator();
+            RNDGenerator genarator = new IntGenerator();
+
             switch (id)
             {
                 case 0:
-                    return new VeryPoorCustomer(genarator.Rnd(0, 50), new List<IStock>(), 20);                                      
+                    return new VeryPoorCustomer(genarator.Rnd(0, 50), new StockGenerator().GenerateStock(0,2), genarator.Rnd(2, 5));                                      
                 case 1:
-                    return new PoorCustomer(genarator.Rnd(0, 100), new List<IStock>(), 25);
+                    return new PoorCustomer(genarator.Rnd(50, 100), new StockGenerator().GenerateStock(0, 3), genarator.Rnd(3, 6));
                 case 2:
-                    return new AverageCustomer(genarator.Rnd(0, 150), new List<IStock>(), 30);
+                    return new AverageCustomer(genarator.Rnd(100, 150), new StockGenerator().GenerateStock(0, 4), genarator.Rnd(4, 7));
                 case 3:
-                    return new RichCustomer(genarator.Rnd(0, 200), new List<IStock>(), 40);
+                    return new RichCustomer(genarator.Rnd(150, 200), new StockGenerator().GenerateStock(0, 5), genarator.Rnd(6, 12));
                 case 4:
-                    return new VeryRichCustomer(genarator.Rnd(0, 500), new List<IStock>(), 50);
+                    return new VeryRichCustomer(genarator.Rnd(200, 500), new StockGenerator().GenerateStock(0, 6), genarator.Rnd(8, 16));
                 default:
                     return null;
             }

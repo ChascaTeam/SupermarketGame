@@ -179,11 +179,11 @@
             this.radioButton5.Text = "Worker Info";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
-            // LaborMaretMenu
+            // LaborMarketMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 370);
+            this.ClientSize = new System.Drawing.Size(359, 371);
             this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
@@ -201,8 +201,8 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(375, 409);
             this.MinimumSize = new System.Drawing.Size(375, 409);
-            this.Name = "LaborMaretMenu";
-            this.Text = "Labor Maret Menu";
+            this.Name = "LaborMarketMenuForm";
+            this.Text = "Supermarket Simulator";
             this.Load += new System.EventHandler(this.LaborMaretMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

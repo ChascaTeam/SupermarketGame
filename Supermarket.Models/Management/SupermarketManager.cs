@@ -18,7 +18,9 @@ namespace Supermarket.Models.Management
         }
 
         public Warehouse Warehouse { get; }
+
         public List<IWorkForce> Workers { get; }
+
         public decimal CurrentCapital { get; }
 
         public void IncreaseWarehouseVolume(int amount)
@@ -31,19 +33,17 @@ namespace Supermarket.Models.Management
             foreach (var worker in workers)
             {
                 this.Workers.Add(worker);
-            }
-            
+            }            
         }
 
         public void FireWorker(Worker worker)
         {
             this.Workers.Remove(worker);
         }
-
-        //total workers salary + warehouse rent per day
-        public decimal TotalFixedCostPerDay()
+        
+        public decimal SalaryCostsPerDay()
         {
-            return this.Workers.Sum(w => w.SalaryPerDay) + (decimal)this.Warehouse.WarehouseRent;
+            return this.Workers.Sum(w => w.SalaryPerDay);
         }
 
         public void RestockWarehouse(List<Stock> stocks)
@@ -65,8 +65,7 @@ namespace Supermarket.Models.Management
             else
             {
                 throw new ArgumentException("Warehouse doesn't have enough space!");
-            }
-            
+            }         
         }
 
         public string CheckCurrentStockInWarehouse()

@@ -269,7 +269,8 @@
             this.MaximumSize = new System.Drawing.Size(375, 409);
             this.MinimumSize = new System.Drawing.Size(375, 409);
             this.Name = "MenuPlayForm";
-            this.Text = "MenuPlayForm";
+            this.Text = "Supermarket Simulator";
+            this.Load += new System.EventHandler(this.MenuPlayForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StartMenuImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

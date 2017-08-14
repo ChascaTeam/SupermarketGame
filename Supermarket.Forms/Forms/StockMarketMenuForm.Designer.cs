@@ -498,7 +498,7 @@
             this.MaximumSize = new System.Drawing.Size(375, 409);
             this.MinimumSize = new System.Drawing.Size(375, 409);
             this.Name = "StockMarketMenuForm";
-            this.Text = "Stock Market Menu";
+            this.Text = "Supermarket Simulator";
             this.ResumeLayout(false);
             this.PerformLayout();
 

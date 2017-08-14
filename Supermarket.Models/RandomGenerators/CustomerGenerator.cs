@@ -4,10 +4,10 @@ using Supermarket.Models.Interfaces;
 
 namespace Supermarket.Models.RandomGenerators
 {
-   public class CustomerGenerator : RNDGenerator
+   public class CustomerGenerator
     {
         private CustomerFactory customerFactory = new CustomerFactory();
-        private DecimalGenerator generator = new DecimalGenerator();
+        private IntGenerator generator = new IntGenerator();
 
         public List<ICustomer> GenerateCustomers()
         {
@@ -15,7 +15,7 @@ namespace Supermarket.Models.RandomGenerators
 
             for (int i = 0; i < this.generator.Rnd(5,50); i++)
             {
-                customers.Add(this.customerFactory.Get(base.Rnd(0, 4)));
+                customers.Add(this.customerFactory.Get(this.generator.Rnd(0, 4)));
             }
 
             return customers;
