@@ -1,10 +1,8 @@
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Services\bin\Debug\Supermarket.Services.dll
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Services\bin\Debug\Supermarket.Services.pdb
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Services\bin\Debug\Supermarket.Data.dll
-C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Services\bin\Debug\Supermarket.Management.exe
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Services\bin\Debug\Supermarket.Models.dll
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Services\bin\Debug\Supermarket.Management.pdb
-C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Services\bin\Debug\Supermarket.Management.exe.config
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Services\bin\Debug\Supermarket.Data.pdb
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Services\bin\Debug\Supermarket.Models.pdb
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Services\bin\Debug\Supermarket.Models.dll.config
@@ -24,3 +22,5 @@ C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Services\bin\D
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Services\obj\Debug\Supermarket.Services.csprojResolveAssemblyReference.cache
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Services\obj\Debug\Supermarket.Services.dll
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Services\obj\Debug\Supermarket.Services.pdb
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Services\bin\Debug\Supermarket.Management.dll
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Services\bin\Debug\Supermarket.Management.dll.config

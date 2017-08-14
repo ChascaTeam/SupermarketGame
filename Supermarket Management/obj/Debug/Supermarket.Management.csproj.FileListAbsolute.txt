@@ -9,8 +9,6 @@ C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\obj\
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.dll.config
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.dll
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.dll
-C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Forms.dll
-C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Forms.pdb
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.dll.config
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.dll
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.pdb
