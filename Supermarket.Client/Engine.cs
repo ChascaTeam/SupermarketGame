@@ -10,6 +10,7 @@ using Supermarket.Models.Interfaces;
 using Supermarket.Models.Management;
 using Supermarket.Models.RandomGenerators;
 using Supermarket.Models.StockTypes;
+using Supermarket.Models.WorkerTypes;
 
 namespace Supermarket.Client
 {
@@ -40,7 +41,7 @@ namespace Supermarket.Client
 
         public void Run()
         {
-            
+             
                 //Creates a list of workers
                 this.CreateLaborMarketData();
 

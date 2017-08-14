@@ -21,7 +21,7 @@ namespace Supermarket.Models.Management
 
         public List<IWorkForce> Workers { get; }
 
-        public decimal CurrentCapital { get; }
+        public decimal CurrentCapital { get; set; }
 
         public void IncreaseWarehouseVolume(int amount)
         {

@@ -17,9 +17,15 @@ namespace Supermarket.Client.Forms
             var mainForm = (MainForm)(this).Parent.Parent;
 
             if (Engine.manager.CurrentCapital > 0)
-            {
-                Engine.daysPassed++;
+            {   
+                Engine.daysPassed++;               
+                Engine.manager.CurrentCapital += Engine.income;
+                Engine.manager.CurrentCapital -= (Engine.manager.Warehouse.WarehouseRent+Engine.manager.SalaryCostsPerDay());
                 mainForm.SetContentHolderForm(new MenuPlayForm());
+            }
+            else
+            {
+                mainForm.SetContentHolderForm(new GameOverForm());
             }
         }
 

@@ -17,18 +17,15 @@ C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\bin\Debu
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Client.exe.config
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Client.exe
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Client.pdb
-C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Forms.dll
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Management.dll
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Models.dll
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Data.dll
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Management.pdb
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Management.dll.config
-C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Forms.pdb
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Models.pdb
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Models.dll.config
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Data.pdb
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.csprojResolveAssemblyReference.cache
-C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.MenuStartForm.resources
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Properties.Resources.resources
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.csproj.GenerateResource.Cache
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.exe
@@ -43,3 +40,13 @@ C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\obj\Debu
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.WorkforceMenuForm.resources
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.MenuStartForm.resources
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.MainForm.resources
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.GameOverForm.resources
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.InfoMenuForm.resources
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.LaborMarketMenuForm.resources
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.MainForm.resources
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.MenuPlayForm.resources
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.StockMarketMenuForm.resources
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.SummaryForm.resources
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.WarehouseForm.resources
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.WorkforceMenuForm.resources
+C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.MenuStartForm.resources
