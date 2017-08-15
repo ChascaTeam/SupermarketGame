@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using Supermarket.Management.Market;
 using Supermarket.Models.Interfaces;
 using Supermarket.Models.RandomGenerators;
 using Supermarket.Models.StockTypes;
@@ -60,16 +59,6 @@ namespace Supermarket.Client.Forms
             mainForm.SetContentHolderForm(new LaborMarketMenuForm());
         }
 
-        private void CurrentMoneyText_TextChanged(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, System.EventArgs e)
-        {
-
-        }
-
         private decimal SalaryCostsPerDay()
         {
             return Engine.workers.Sum(w => w.SalaryPerDay);
@@ -79,9 +68,9 @@ namespace Supermarket.Client.Forms
         {
             Engine.customers = new CustomerGenerator().GenerateCustomers();
         }
+
         private void CalculateWorkersPower()
         {
-
             int numOfClients = 0;
 
             foreach (var worker in Engine.workers)
@@ -100,14 +89,13 @@ namespace Supermarket.Client.Forms
                 {
                     Engine.customers = Engine.customers.Take(numOfClients).ToList();
                 }
-
             }
-
         }
 
         private void CustomersShopping(List<Stock> productsInStore, ICustomer customer)
         {
             decimal quantity;
+
             for (int j = 0; j < 5; j++)
             {
                 for (int i = 0; i < 5; i++)

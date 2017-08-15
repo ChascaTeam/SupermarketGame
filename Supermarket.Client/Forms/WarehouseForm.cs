@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
 using System.Text.RegularExpressions;
-using System.Threading;
 using System.Windows.Forms;
+using Supermarket.Management.Exceptions;
 
 namespace Supermarket.Client.Forms
 {
@@ -43,11 +42,11 @@ namespace Supermarket.Client.Forms
 
         private void ChangePricesButton_Click(object sender, EventArgs e)
         {
-            Regex reg = new Regex(@"^[0-9\.]+$");
+            Regex reg = new Regex(@"^[-0-9\.]+$");
             List<TextBox> input = new List<TextBox>{ this.AlcoholPriceText, this.DairyPriceText,
                 this.MeatPriceText, this.SweetsPriceText, this.VegetablesPriceText };
             try
-            {               
+            {
                 for (int i = 0; i < 5; i++)
                 {
                     if (input[i].Text == "")
@@ -56,12 +55,15 @@ namespace Supermarket.Client.Forms
                     }
                     if (!reg.IsMatch(input[i].Text))
                     {
-                        throw new ArgumentException("Input accepts numbers only!");
-                    }                
+                        throw new InvalidInputException();
+                    }
+                    if (input[i].Text.Contains("-"))
+                    {
+                        throw new InvalidNumberException();
+                    }
                 }
-                
             }
-            catch (ArgumentException exception)
+            catch (Exception exception)
             {
                 MessageBox.Show(exception.Message);
                 return;
@@ -77,15 +79,15 @@ namespace Supermarket.Client.Forms
         }
 
         private void BackButton_Click(object sender, EventArgs e)
-        {           
+        {
             var mainForm = (MainForm)(this).Parent.Parent;
             mainForm.SetContentHolderForm(new MenuPlayForm());
-            
+
         }
 
         private void IncreaseSpaceButton_Click(object sender, EventArgs e)
         {
-            
+
             Engine.manager.CurrentCapital -= (99 + Engine.daysPassed);
             Engine.manager.Warehouse.WarehouseRent += (9 + Engine.daysPassed);
             Engine.manager.Warehouse.IncreaseVolume((14 + Engine.daysPassed));

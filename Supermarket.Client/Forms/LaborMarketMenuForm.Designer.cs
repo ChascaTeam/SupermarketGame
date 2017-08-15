@@ -66,7 +66,7 @@
             this.StockMarketLabel.Size = new System.Drawing.Size(115, 20);
             this.StockMarketLabel.TabIndex = 65;
             this.StockMarketLabel.Text = "Labor Market";
-            this.StockMarketLabel.Click += new System.EventHandler(this.StockMarketLabel_Click);
+
             // 
             // FirstWorkerText
             // 
@@ -76,7 +76,7 @@
             this.FirstWorkerText.ReadOnly = true;
             this.FirstWorkerText.Size = new System.Drawing.Size(351, 25);
             this.FirstWorkerText.TabIndex = 66;
-            this.FirstWorkerText.TextChanged += new System.EventHandler(this.FirstWorkerText_TextChanged);
+
             // 
             // SecondWorkerText
             // 
@@ -203,7 +203,6 @@
             this.Name = "LaborMarketMenuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Supermarket Simulator";
-            this.Load += new System.EventHandler(this.LaborMaretMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -39,6 +39,7 @@ namespace Supermarket.Client.Forms
                 mainForm.SetContentHolderForm(new GameOverForm());
             }
         }
+
         private decimal SalaryCostsPerDay()
         {
             return Engine.workers.Sum(w => w.SalaryPerDay);
