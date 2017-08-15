@@ -115,7 +115,6 @@
             this.RentText.Size = new System.Drawing.Size(100, 20);
             this.RentText.TabIndex = 21;
             this.RentText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.RentText.TextChanged += new System.EventHandler(this.RentText_TextChanged);
             // 
             // WagesLabel
             // 
@@ -192,7 +191,6 @@
             this.UnsatisfiedClientsText.Size = new System.Drawing.Size(35, 20);
             this.UnsatisfiedClientsText.TabIndex = 32;
             this.UnsatisfiedClientsText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.UnsatisfiedClientsText.TextChanged += new System.EventHandler(this.UnsatisfiedClientsText_TextChanged);
             // 
             // SatisfiedClientsText
             // 
@@ -276,7 +274,6 @@
             this.Name = "SummaryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SummaryForm";
-            this.Load += new System.EventHandler(this.SummaryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

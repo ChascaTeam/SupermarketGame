@@ -93,6 +93,5 @@ namespace Supermarket.Client.Forms
             mainForm.SetContentHolderForm(new WarehouseForm());
         }
 
-        
     }
 }

@@ -27,25 +27,7 @@ namespace Supermarket.Models.Management
         {
             this.Warehouse.IncreaseVolume(amount);
         }
-
-        public void HireWorker(List<Worker> workers)
-        {
-            foreach (var worker in workers)
-            {
-                this.Workers.Add(worker);
-            }            
-        }
-
-        public void FireWorker(Worker worker)
-        {
-            this.Workers.Remove(worker);
-        }
         
-        public decimal SalaryCostsPerDay()
-        {
-            return this.Workers.Sum(w => w.SalaryPerDay);
-        }
-
         public void RestockWarehouse(List<Stock> stocks)
         {
             int stocksVolume = 0;

@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 using Supermarket.Management.Market;
 using Supermarket.Models.Interfaces;
 using Supermarket.Models.RandomGenerators;
+using Supermarket.Models.StockTypes;
 
 namespace Supermarket.Client.Forms
 {
@@ -10,35 +12,36 @@ namespace Supermarket.Client.Forms
     {
         public SummaryForm()
         {
-            InitializeComponent();
+            InitializeComponent();           
             this.DayText.Text = (Engine.daysPassed -1).ToString();
-            this.WagesText.Text = Engine.manager.SalaryCostsPerDay().ToString();
+            this.RevenueText.Text = Engine.income.ToString();
+            this.WagesText.Text = this.SalaryCostsPerDay().ToString();
             this.RentText.Text = Engine.manager.Warehouse.WarehouseRent.ToString();
-            this.TotalText.Text = (Engine.manager.Warehouse.WarehouseRent + Engine.manager.SalaryCostsPerDay()).ToString();
+            this.TotalText.Text = (Engine.income - (Engine.manager.Warehouse.WarehouseRent + this.SalaryCostsPerDay())).ToString();
             this.SatisfiedClientsText.Text = Engine.counter.SatisfiedNumber.ToString();
             this.UnsatisfiedClientsText.Text = Engine.counter.UnsatisfiedNumber.ToString();
         }
 
         private void ContinueButton_Click(object sender, System.EventArgs e)
         {
-            Engine.laborExchange = new LaborExchange(new WorkForceGenerator().GenerateWorkersForHire());
             var mainForm = (MainForm)(this).Parent.Parent;
-            mainForm.SetContentHolderForm(new MenuPlayForm());
+
+            if (Engine.manager.CurrentCapital > 0)
+            {
+                             
+                Engine.laborExchange = new LaborExchange(new WorkForceGenerator().GenerateWorkersForHire());
+                Engine.counter.Clear();
+                Engine.income = 0;
+                mainForm.SetContentHolderForm(new MenuPlayForm());
+            }
+            else
+            {
+                mainForm.SetContentHolderForm(new GameOverForm());
+            }
         }
-
-        private void SummaryForm_Load(object sender, System.EventArgs e)
+        private decimal SalaryCostsPerDay()
         {
-
-        }
-
-        private void UnsatisfiedClientsText_TextChanged(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void RentText_TextChanged(object sender, System.EventArgs e)
-        {
-
+            return Engine.workers.Sum(w => w.SalaryPerDay);
         }
     }
 }

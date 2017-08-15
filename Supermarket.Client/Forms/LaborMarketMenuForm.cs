@@ -8,7 +8,7 @@ namespace Supermarket.Client.Forms
 {
     public partial class LaborMarketMenuForm : Form
     {
-       
+
         public LaborMarketMenuForm()
         {
             this.InitializeComponent();
@@ -57,8 +57,21 @@ namespace Supermarket.Client.Forms
             {
                 if (checkBoxs[i].Checked && textBoxs[i].Text != "")
                 {
-                    Engine.workers.Add(Engine.laborExchange.AvailableWorkers[i]);
-                    textBoxs[i].Text = "";
+                    try
+                    {
+                        if (Engine.workers.Count == 5)
+                        {
+                            throw new ArgumentException("You cant have more than 5 workers!");
+                        }
+                        Engine.workers.Add(Engine.laborExchange.AvailableWorkers[i]);
+                        textBoxs[i].Text = "";
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show(exception.Message);
+                        return;
+                    }
+             
                 }
             }
         }
