@@ -13,7 +13,7 @@ namespace Supermarket.Models.RandomGenerators
         {
             List<ICustomer> customers = new List<ICustomer>();
 
-            for (int i = 0; i < this.generator.Rnd(5,50); i++)
+            for (int i = 0; i < this.generator.Rnd(30,100); i++)
             {
                 customers.Add(this.customerFactory.Get(this.generator.Rnd(0, 4)));
             }

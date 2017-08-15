@@ -15,7 +15,7 @@ namespace Supermarket.Client.Forms
             InitializeComponent();            
             this.textBox1.Text = Engine.daysPassed.ToString();
             this.CurrentMoneyText.Text = Engine.manager.CurrentCapital.ToString();
-            this.IncomeText.Text = Engine.income.ToString();
+            this.IncomeText.Text = Engine.PreviousDayIncome.ToString();
         }
 
         private void NextDayButton_Click(object sender, System.EventArgs e)
@@ -105,34 +105,37 @@ namespace Supermarket.Client.Forms
                         if (productsInStore[i].Quantity >= customer.WantedProducts[j].Quantity)
                         {
                             quantity = customer.WantedProducts[j].Quantity;
-                            Engine.income += this.SpentMoney(quantity, productsInStore[i], customer, i);
-                            if (customer.WantedProducts[j].Quantity != 0)
+                            var spentMoney = this.SpentMoney(quantity, productsInStore[i], customer, i);
+                            Engine.income += spentMoney;
+                            if (customer.WantedProducts[j].Quantity != 0 && spentMoney !=0)
                             {
                                 customer.HasShoped = true;
+                                break;
                             }
                             
                         }
                         else
                         {
                             quantity = productsInStore[i].Quantity;
-                            Engine.income += this.SpentMoney(quantity, productsInStore[i], customer, i);
-                            if (customer.WantedProducts[j].Quantity != 0)
+                            var spentMoney = this.SpentMoney(quantity, productsInStore[i], customer, i);
+                            Engine.income += spentMoney;
+                            if (customer.WantedProducts[j].Quantity != 0 && spentMoney != 0)
                             {
                                 customer.HasShoped = true;
+                                break;
                             }
                         }                                              
                     }
                 }
 
-                if (customer.HasShoped)
+                if (customer.HasShoped && j ==4)
                 {
                     Engine.counter.AddSatisfied();
                 }
-                else
+                else if (j == 4)
                 {
                     Engine.counter.AddUnsatisfied();
                 }
-                customer.HasShoped = false;
             }
         }
 
@@ -160,5 +163,6 @@ namespace Supermarket.Client.Forms
 
             return spentMoney;
         }
+
     }
 }

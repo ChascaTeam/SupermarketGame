@@ -13,11 +13,13 @@ namespace Supermarket.Client.Forms
         }
 
         private void StartButton_Click(object sender, EventArgs e)
-        {
-            var mainForm = (MainForm)(this).Parent.Parent;
-            mainForm.SetContentHolderForm(new MenuPlayForm());
+        {          
+            Engine engine = new Engine();
+            engine.Run();
             Engine.stockExchange = new StockExchange(new StockGenerator().GenerateStockForShop());
             Engine.laborExchange = new LaborExchange(new WorkForceGenerator().GenerateWorkersForHire());
+            var mainForm = (MainForm)(this).Parent.Parent;
+            mainForm.SetContentHolderForm(new MenuPlayForm());
         }
 
         private void GameInfo_Click(object sender, EventArgs e)

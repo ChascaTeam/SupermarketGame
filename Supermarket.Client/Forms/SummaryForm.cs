@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using Supermarket.Models.Interfaces;
@@ -31,6 +32,7 @@ namespace Supermarket.Client.Forms
                 Engine.stockExchange = new StockExchange(new StockGenerator().GenerateStockForShop());
                 Engine.laborExchange = new LaborExchange(new WorkForceGenerator().GenerateWorkersForHire());
                 Engine.counter.Clear();
+                Engine.PreviousDayIncome = (Engine.income - (Engine.manager.Warehouse.WarehouseRent + this.SalaryCostsPerDay())); 
                 Engine.income = 0;
                 mainForm.SetContentHolderForm(new MenuPlayForm());
             }

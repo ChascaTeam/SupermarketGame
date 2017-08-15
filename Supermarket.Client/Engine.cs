@@ -11,13 +11,27 @@ namespace Supermarket.Client
 {
     public class Engine
     {
-        internal static StockExchange stockExchange = new StockExchange(new StockGenerator().GenerateStockForShop());
-        internal static IList<ICustomer> customers = new CustomerData().Customers;
-        internal static IList<IWorkForce> workers = new WorkerData().Workers;
-        internal static LaborExchange laborExchange = new LaborExchange(new List<IWorkForce>());
+        internal static StockExchange stockExchange;
+        internal static IList<ICustomer> customers;
+        internal static IList<IWorkForce> workers;
+        internal static LaborExchange laborExchange;
         internal static decimal income;
-        internal static int daysPassed = 1;
-        internal static IClientCounter counter = new ClientsMood();
-        internal static SupermarketManager manager = new SupermarketManager(new Warehouse(), 1000);
+        internal static decimal PreviousDayIncome;
+        internal static int daysPassed;
+        internal static IClientCounter counter;
+        internal static SupermarketManager manager;
+
+        public void Run()
+        {
+            stockExchange = new StockExchange(new StockGenerator().GenerateStockForShop());
+            customers = new CustomerData().Customers;
+            workers = new WorkerData().Workers;
+            laborExchange = new LaborExchange(new List<IWorkForce>());
+            income = 0;
+            PreviousDayIncome = 0;
+            daysPassed = 1;
+            counter = new ClientsMood();
+            manager = new SupermarketManager(new Warehouse(), 1000);
+        }
     }
 }

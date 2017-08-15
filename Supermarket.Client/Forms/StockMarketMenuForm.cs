@@ -46,27 +46,25 @@ namespace Supermarket.Client.Forms
                 return;
             }
 
-            List<TextBox> quantityBoxes = new List<TextBox> { this.AlcoholBuyText, this.DairyBuyText, this.MeatBuyText, this.SweetsBuyText, this.VegetablesBuyText };
+            List<TextBox> buyQuantityBoxes = new List<TextBox> { this.AlcoholBuyText, this.DairyBuyText, this.MeatBuyText, this.SweetsBuyText, this.VegetablesBuyText };
             List<TextBox> priceBoxes = new List<TextBox> { this.AlcoholPriceText, this.DiaryPriceText, this.MeatPriceText, this.SweetsPriceText, this.VegetablesPriceText };
             decimal totalPrice = 0;
             decimal totalSpace = 0;
 
             for (int i = 0; i < 5; i++)
             {
-                totalPrice += int.Parse(quantityBoxes[i].Text) * int.Parse(priceBoxes[i].Text);
-                totalSpace += int.Parse(quantityBoxes[i].Text);
+                totalPrice += int.Parse(buyQuantityBoxes[i].Text) * int.Parse(priceBoxes[i].Text);
+                totalSpace += int.Parse(buyQuantityBoxes[i].Text);
             }
 
             this.TotalPriceText.Text = totalPrice.ToString();
             this.WarehouseSpaceNeededText.Text = totalSpace.ToString();
             this.CurrentWarehouseSpsaceText.Text = (Engine.manager.Warehouse.WarehouseVolume - Engine.manager.Warehouse.FilledVolume()).ToString();
-
         }
 
         private void BuyProductsButton_Click(object sender, EventArgs e)
-        {
-
-            List<TextBox> quantityBoxes = new List<TextBox> { this.AlcoholBuyText, this.DairyBuyText, this.MeatBuyText,
+        {            
+            List<TextBox> buyQuantityBoxes = new List<TextBox> { this.AlcoholBuyText, this.DairyBuyText, this.MeatBuyText,
                 this.SweetsBuyText, this.VegetablesBuyText };
             List<TextBox> priceBoxes = new List<TextBox> { this.AlcoholPriceText, this.DiaryPriceText, this.MeatPriceText,
                 this.SweetsPriceText, this.VegetablesPriceText };
@@ -78,7 +76,7 @@ namespace Supermarket.Client.Forms
                 this.CheckInput();
                 for (int i = 0; i < 5; i++)
                 {
-                    totalSpace += int.Parse(quantityBoxes[i].Text);
+                    totalSpace += int.Parse(buyQuantityBoxes[i].Text);
                 }
                 if (totalSpace > Engine.manager.Warehouse.WarehouseVolume - Engine.manager.Warehouse.FilledVolume())
                 {
@@ -90,11 +88,12 @@ namespace Supermarket.Client.Forms
                 MessageBox.Show(exception.Message);
                 return;
             }
-
+          
             for (int i = 0; i < 5; i++)
             {
-                Engine.manager.Warehouse.StoredProducts[i].Quantity += int.Parse(quantityBoxes[i].Text);
-                totalPrice += int.Parse(quantityBoxes[i].Text) * int.Parse(priceBoxes[i].Text);
+                Engine.manager.Warehouse.StoredProducts[i].Quantity += int.Parse(buyQuantityBoxes[i].Text);
+                totalPrice += int.Parse(buyQuantityBoxes[i].Text) * int.Parse(priceBoxes[i].Text);
+                Engine.stockExchange.AvailableStock[i].Quantity -= int.Parse(buyQuantityBoxes[i].Text);
             }
 
             Engine.manager.CurrentCapital -= totalPrice;
@@ -124,7 +123,7 @@ namespace Supermarket.Client.Forms
                 if (input[i].Text.Contains("-"))
                 {
                     throw new InvalidNumberException();
-                }                
+                }
                 if (int.Parse(quantityBoxes[i].Text) < int.Parse(input[i].Text))
                 {
                     throw new WrongOrderException();
