@@ -118,7 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CurrentMoneyText.Text" xml:space="preserve">
-    <value>some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text </value>
+    <value> After entering Play Game button you will see a Play Menu. In the upper left corner you will see the starting amount of money you will have - $1000. Below it you can see your revenue so far. The current day is displayed in the top right corner. To start playing first you need to buy goods and hire workers. 
+
+When you click Stock Market button you can buy stocks. On the left side of the screen you will see your current quantities. And on the right – there is information about the goods available on the stock exchange this day, along with their amounts and prices. In the Buy column you can insert the desired quantity of each stock. After entering the Calc Total Price button you will see how much are the goods going to cost, the total space that you will need in the warehouse, and the free space that remains. Next click the Buy Products button and you are ready with purchasing stocks.
+
+When you click Labor Market button you can hire workers. You have to bookmark the workers you want to hire and then to click the Hire Workers button.
+
+When you click Workforce button you will see your workers. You can fire employees by first selecting them and clicking the Fire Workers button.
+
+When you click Warehouse button there will appear info about the warehouse, you can buy additional space or set prices on the good you are going to sell.
+
+When you fulfill all of the above instructions, you can click Next Day button and you will get summary for the current day as follows:
+- number of satisfied;
+- number of unsatisfied clients;
+- incomes;
+- expenses;
+- the final result.
+The goal of the game is to manage your supermarket well enough In a way that you finish your workday with profit.
+</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
