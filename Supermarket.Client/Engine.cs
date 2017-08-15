@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Supermarket.Client.Forms;
 using Supermarket.Data;
 using Supermarket.Data.Interfaces;
 using Supermarket.Management.Market;
@@ -10,7 +9,7 @@ using Supermarket.Models.Interfaces;
 using Supermarket.Models.Management;
 using Supermarket.Models.RandomGenerators;
 using Supermarket.Models.StockTypes;
-using Supermarket.Models.WorkerTypes;
+
 
 namespace Supermarket.Client
 {
@@ -19,9 +18,10 @@ namespace Supermarket.Client
         
         private IList<ICustomer> customers;
         private StockExchange stockExchange;
-        private LaborExchange laborExchange;
-        private IList<IWorkForce> workers;
 
+
+        internal static IList<IWorkForce> workers = new WorkerData().Workers;
+        internal static LaborExchange laborExchange = new LaborExchange(new List<IWorkForce>());
         internal static decimal income;
         internal static int daysPassed = 1;
         internal static IClientCounter counter = new ClientsMood();
@@ -35,16 +35,11 @@ namespace Supermarket.Client
 
             this.customers = cd.Customers;
             this.stockExchange = new StockExchange(new List<IStock>());
-            this.laborExchange = new LaborExchange(new List<IWorkForce>());
-            this.workers = wd.Workers;
+
         }
 
         public void Run()
         {
-            
-                //Creates a list of workers
-                this.CreateLaborMarketData();
-
                 //Creates a list of customers
                 this.CreateCustomersData();
 
@@ -56,37 +51,19 @@ namespace Supermarket.Client
                 {
                     this.CustomersShopping(manager.Warehouse.StoredProducts, customer);
                 }
-
-            //calculates total cost (not needed just for test)
-            var weges = manager.SalaryCostsPerDay();
-            var rent = manager.Warehouse.WarehouseRent;
-
-            
-        
-
+                 
         //Manager work. (buy stock, hire/fire workers)
         //Start of day. (calculate net income)
         //End of day (add net income to capital)
         //Check if goal is meet(enough capital or bankruptcy)
         //else Repeat
     }
-
-        private void IncreaseWarehouseVolume()
-        {
-            decimal volumeCost = 100m + daysPassed;
-            decimal rentIncrease = 10m + daysPassed;
-            int volumeIncrease = 15 + daysPassed;
-
-            income -= volumeCost;
-            manager.Warehouse.WarehouseRent += rentIncrease;
-            manager.Warehouse.IncreaseVolume(volumeIncrease);
-        }
-
+      
         private void CalculateWorkersPower()
         {
             int numOfClients = 0;
 
-            foreach (var worker in this.workers)
+            foreach (var worker in workers)
             {
                 numOfClients += worker.CustomersPerDay;
             }
@@ -167,10 +144,7 @@ namespace Supermarket.Client
             return spentMoney;
         }
 
-        private void CreateLaborMarketData()
-        {
-            this.laborExchange = new LaborExchange(new WorkForceGenerator().GenerateWorkersForHire());
-        }
+      
 
         private void CreateCustomersData()
         {

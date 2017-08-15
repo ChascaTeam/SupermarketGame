@@ -14,9 +14,9 @@ namespace Supermarket.Management.Market
 
         public List<IWorkForce> AvailableWorkers { get; protected set; }
 
-        public void ShowAvailableWorkers()
+        public void Remove(IWorkForce worker)
         {
-            throw new NotImplementedException();
+            this.AvailableWorkers.Remove(worker);
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using Supermarket.Management.Market;
+using Supermarket.Models.RandomGenerators;
 
 namespace Supermarket.Client.Forms
 {
@@ -18,6 +20,7 @@ namespace Supermarket.Client.Forms
 
             Engine engine = new Engine();
             engine.Run();
+            Engine.laborExchange = new LaborExchange(new WorkForceGenerator().GenerateWorkersForHire());
         }
 
         private void GameInfo_Click(object sender, EventArgs e)

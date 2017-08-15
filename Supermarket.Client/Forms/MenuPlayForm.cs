@@ -1,12 +1,16 @@
 ﻿using System.Windows.Forms;
+using Supermarket.Management.Market;
+using Supermarket.Models.RandomGenerators;
 
 namespace Supermarket.Client.Forms
 {
     public partial class MenuPlayForm : Form
     {
+        
         public MenuPlayForm()
         {
             InitializeComponent();
+            
             this.textBox1.Text = Engine.daysPassed.ToString();
             this.CurrentMoneyText.Text = Engine.manager.CurrentCapital.ToString();
             this.IncomeText.Text = Engine.income.ToString();
@@ -17,7 +21,7 @@ namespace Supermarket.Client.Forms
             var mainForm = (MainForm)(this).Parent.Parent;
 
             if (Engine.manager.CurrentCapital > 0)
-            {   
+            {                
                 Engine.daysPassed++;               
                 Engine.manager.CurrentCapital += Engine.income;
                 Engine.manager.CurrentCapital -= (Engine.manager.Warehouse.WarehouseRent+Engine.manager.SalaryCostsPerDay());

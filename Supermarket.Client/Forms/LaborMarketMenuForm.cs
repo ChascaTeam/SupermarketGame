@@ -1,13 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
+using Supermarket.Management.Market;
+using Supermarket.Models.RandomGenerators;
 
 namespace Supermarket.Client.Forms
 {
     public partial class LaborMarketMenuForm : Form
     {
+       
         public LaborMarketMenuForm()
         {
-            InitializeComponent();
+            this.InitializeComponent();
+            this.FillTextBoxes();
         }
 
         private void StockMarketLabel_Click(object sender, EventArgs e)
@@ -34,6 +39,50 @@ namespace Supermarket.Client.Forms
         {
             var mainForm = (MainForm)(this).Parent.Parent;
             mainForm.SetContentHolderForm(new MenuPlayForm());
+            this.FillTextBoxes();
+        }
+
+        private void FirstWorkerText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HireWorkersButton_Click(object sender, EventArgs e)
+        {
+            List<CheckBox> checkBoxs = new List<CheckBox> { this.checkBox0, this.checkBox1, this.checkBox2, this.checkBox3, this.checkBox4 };
+            List<TextBox> textBoxs = new List<TextBox>{this.FirstWorkerText,this.SecondWorkerText,this.ThirdWorkerText,
+                this.FourthWorkerText,this.FifthWorkerText};
+
+            for (int i = 0; i < 5; i++)
+            {
+                if (checkBoxs[i].Checked && textBoxs[i].Text != "")
+                {
+                    Engine.workers.Add(Engine.laborExchange.AvailableWorkers[i]);
+                    textBoxs[i].Text = "";
+                }
+            }
+        }
+
+        private void FillTextBoxes()
+        {
+            for (int i = 0; i < Engine.laborExchange.AvailableWorkers.Count; i++)
+            {
+
+                if (Engine.workers.Contains(Engine.laborExchange.AvailableWorkers[i]))
+                {
+                    Engine.laborExchange.Remove(Engine.laborExchange.AvailableWorkers[i]);
+                }
+            }
+            List<TextBox> textBoxs = new List<TextBox>{this.FirstWorkerText,this.SecondWorkerText,this.ThirdWorkerText,
+                this.FourthWorkerText,this.FifthWorkerText};
+            for (int i = 0; i < 5; i++)
+            {
+                textBoxs[i].Text = "";
+                if (Engine.laborExchange.AvailableWorkers.Count - 1 >= i)
+                {
+                    textBoxs[i].Text = Engine.laborExchange.AvailableWorkers[i].ToString();
+                }
+            }
         }
     }
 }

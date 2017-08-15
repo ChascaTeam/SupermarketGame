@@ -21,7 +21,7 @@ namespace Supermarket.Client.Forms
 
         private void ContinueButton_Click(object sender, System.EventArgs e)
         {
-           
+            Engine.laborExchange = new LaborExchange(new WorkForceGenerator().GenerateWorkersForHire());
             var mainForm = (MainForm)(this).Parent.Parent;
             mainForm.SetContentHolderForm(new MenuPlayForm());
         }
