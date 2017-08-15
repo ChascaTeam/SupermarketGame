@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Supermarket.Management.Market;
-using Supermarket.Models.RandomGenerators;
+using Supermarket.Management.Exceptions;
 
 namespace Supermarket.Client.Forms
 {
@@ -15,26 +14,6 @@ namespace Supermarket.Client.Forms
             this.FillTextBoxes();
         }
 
-        private void StockMarketLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LaborMaretMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BackButton_Click(object sender, EventArgs e)
         {
             var mainForm = (MainForm)(this).Parent.Parent;
@@ -42,14 +21,10 @@ namespace Supermarket.Client.Forms
             this.FillTextBoxes();
         }
 
-        private void FirstWorkerText_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void HireWorkersButton_Click(object sender, EventArgs e)
         {
-            List<CheckBox> checkBoxs = new List<CheckBox> { this.checkBox0, this.checkBox1, this.checkBox2, this.checkBox3, this.checkBox4 };
+            List<CheckBox> checkBoxs = new List<CheckBox> { this.checkBox0, this.checkBox1, this.checkBox2,
+                this.checkBox3, this.checkBox4 };
             List<TextBox> textBoxs = new List<TextBox>{this.FirstWorkerText,this.SecondWorkerText,this.ThirdWorkerText,
                 this.FourthWorkerText,this.FifthWorkerText};
 
@@ -61,7 +36,7 @@ namespace Supermarket.Client.Forms
                     {
                         if (Engine.workers.Count == 5)
                         {
-                            throw new ArgumentException("You cant have more than 5 workers!");
+                            throw new WorkerLimitException();
                         }
                         Engine.workers.Add(Engine.laborExchange.AvailableWorkers[i]);
                         textBoxs[i].Text = "";
@@ -70,8 +45,7 @@ namespace Supermarket.Client.Forms
                     {
                         MessageBox.Show(exception.Message);
                         return;
-                    }
-             
+                    }           
                 }
             }
         }
@@ -86,8 +60,10 @@ namespace Supermarket.Client.Forms
                     Engine.laborExchange.Remove(Engine.laborExchange.AvailableWorkers[i]);
                 }
             }
+
             List<TextBox> textBoxs = new List<TextBox>{this.FirstWorkerText,this.SecondWorkerText,this.ThirdWorkerText,
                 this.FourthWorkerText,this.FifthWorkerText};
+
             for (int i = 0; i < 5; i++)
             {
                 textBoxs[i].Text = "";

@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
-using Supermarket.Models.Interfaces;
+
+using Supermarket.Models.StockTypes;
 
 namespace Supermarket.Data.Interfaces
 {
     public interface IStockData
     {
-        IList<IStock> Stock { get; }
+        IList<Stock> Stock { get; }
     }
 }

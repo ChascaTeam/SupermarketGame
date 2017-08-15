@@ -1,26 +1,25 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Supermarket.Data;
-using Supermarket.Models.Interfaces;
 using Supermarket.Models.StockTypes;
 
 namespace Supermarket.Services
 {
     public class StockServices : StockData
     {
-        public void AddStock(IStock stock)
+        public void AddStock(Stock stock)
         {                 
-            Stock.Add(stock);
+            this.Stock.Add(stock);
         }
 
-        public void RemoveStock(IStock stock)
+        public void RemoveStock(Stock stock)
         {
-            Stock.Remove(stock);
+            this.Stock.Remove(stock);
         }
 
-        public IList<IStock> GetAllAlcohol()
+        public IList<Stock> GetAllAlcohol()
         {
-            return Stock.Where(x => x.GetType() == typeof(Alcohol)).ToList();
+            return this.Stock.Where(x => x.GetType() == typeof(Alcohol)).ToList();
         }
     }
 }

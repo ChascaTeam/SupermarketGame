@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using Supermarket.Management.Market;
-using Supermarket.Models.RandomGenerators;
+using Supermarket.Management.Exceptions;
 
 namespace Supermarket.Client.Forms
 {
@@ -18,7 +17,6 @@ namespace Supermarket.Client.Forms
             this.SweetsText.Text = Engine.manager.Warehouse.StoredProducts[3].Quantity.ToString();
             this.VegetablesText.Text = Engine.manager.Warehouse.StoredProducts[4].Quantity.ToString();
 
-
             List<TextBox> quantityBoxes = new List<TextBox> { this.AlcoholQuantityText, this.DairyQuantityText, this.MeatQuantityText, this.SweetsQuantityText, this.VegetablesQuantityText };
             List<TextBox> priceBoxes = new List<TextBox> { this.AlcoholPriceText, this.DiaryPriceText, this.MeatPriceText, this.SweetsPriceText, this.VegetablesPriceText };
 
@@ -30,11 +28,6 @@ namespace Supermarket.Client.Forms
 
         }
 
-        private void AlcoholTxt_TextChanged(object sender, System.EventArgs e)
-        {
-
-        }
-
         private void BackButton_Click(object sender, System.EventArgs e)
         {
             var mainForm = (MainForm)(this).Parent.Parent;
@@ -43,12 +36,11 @@ namespace Supermarket.Client.Forms
 
         private void CalcTotalPriceButton_Click(object sender, System.EventArgs e)
         {
-
             try
             {
                 this.CheckInput();
             }
-            catch (ArgumentException exception)
+            catch (Exception exception)
             {
                 MessageBox.Show(exception.Message);
                 return;
@@ -74,11 +66,13 @@ namespace Supermarket.Client.Forms
         private void BuyProductsButton_Click(object sender, EventArgs e)
         {
 
-            List<TextBox> quantityBoxes = new List<TextBox> { this.AlcoholBuyText, this.DairyBuyText, this.MeatBuyText, this.SweetsBuyText, this.VegetablesBuyText };
-            List<TextBox> priceBoxes = new List<TextBox> { this.AlcoholPriceText, this.DiaryPriceText, this.MeatPriceText, this.SweetsPriceText, this.VegetablesPriceText };
-
+            List<TextBox> quantityBoxes = new List<TextBox> { this.AlcoholBuyText, this.DairyBuyText, this.MeatBuyText,
+                this.SweetsBuyText, this.VegetablesBuyText };
+            List<TextBox> priceBoxes = new List<TextBox> { this.AlcoholPriceText, this.DiaryPriceText, this.MeatPriceText,
+                this.SweetsPriceText, this.VegetablesPriceText };
             decimal totalPrice = 0;
             decimal totalSpace = 0;
+
             try
             {
                 this.CheckInput();
@@ -88,7 +82,7 @@ namespace Supermarket.Client.Forms
                 }
                 if (totalSpace > Engine.manager.Warehouse.WarehouseVolume - Engine.manager.Warehouse.FilledVolume())
                 {
-                    throw new ArgumentException("Not enough space!");
+                    throw new InvalidSizeException();
                 }
             }
             catch (Exception exception)
@@ -97,13 +91,14 @@ namespace Supermarket.Client.Forms
                 return;
             }
 
-
             for (int i = 0; i < 5; i++)
             {
                 Engine.manager.Warehouse.StoredProducts[i].Quantity += int.Parse(quantityBoxes[i].Text);
                 totalPrice += int.Parse(quantityBoxes[i].Text) * int.Parse(priceBoxes[i].Text);
             }
+
             Engine.manager.CurrentCapital -= totalPrice;
+
             var mainForm = (MainForm)(this).Parent.Parent;
             mainForm.SetContentHolderForm(new StockMarketMenuForm());
         }
@@ -113,7 +108,8 @@ namespace Supermarket.Client.Forms
             Regex reg = new Regex(@"^[0-9\.]+$");
             List<TextBox> input = new List<TextBox>{ this.AlcoholBuyText, this.DairyBuyText,
                 this.MeatBuyText, this.SweetsBuyText, this.VegetablesBuyText };
-            List<TextBox> quantityBoxes = new List<TextBox> { this.AlcoholQuantityText, this.DairyQuantityText, this.MeatQuantityText, this.SweetsQuantityText, this.VegetablesQuantityText };
+            List<TextBox> quantityBoxes = new List<TextBox> { this.AlcoholQuantityText, this.DairyQuantityText, this.MeatQuantityText,
+                this.SweetsQuantityText, this.VegetablesQuantityText };
 
             for (int i = 0; i < 5; i++)
             {
@@ -123,19 +119,18 @@ namespace Supermarket.Client.Forms
                 }
                 if (!reg.IsMatch(input[i].Text))
                 {
-                    throw new ArgumentException("Positive numbers only!");
+                    throw new InvalidInputException();
                 }
+                if (input[i].Text.Contains("-"))
+                {
+                    throw new InvalidNumberException();
+                }                
                 if (int.Parse(quantityBoxes[i].Text) < int.Parse(input[i].Text))
                 {
-                    throw new ArgumentException("Cant buy more than its offered!");
+                    throw new WrongOrderException();
                 }
 
             }
-        }
-
-        private void WarehouseSpaceLabel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

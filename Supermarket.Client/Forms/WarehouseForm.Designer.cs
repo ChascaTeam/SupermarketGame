@@ -125,7 +125,6 @@
             this.label2.Size = new System.Drawing.Size(120, 20);
             this.label2.TabIndex = 26;
             this.label2.Text = "Current Stock";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
@@ -273,7 +272,6 @@
             this.AlcoholTxt.Size = new System.Drawing.Size(39, 20);
             this.AlcoholTxt.TabIndex = 40;
             this.AlcoholTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.AlcoholTxt.TextChanged += new System.EventHandler(this.AlcoholTxt_TextChanged);
             // 
             // LeftSpaceText
             // 

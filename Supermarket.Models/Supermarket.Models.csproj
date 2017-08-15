@@ -57,10 +57,14 @@
     <Compile Include="Factories\WorkerFactory.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
     <Compile Include="Interfaces\IStock.cs" />
+    <Compile Include="Interfaces\ISupermarketManager.cs" />
+    <Compile Include="Interfaces\IWarehouse.cs" />
     <Compile Include="Interfaces\IWorkForce.cs" />
     <Compile Include="Interfaces\IRandomNumberGenerator.cs" />
     <Compile Include="Management\SupermarketManager.cs" />
     <Compile Include="Management\Warehouse.cs" />
+    <Compile Include="Market\LaborExchange.cs" />
+    <Compile Include="Market\StockExchange.cs" />
     <Compile Include="RandomGenerators\IntGenerator.cs" />
     <Compile Include="RandomGenerators\CustomerGenerator.cs" />
     <Compile Include="RandomGenerators\WorkForceGenerator.cs" />

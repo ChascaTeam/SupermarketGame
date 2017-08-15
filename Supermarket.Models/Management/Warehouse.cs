@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Supermarket.Models.Interfaces;
 using Supermarket.Models.StockTypes;
 
 namespace Supermarket.Models.Management
 {
-    public class Warehouse
+    public class Warehouse : IWarehouse
     {
         private decimal warehouseRent;
+        private int warehouseVolume;
 
         public Warehouse()
         {
@@ -18,12 +18,16 @@ namespace Supermarket.Models.Management
 
         public List<Stock> StoredProducts { get; protected set; }
 
-        public int WarehouseVolume { get; protected set; }
+        public int WarehouseVolume
+        {
+            get => this.warehouseVolume;
+            protected set => this.warehouseVolume = value;
+        }
 
         public decimal WarehouseRent
         {
-            get { return this.warehouseRent; }
-            set { this.warehouseRent = value; }
+            get => this.warehouseRent;
+            set => this.warehouseRent = value;
         }
 
         public void IncreaseVolume(int volume)
@@ -41,11 +45,6 @@ namespace Supermarket.Models.Management
             }
 
             return stockInStore;
-        }
-
-        public void AddStock(IStock stock)
-        {
-            this.StoredProducts.First(x => x.GetType() == stock.GetType()).Quantity += stock.Quantity;
         }
     }
 }

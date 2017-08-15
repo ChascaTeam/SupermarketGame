@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using Supermarket.Management.Market;
+using Supermarket.Models.Market;
 using Supermarket.Models.RandomGenerators;
 
 namespace Supermarket.Client.Forms

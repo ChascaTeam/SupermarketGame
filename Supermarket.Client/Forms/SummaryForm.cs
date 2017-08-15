@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using Supermarket.Management.Market;
 using Supermarket.Models.Interfaces;
+using Supermarket.Models.Market;
 using Supermarket.Models.RandomGenerators;
 using Supermarket.Models.StockTypes;
 
@@ -39,6 +39,7 @@ namespace Supermarket.Client.Forms
                 mainForm.SetContentHolderForm(new GameOverForm());
             }
         }
+
         private decimal SalaryCostsPerDay()
         {
             return Engine.workers.Sum(w => w.SalaryPerDay);

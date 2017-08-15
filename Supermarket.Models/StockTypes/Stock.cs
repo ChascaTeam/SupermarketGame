@@ -13,6 +13,7 @@ namespace Supermarket.Models.StockTypes
             this.Quantity = 0;
             this.Price = 0;
         }
+
         public void ChangePrice(decimal newPrice)
         {
             this.Price = newPrice;

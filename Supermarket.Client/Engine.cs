@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using Supermarket.Data;
-using Supermarket.Management.Market;
-using Supermarket.Models;
 using Supermarket.Models.Client_Counter;
 using Supermarket.Models.Interfaces;
 using Supermarket.Models.Management;
+using Supermarket.Models.Market;
 using Supermarket.Models.RandomGenerators;
 
 

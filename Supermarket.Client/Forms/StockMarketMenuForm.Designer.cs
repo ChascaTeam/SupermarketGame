@@ -108,7 +108,6 @@
             this.AlcoholTxt.Size = new System.Drawing.Size(39, 20);
             this.AlcoholTxt.TabIndex = 41;
             this.AlcoholTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.AlcoholTxt.TextChanged += new System.EventHandler(this.AlcoholTxt_TextChanged);
             // 
             // DairyLabel
             // 
@@ -374,7 +373,6 @@
             this.WarehouseSpaceLabel.Size = new System.Drawing.Size(157, 13);
             this.WarehouseSpaceLabel.TabIndex = 71;
             this.WarehouseSpaceLabel.Text = "Total warehouse space needed";
-            this.WarehouseSpaceLabel.Click += new System.EventHandler(this.WarehouseSpaceLabel_Click);
             // 
             // AlcoholBuyText
             // 

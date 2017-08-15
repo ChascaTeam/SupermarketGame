@@ -21,10 +21,5 @@ namespace Supermarket.Client.Forms
             }
             a.Show();
         }
-
-        private void ContentHolder_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

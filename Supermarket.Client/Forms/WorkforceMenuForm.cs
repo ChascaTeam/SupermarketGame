@@ -34,7 +34,6 @@ namespace Supermarket.Client.Forms
                         textBoxs[i].Text = "";                                       
                 }
             }
-
         }
 
         private void FillTextBoxes()
@@ -42,6 +41,7 @@ namespace Supermarket.Client.Forms
             
             List<TextBox> textBoxs = new List<TextBox>{this.FirstWorkerText,this.SecondWorkerText,this.ThirdWorkerText,
                 this.FourthWorkerText,this.FifthWorkerText};
+
             for (int i = 0; i < 5; i++)
             {
                 textBoxs[i].Text = "";

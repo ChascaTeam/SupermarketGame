@@ -5,7 +5,7 @@ namespace Supermarket.Models.CustomerTypes
 {
     public class VeryPoorCustomer : Customer
     {
-        public VeryPoorCustomer(decimal money, List<Stock> wantedProducts, decimal priceTolerance) 
+        public VeryPoorCustomer(decimal money, List<Stock> wantedProducts, decimal priceTolerance)
             : base(money, wantedProducts, priceTolerance)
         {
         }
