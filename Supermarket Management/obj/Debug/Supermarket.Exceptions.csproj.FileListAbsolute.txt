@@ -9,3 +9,13 @@ C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket Management\bin
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Exceptions.csprojResolveAssemblyReference.cache
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.dll
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.pdb
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.dll.config
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.dll
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.pdb
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Data.dll
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Models.dll
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Data.pdb
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Models.pdb
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Exceptions.csprojResolveAssemblyReference.cache
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.dll
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.pdb

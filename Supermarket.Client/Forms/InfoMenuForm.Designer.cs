@@ -64,7 +64,8 @@
             this.CurrentMoneyText.Multiline = true;
             this.CurrentMoneyText.Name = "CurrentMoneyText";
             this.CurrentMoneyText.ReadOnly = true;
-            this.CurrentMoneyText.Size = new System.Drawing.Size(335, 232);
+            this.CurrentMoneyText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.CurrentMoneyText.Size = new System.Drawing.Size(338, 259);
             this.CurrentMoneyText.TabIndex = 12;
             this.CurrentMoneyText.Text = resources.GetString("CurrentMoneyText.Text");
             // 
@@ -73,7 +74,7 @@
             this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BackButton.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.BackButton.Location = new System.Drawing.Point(108, 330);
+            this.BackButton.Location = new System.Drawing.Point(118, 369);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(121, 28);
             this.BackButton.TabIndex = 13;
