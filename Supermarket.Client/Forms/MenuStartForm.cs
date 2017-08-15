@@ -16,10 +16,7 @@ namespace Supermarket.Client.Forms
         {
             var mainForm = (MainForm)(this).Parent.Parent;
             mainForm.SetContentHolderForm(new MenuPlayForm());
-
-
-            Engine engine = new Engine();
-            engine.Run();
+            Engine.stockExchange = new StockExchange(new StockGenerator().GenerateStockForShop());
             Engine.laborExchange = new LaborExchange(new WorkForceGenerator().GenerateWorkersForHire());
         }
 

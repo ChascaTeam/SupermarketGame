@@ -28,7 +28,7 @@ namespace Supermarket.Client.Forms
 
             if (Engine.manager.CurrentCapital > 0)
             {
-                             
+                Engine.stockExchange = new StockExchange(new StockGenerator().GenerateStockForShop());
                 Engine.laborExchange = new LaborExchange(new WorkForceGenerator().GenerateWorkersForHire());
                 Engine.counter.Clear();
                 Engine.income = 0;

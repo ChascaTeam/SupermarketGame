@@ -20,5 +20,18 @@ namespace Supermarket.Models.RandomGenerators
             return stock;
         }
 
+        public List<Stock> GenerateStockForShop()
+        {
+            List<Stock> stock = new List<Stock> { new Alcohol(), new DairyProducts(), new Meat(), new Sweets(), new Vegetables() };
+
+            foreach (var product in stock)
+            {
+                product.Quantity += this.generator.Rnd(20,100);
+                product.Price += this.generator.Rnd(1, 4);
+            }
+
+            return stock;
+        }
+
     }
 }

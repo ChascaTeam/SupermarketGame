@@ -118,13 +118,20 @@ namespace Supermarket.Client.Forms
                         {
                             quantity = customer.WantedProducts[j].Quantity;
                             Engine.income += this.SpentMoney(quantity, productsInStore[i], customer, i);
-                            customer.HasShoped = true;
+                            if (customer.WantedProducts[j].Quantity != 0)
+                            {
+                                customer.HasShoped = true;
+                            }
+                            
                         }
                         else
                         {
                             quantity = productsInStore[i].Quantity;
                             Engine.income += this.SpentMoney(quantity, productsInStore[i], customer, i);
-                            customer.HasShoped = true;
+                            if (customer.WantedProducts[j].Quantity != 0)
+                            {
+                                customer.HasShoped = true;
+                            }
                         }                                              
                     }
                 }

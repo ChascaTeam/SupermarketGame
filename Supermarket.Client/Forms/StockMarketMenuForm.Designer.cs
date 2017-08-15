@@ -55,11 +55,10 @@
             this.VegetablesPriceText = new System.Windows.Forms.TextBox();
             this.BackButton = new System.Windows.Forms.Button();
             this.CalcTotalPriceButton = new System.Windows.Forms.Button();
-            this.TotalPriceText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BuyProductsButton = new System.Windows.Forms.Button();
             this.TotalPriceLabel = new System.Windows.Forms.Label();
-            this.WarehouseText = new System.Windows.Forms.TextBox();
+            this.WarehouseSpaceNeededText = new System.Windows.Forms.TextBox();
             this.WarehouseSpaceLabel = new System.Windows.Forms.Label();
             this.AlcoholBuyText = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -69,6 +68,7 @@
             this.DairyBuyText = new System.Windows.Forms.TextBox();
             this.CurrentWarehouseSpsaceText = new System.Windows.Forms.TextBox();
             this.CurrentWarehouseSpaceLabel = new System.Windows.Forms.Label();
+            this.TotalPriceText = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // StockMarketLabel
@@ -324,16 +324,7 @@
             this.CalcTotalPriceButton.TabIndex = 64;
             this.CalcTotalPriceButton.Text = "Calc Total Price";
             this.CalcTotalPriceButton.UseVisualStyleBackColor = true;
-            // 
-            // TotalPriceText
-            // 
-            this.TotalPriceText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.TotalPriceText.Location = new System.Drawing.Point(237, 251);
-            this.TotalPriceText.Name = "TotalPriceText";
-            this.TotalPriceText.ReadOnly = true;
-            this.TotalPriceText.Size = new System.Drawing.Size(61, 20);
-            this.TotalPriceText.TabIndex = 65;
-            this.TotalPriceText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CalcTotalPriceButton.Click += new System.EventHandler(this.CalcTotalPriceButton_Click);
             // 
             // label1
             // 
@@ -355,6 +346,7 @@
             this.BuyProductsButton.TabIndex = 68;
             this.BuyProductsButton.Text = "Buy Products";
             this.BuyProductsButton.UseVisualStyleBackColor = true;
+            this.BuyProductsButton.Click += new System.EventHandler(this.BuyProductsButton_Click);
             // 
             // TotalPriceLabel
             // 
@@ -365,23 +357,23 @@
             this.TotalPriceLabel.TabIndex = 69;
             this.TotalPriceLabel.Text = "Total Price";
             // 
-            // WarehouseText
+            // WarehouseSpaceNeededText
             // 
-            this.WarehouseText.Location = new System.Drawing.Point(237, 277);
-            this.WarehouseText.Name = "WarehouseText";
-            this.WarehouseText.ReadOnly = true;
-            this.WarehouseText.Size = new System.Drawing.Size(61, 20);
-            this.WarehouseText.TabIndex = 70;
-            this.WarehouseText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.WarehouseSpaceNeededText.Location = new System.Drawing.Point(237, 277);
+            this.WarehouseSpaceNeededText.Name = "WarehouseSpaceNeededText";
+            this.WarehouseSpaceNeededText.ReadOnly = true;
+            this.WarehouseSpaceNeededText.Size = new System.Drawing.Size(61, 20);
+            this.WarehouseSpaceNeededText.TabIndex = 70;
+            this.WarehouseSpaceNeededText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // WarehouseSpaceLabel
             // 
             this.WarehouseSpaceLabel.AutoSize = true;
-            this.WarehouseSpaceLabel.Location = new System.Drawing.Point(119, 280);
+            this.WarehouseSpaceLabel.Location = new System.Drawing.Point(80, 280);
             this.WarehouseSpaceLabel.Name = "WarehouseSpaceLabel";
-            this.WarehouseSpaceLabel.Size = new System.Drawing.Size(112, 13);
+            this.WarehouseSpaceLabel.Size = new System.Drawing.Size(151, 13);
             this.WarehouseSpaceLabel.TabIndex = 71;
-            this.WarehouseSpaceLabel.Text = "Total warhouse space";
+            this.WarehouseSpaceLabel.Text = "Total warhouse space needed";
             // 
             // AlcoholBuyText
             // 
@@ -444,17 +436,27 @@
             // CurrentWarehouseSpaceLabel
             // 
             this.CurrentWarehouseSpaceLabel.AutoSize = true;
-            this.CurrentWarehouseSpaceLabel.Location = new System.Drawing.Point(109, 306);
+            this.CurrentWarehouseSpaceLabel.Location = new System.Drawing.Point(88, 306);
             this.CurrentWarehouseSpaceLabel.Name = "CurrentWarehouseSpaceLabel";
-            this.CurrentWarehouseSpaceLabel.Size = new System.Drawing.Size(122, 13);
+            this.CurrentWarehouseSpaceLabel.Size = new System.Drawing.Size(143, 13);
             this.CurrentWarehouseSpaceLabel.TabIndex = 79;
-            this.CurrentWarehouseSpaceLabel.Text = "Current warhouse space";
+            this.CurrentWarehouseSpaceLabel.Text = "Current free warhouse space";
+            // 
+            // TotalPriceText
+            // 
+            this.TotalPriceText.Location = new System.Drawing.Point(237, 254);
+            this.TotalPriceText.Name = "TotalPriceText";
+            this.TotalPriceText.ReadOnly = true;
+            this.TotalPriceText.Size = new System.Drawing.Size(61, 20);
+            this.TotalPriceText.TabIndex = 80;
+            this.TotalPriceText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // StockMarketMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(375, 409);
+            this.Controls.Add(this.TotalPriceText);
             this.Controls.Add(this.CurrentWarehouseSpaceLabel);
             this.Controls.Add(this.CurrentWarehouseSpsaceText);
             this.Controls.Add(this.DairyBuyText);
@@ -464,11 +466,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.AlcoholBuyText);
             this.Controls.Add(this.WarehouseSpaceLabel);
-            this.Controls.Add(this.WarehouseText);
+            this.Controls.Add(this.WarehouseSpaceNeededText);
             this.Controls.Add(this.TotalPriceLabel);
             this.Controls.Add(this.BuyProductsButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TotalPriceText);
             this.Controls.Add(this.CalcTotalPriceButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.VegetablesPriceText);
@@ -537,11 +538,10 @@
         private System.Windows.Forms.TextBox VegetablesPriceText;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button CalcTotalPriceButton;
-        private System.Windows.Forms.TextBox TotalPriceText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BuyProductsButton;
         private System.Windows.Forms.Label TotalPriceLabel;
-        private System.Windows.Forms.TextBox WarehouseText;
+        private System.Windows.Forms.TextBox WarehouseSpaceNeededText;
         private System.Windows.Forms.Label WarehouseSpaceLabel;
         private System.Windows.Forms.TextBox AlcoholBuyText;
         private System.Windows.Forms.Label label3;
@@ -551,5 +551,6 @@
         private System.Windows.Forms.TextBox DairyBuyText;
         private System.Windows.Forms.TextBox CurrentWarehouseSpsaceText;
         private System.Windows.Forms.Label CurrentWarehouseSpaceLabel;
+        private System.Windows.Forms.TextBox TotalPriceText;
     }
 }

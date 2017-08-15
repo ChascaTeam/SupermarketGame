@@ -43,7 +43,7 @@ namespace Supermarket.Client.Forms
 
         private void ChangePricesButton_Click(object sender, EventArgs e)
         {
-            Regex reg = new Regex(@"[0-9]+");
+            Regex reg = new Regex(@"^[0-9\.]+$");
             List<TextBox> input = new List<TextBox>{ this.AlcoholPriceText, this.DairyPriceText,
                 this.MeatPriceText, this.SweetsPriceText, this.VegetablesPriceText };
             try
