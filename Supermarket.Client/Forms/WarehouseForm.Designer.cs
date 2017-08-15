@@ -69,6 +69,7 @@
             this.CostText = new System.Windows.Forms.TextBox();
             this.BonusSpaceText = new System.Windows.Forms.TextBox();
             this.RentInceraseText = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.StartMenuImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -80,11 +81,11 @@
             // 
             this.WarehouseLabel.AutoSize = true;
             this.WarehouseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.WarehouseLabel.Location = new System.Drawing.Point(141, 4);
+            this.WarehouseLabel.Location = new System.Drawing.Point(225, -1);
             this.WarehouseLabel.Name = "WarehouseLabel";
-            this.WarehouseLabel.Size = new System.Drawing.Size(90, 20);
+            this.WarehouseLabel.Size = new System.Drawing.Size(127, 20);
             this.WarehouseLabel.TabIndex = 21;
-            this.WarehouseLabel.Text = "Warehose";
+            this.WarehouseLabel.Text = "Warehose Info";
             // 
             // TotalSpaceText
             // 
@@ -119,7 +120,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(131, 113);
+            this.label2.Location = new System.Drawing.Point(121, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 20);
             this.label2.TabIndex = 26;
@@ -277,7 +278,7 @@
             // LeftSpaceText
             // 
             this.LeftSpaceText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.LeftSpaceText.Location = new System.Drawing.Point(308, 74);
+            this.LeftSpaceText.Location = new System.Drawing.Point(311, 74);
             this.LeftSpaceText.Name = "LeftSpaceText";
             this.LeftSpaceText.ReadOnly = true;
             this.LeftSpaceText.Size = new System.Drawing.Size(39, 20);
@@ -315,7 +316,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(119, 7);
+            this.label3.Location = new System.Drawing.Point(121, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(13, 13);
             this.label3.TabIndex = 45;
@@ -397,17 +398,18 @@
             this.IncreaseSpaceButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IncreaseSpaceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.IncreaseSpaceButton.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.IncreaseSpaceButton.Location = new System.Drawing.Point(12, 82);
+            this.IncreaseSpaceButton.Location = new System.Drawing.Point(76, 100);
             this.IncreaseSpaceButton.Name = "IncreaseSpaceButton";
-            this.IncreaseSpaceButton.Size = new System.Drawing.Size(120, 28);
+            this.IncreaseSpaceButton.Size = new System.Drawing.Size(39, 28);
             this.IncreaseSpaceButton.TabIndex = 54;
-            this.IncreaseSpaceButton.Text = "Increase Space";
+            this.IncreaseSpaceButton.Text = "Buy";
             this.IncreaseSpaceButton.UseVisualStyleBackColor = true;
+            this.IncreaseSpaceButton.Click += new System.EventHandler(this.IncreaseSpaceButton_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(-1, 59);
+            this.label4.Location = new System.Drawing.Point(-1, 77);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 13);
             this.label4.TabIndex = 55;
@@ -416,7 +418,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(-1, 33);
+            this.label5.Location = new System.Drawing.Point(-1, 51);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 13);
             this.label5.TabIndex = 56;
@@ -425,7 +427,7 @@
             // CostLabel
             // 
             this.CostLabel.AutoSize = true;
-            this.CostLabel.Location = new System.Drawing.Point(42, 7);
+            this.CostLabel.Location = new System.Drawing.Point(42, 25);
             this.CostLabel.Name = "CostLabel";
             this.CostLabel.Size = new System.Drawing.Size(28, 13);
             this.CostLabel.TabIndex = 57;
@@ -434,7 +436,7 @@
             // CostText
             // 
             this.CostText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CostText.Location = new System.Drawing.Point(76, 4);
+            this.CostText.Location = new System.Drawing.Point(76, 22);
             this.CostText.Name = "CostText";
             this.CostText.ReadOnly = true;
             this.CostText.Size = new System.Drawing.Size(39, 20);
@@ -444,7 +446,7 @@
             // BonusSpaceText
             // 
             this.BonusSpaceText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BonusSpaceText.Location = new System.Drawing.Point(76, 30);
+            this.BonusSpaceText.Location = new System.Drawing.Point(76, 48);
             this.BonusSpaceText.Name = "BonusSpaceText";
             this.BonusSpaceText.ReadOnly = true;
             this.BonusSpaceText.Size = new System.Drawing.Size(39, 20);
@@ -454,18 +456,29 @@
             // RentInceraseText
             // 
             this.RentInceraseText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.RentInceraseText.Location = new System.Drawing.Point(76, 56);
+            this.RentInceraseText.Location = new System.Drawing.Point(76, 74);
             this.RentInceraseText.Name = "RentInceraseText";
             this.RentInceraseText.ReadOnly = true;
             this.RentInceraseText.Size = new System.Drawing.Size(39, 20);
             this.RentInceraseText.TabIndex = 60;
             this.RentInceraseText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(8, -1);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(135, 20);
+            this.label6.TabIndex = 61;
+            this.label6.Text = "Increase Space";
+            // 
             // WarehouseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(375, 409);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.RentInceraseText);
             this.Controls.Add(this.BonusSpaceText);
             this.Controls.Add(this.CostText);
@@ -565,5 +578,6 @@
         private System.Windows.Forms.TextBox CostText;
         private System.Windows.Forms.TextBox BonusSpaceText;
         private System.Windows.Forms.TextBox RentInceraseText;
+        private System.Windows.Forms.Label label6;
     }
 }

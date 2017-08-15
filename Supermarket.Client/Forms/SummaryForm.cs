@@ -35,5 +35,10 @@ namespace Supermarket.Client.Forms
         {
 
         }
+
+        private void RentText_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

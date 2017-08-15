@@ -115,6 +115,7 @@
             this.RentText.Size = new System.Drawing.Size(100, 20);
             this.RentText.TabIndex = 21;
             this.RentText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.RentText.TextChanged += new System.EventHandler(this.RentText_TextChanged);
             // 
             // WagesLabel
             // 

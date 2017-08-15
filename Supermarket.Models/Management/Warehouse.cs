@@ -13,6 +13,7 @@ namespace Supermarket.Models.Management
         {
             this.StoredProducts = new List<Stock> { new Alcohol(), new DairyProducts(), new Meat(), new Sweets(), new Vegetables() };
             this.WarehouseRent = 50m;
+            this.WarehouseVolume = 50;
         }
 
         public List<Stock> StoredProducts { get; protected set; }

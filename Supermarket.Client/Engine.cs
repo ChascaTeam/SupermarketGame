@@ -41,7 +41,7 @@ namespace Supermarket.Client
 
         public void Run()
         {
-             
+            
                 //Creates a list of workers
                 this.CreateLaborMarketData();
 
