@@ -77,9 +77,9 @@
             this.StockMarketLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StockMarketLabel.Location = new System.Drawing.Point(121, 9);
             this.StockMarketLabel.Name = "StockMarketLabel";
-            this.StockMarketLabel.Size = new System.Drawing.Size(90, 20);
+            this.StockMarketLabel.Size = new System.Drawing.Size(115, 20);
             this.StockMarketLabel.TabIndex = 22;
-            this.StockMarketLabel.Text = "Warehose";
+            this.StockMarketLabel.Text = "Stock Market";
             // 
             // label2
             // 
@@ -371,9 +371,10 @@
             this.WarehouseSpaceLabel.AutoSize = true;
             this.WarehouseSpaceLabel.Location = new System.Drawing.Point(80, 280);
             this.WarehouseSpaceLabel.Name = "WarehouseSpaceLabel";
-            this.WarehouseSpaceLabel.Size = new System.Drawing.Size(151, 13);
+            this.WarehouseSpaceLabel.Size = new System.Drawing.Size(157, 13);
             this.WarehouseSpaceLabel.TabIndex = 71;
-            this.WarehouseSpaceLabel.Text = "Total warhouse space needed";
+            this.WarehouseSpaceLabel.Text = "Total warehouse space needed";
+            this.WarehouseSpaceLabel.Click += new System.EventHandler(this.WarehouseSpaceLabel_Click);
             // 
             // AlcoholBuyText
             // 
@@ -438,9 +439,9 @@
             this.CurrentWarehouseSpaceLabel.AutoSize = true;
             this.CurrentWarehouseSpaceLabel.Location = new System.Drawing.Point(88, 306);
             this.CurrentWarehouseSpaceLabel.Name = "CurrentWarehouseSpaceLabel";
-            this.CurrentWarehouseSpaceLabel.Size = new System.Drawing.Size(143, 13);
+            this.CurrentWarehouseSpaceLabel.Size = new System.Drawing.Size(149, 13);
             this.CurrentWarehouseSpaceLabel.TabIndex = 79;
-            this.CurrentWarehouseSpaceLabel.Text = "Current free warhouse space";
+            this.CurrentWarehouseSpaceLabel.Text = "Current free warehouse space";
             // 
             // TotalPriceText
             // 

@@ -123,7 +123,7 @@ namespace Supermarket.Client.Forms
                 }
                 if (!reg.IsMatch(input[i].Text))
                 {
-                    throw new ArgumentException("Input accepts numbers only!");
+                    throw new ArgumentException("Positive numbers only!");
                 }
                 if (int.Parse(quantityBoxes[i].Text) < int.Parse(input[i].Text))
                 {
@@ -131,6 +131,11 @@ namespace Supermarket.Client.Forms
                 }
 
             }
+        }
+
+        private void WarehouseSpaceLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

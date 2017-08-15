@@ -50,3 +50,27 @@ C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Deb
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.WarehouseForm.resources
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.WorkforceMenuForm.resources
 C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.MenuStartForm.resources
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Client.exe.config
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Client.exe
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Client.pdb
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Data.dll
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Management.dll
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Models.dll
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Management.pdb
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Data.pdb
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\bin\Debug\Supermarket.Models.pdb
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.csprojResolveAssemblyReference.cache
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.GameOverForm.resources
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.InfoMenuForm.resources
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.LaborMarketMenuForm.resources
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.MainForm.resources
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.MenuPlayForm.resources
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.StockMarketMenuForm.resources
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.SummaryForm.resources
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.WarehouseForm.resources
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.WorkforceMenuForm.resources
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Forms.MenuStartForm.resources
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.Properties.Resources.resources
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.csproj.GenerateResource.Cache
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.exe
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Client\obj\Debug\Supermarket.Client.pdb
