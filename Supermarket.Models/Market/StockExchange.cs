@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using Supermarket.Models.Interfaces;
-using Supermarket.Models.RandomGenerators;
+﻿using System.Collections.Generic;
 using Supermarket.Models.StockTypes;
 
-namespace Supermarket.Management.Market
+namespace Supermarket.Models.Market
 {
-    public class StockExchange : RNDGenerator
+    public class StockExchange
     {
         public StockExchange(List<Stock> availableProducts)
         {

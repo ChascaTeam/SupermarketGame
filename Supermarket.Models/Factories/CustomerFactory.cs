@@ -3,9 +3,8 @@ using Supermarket.Models.RandomGenerators;
 
 namespace Supermarket.Models.Factories
 {
-   public  class CustomerFactory
+    public class CustomerFactory
     {
-
         public Customer Get(int id)
         {
             RNDGenerator genarator = new IntGenerator();
@@ -13,7 +12,7 @@ namespace Supermarket.Models.Factories
             switch (id)
             {
                 case 0:
-                    return new VeryPoorCustomer(genarator.Rnd(0, 50), new StockGenerator().GenerateStock(0,2), genarator.Rnd(2, 5));                                      
+                    return new VeryPoorCustomer(genarator.Rnd(0, 50), new StockGenerator().GenerateStock(0, 2), genarator.Rnd(2, 5));
                 case 1:
                     return new PoorCustomer(genarator.Rnd(50, 100), new StockGenerator().GenerateStock(0, 3), genarator.Rnd(3, 6));
                 case 2:

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-
 using Supermarket.Models.StockTypes;
 
 namespace Supermarket.Models.CustomerTypes

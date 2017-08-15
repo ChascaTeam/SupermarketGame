@@ -1,4 +1,6 @@
-﻿namespace Supermarket.Models.Client_Counter
+﻿using Supermarket.Models.Interfaces;
+
+namespace Supermarket.Models.Client_Counter
 {
     public class ClientsMood : IClientCounter
     {

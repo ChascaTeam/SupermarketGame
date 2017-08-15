@@ -48,16 +48,12 @@
     <Compile Include="Exceptions\InvalidInputException.cs" />
     <Compile Include="Exceptions\InvalidNumberException.cs" />
     <Compile Include="Exceptions\InvalidSizeException.cs" />
-    <Compile Include="Market\LaborExchange.cs" />
-    <Compile Include="Market\StockExchange.cs" />
     <Compile Include="Exceptions\WorkerLimitException.cs" />
     <Compile Include="Exceptions\WrongOrderException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
-    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Supermarket.Data\Supermarket.Data.csproj">

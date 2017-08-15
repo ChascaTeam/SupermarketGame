@@ -38,7 +38,6 @@
             this.ContentHolder.Name = "ContentHolder";
             this.ContentHolder.Size = new System.Drawing.Size(375, 409);
             this.ContentHolder.TabIndex = 0;
-            this.ContentHolder.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentHolder_Paint);
             // 
             // MainForm
             // 

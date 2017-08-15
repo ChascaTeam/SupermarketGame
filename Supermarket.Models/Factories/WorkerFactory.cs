@@ -13,7 +13,7 @@ namespace Supermarket.Models.Factories
             switch (id)
             {
                 case 0:
-                    return new Intern(this.name.GenerateName(),this.num.Rnd(3,5),this.num.Rnd(40,50));
+                    return new Intern(this.name.GenerateName(), this.num.Rnd(3, 5), this.num.Rnd(40, 50));
                 case 1:
                     return new LazyWorker(this.name.GenerateName(), this.num.Rnd(5, 8), this.num.Rnd(51, 59));
                 case 2:

@@ -30,16 +30,6 @@ namespace Supermarket.Client.Forms
             this.RentInceraseText.Text = (9 + Engine.daysPassed).ToString();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AlcoholTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void ChangePricesButton_Click(object sender, EventArgs e)
         {
             Regex reg = new Regex(@"^[-0-9\.]+$");
