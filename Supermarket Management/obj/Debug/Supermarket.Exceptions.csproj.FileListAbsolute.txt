@@ -30,3 +30,14 @@ C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\bin\
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Exceptions.csprojResolveAssemblyReference.cache
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.dll
 C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.pdb
+D:\Teamwork\Supermarket Management\bin\Debug\Supermarket.Management.dll.config
+D:\Teamwork\Supermarket Management\bin\Debug\Supermarket.Management.dll
+D:\Teamwork\Supermarket Management\bin\Debug\Supermarket.Management.pdb
+D:\Teamwork\Supermarket Management\bin\Debug\Supermarket.Data.dll
+D:\Teamwork\Supermarket Management\bin\Debug\Supermarket.Models.dll
+D:\Teamwork\Supermarket Management\bin\Debug\Supermarket.Data.pdb
+D:\Teamwork\Supermarket Management\bin\Debug\Supermarket.Models.pdb
+D:\Teamwork\Supermarket Management\bin\Debug\Supermarket.Models.dll.config
+D:\Teamwork\Supermarket Management\obj\Debug\Supermarket.Exceptions.csprojResolveAssemblyReference.cache
+D:\Teamwork\Supermarket Management\obj\Debug\Supermarket.Management.dll
+D:\Teamwork\Supermarket Management\obj\Debug\Supermarket.Management.pdb

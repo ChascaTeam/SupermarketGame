@@ -21,3 +21,11 @@ D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Data\bin\
 D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Data\obj\Debug\Supermarket.Data.csprojResolveAssemblyReference.cache
 D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Data\obj\Debug\Supermarket.Data.dll
 D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Data\obj\Debug\Supermarket.Data.pdb
+D:\Teamwork\Supermarket.Data\bin\Debug\Supermarket.Data.dll
+D:\Teamwork\Supermarket.Data\bin\Debug\Supermarket.Data.pdb
+D:\Teamwork\Supermarket.Data\bin\Debug\Supermarket.Models.dll
+D:\Teamwork\Supermarket.Data\bin\Debug\Supermarket.Models.pdb
+D:\Teamwork\Supermarket.Data\bin\Debug\Supermarket.Models.dll.config
+D:\Teamwork\Supermarket.Data\obj\Debug\Supermarket.Data.csprojResolveAssemblyReference.cache
+D:\Teamwork\Supermarket.Data\obj\Debug\Supermarket.Data.dll
+D:\Teamwork\Supermarket.Data\obj\Debug\Supermarket.Data.pdb

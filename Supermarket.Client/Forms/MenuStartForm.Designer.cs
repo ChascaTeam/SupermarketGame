@@ -40,11 +40,12 @@
             // 
             this.StartMenuImg.Image = ((System.Drawing.Image)(resources.GetObject("StartMenuImg.Image")));
             this.StartMenuImg.InitialImage = ((System.Drawing.Image)(resources.GetObject("StartMenuImg.InitialImage")));
-            this.StartMenuImg.Location = new System.Drawing.Point(12, 12);
-            this.StartMenuImg.MaximumSize = new System.Drawing.Size(335, 248);
-            this.StartMenuImg.MinimumSize = new System.Drawing.Size(335, 248);
+            this.StartMenuImg.Location = new System.Drawing.Point(53, 29);
+            this.StartMenuImg.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.StartMenuImg.MaximumSize = new System.Drawing.Size(893, 591);
+            this.StartMenuImg.MinimumSize = new System.Drawing.Size(893, 591);
             this.StartMenuImg.Name = "StartMenuImg";
-            this.StartMenuImg.Size = new System.Drawing.Size(335, 248);
+            this.StartMenuImg.Size = new System.Drawing.Size(893, 591);
             this.StartMenuImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.StartMenuImg.TabIndex = 4;
             this.StartMenuImg.TabStop = false;
@@ -54,9 +55,10 @@
             this.StartButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartButton.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.StartButton.Location = new System.Drawing.Point(112, 266);
+            this.StartButton.Location = new System.Drawing.Point(314, 634);
+            this.StartButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(121, 28);
+            this.StartButton.Size = new System.Drawing.Size(323, 67);
             this.StartButton.TabIndex = 5;
             this.StartButton.Text = "Start Game";
             this.StartButton.UseVisualStyleBackColor = true;
@@ -67,9 +69,10 @@
             this.GameInfo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GameInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GameInfo.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.GameInfo.Location = new System.Drawing.Point(112, 300);
+            this.GameInfo.Location = new System.Drawing.Point(314, 715);
+            this.GameInfo.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.GameInfo.Name = "GameInfo";
-            this.GameInfo.Size = new System.Drawing.Size(121, 28);
+            this.GameInfo.Size = new System.Drawing.Size(323, 67);
             this.GameInfo.TabIndex = 6;
             this.GameInfo.Text = "Game Info";
             this.GameInfo.UseVisualStyleBackColor = true;
@@ -81,9 +84,10 @@
             this.QuitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.QuitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QuitButton.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.QuitButton.Location = new System.Drawing.Point(112, 334);
+            this.QuitButton.Location = new System.Drawing.Point(314, 796);
+            this.QuitButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.QuitButton.Name = "QuitButton";
-            this.QuitButton.Size = new System.Drawing.Size(121, 28);
+            this.QuitButton.Size = new System.Drawing.Size(323, 67);
             this.QuitButton.TabIndex = 7;
             this.QuitButton.Text = "Quit";
             this.QuitButton.UseVisualStyleBackColor = false;
@@ -91,18 +95,19 @@
             // 
             // MenuStartForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 409);
+            this.ClientSize = new System.Drawing.Size(1000, 975);
             this.Controls.Add(this.QuitButton);
             this.Controls.Add(this.GameInfo);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.StartMenuImg);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(375, 409);
-            this.MinimumSize = new System.Drawing.Size(375, 409);
+            this.MaximumSize = new System.Drawing.Size(1000, 975);
+            this.MinimumSize = new System.Drawing.Size(1000, 975);
             this.Name = "MenuStartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Supermarket Simulator";
