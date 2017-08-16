@@ -168,9 +168,9 @@
             this.SatisfiedClientsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SatisfiedClientsLabel.Location = new System.Drawing.Point(210, 176);
             this.SatisfiedClientsLabel.Name = "SatisfiedClientsLabel";
-            this.SatisfiedClientsLabel.Size = new System.Drawing.Size(137, 20);
+            this.SatisfiedClientsLabel.Size = new System.Drawing.Size(168, 20);
             this.SatisfiedClientsLabel.TabIndex = 30;
-            this.SatisfiedClientsLabel.Text = "Satisfied clients";
+            this.SatisfiedClientsLabel.Text = "Satisfied customers";
             // 
             // UnsatisfiedClientsLabel
             // 
@@ -178,9 +178,9 @@
             this.UnsatisfiedClientsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UnsatisfiedClientsLabel.Location = new System.Drawing.Point(190, 130);
             this.UnsatisfiedClientsLabel.Name = "UnsatisfiedClientsLabel";
-            this.UnsatisfiedClientsLabel.Size = new System.Drawing.Size(157, 20);
+            this.UnsatisfiedClientsLabel.Size = new System.Drawing.Size(188, 20);
             this.UnsatisfiedClientsLabel.TabIndex = 31;
-            this.UnsatisfiedClientsLabel.Text = "Unsatisfied clients";
+            this.UnsatisfiedClientsLabel.Text = "Unsatisfied customers";
             // 
             // UnsatisfiedClientsText
             // 

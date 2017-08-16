@@ -320,7 +320,7 @@
             this.CalcTotalPriceButton.Location = new System.Drawing.Point(209, 222);
             this.CalcTotalPriceButton.Name = "CalcTotalPriceButton";
             this.CalcTotalPriceButton.Size = new System.Drawing.Size(121, 23);
-            this.CalcTotalPriceButton.TabIndex = 64;
+            this.CalcTotalPriceButton.TabIndex = 5;
             this.CalcTotalPriceButton.Text = "Calc Total Price";
             this.CalcTotalPriceButton.UseVisualStyleBackColor = true;
             this.CalcTotalPriceButton.Click += new System.EventHandler(this.CalcTotalPriceButton_Click);
@@ -379,7 +379,7 @@
             this.AlcoholBuyText.Location = new System.Drawing.Point(296, 92);
             this.AlcoholBuyText.Name = "AlcoholBuyText";
             this.AlcoholBuyText.Size = new System.Drawing.Size(39, 20);
-            this.AlcoholBuyText.TabIndex = 72;
+            this.AlcoholBuyText.TabIndex = 0;
             this.AlcoholBuyText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
@@ -396,7 +396,7 @@
             this.VegetablesBuyText.Location = new System.Drawing.Point(296, 196);
             this.VegetablesBuyText.Name = "VegetablesBuyText";
             this.VegetablesBuyText.Size = new System.Drawing.Size(39, 20);
-            this.VegetablesBuyText.TabIndex = 74;
+            this.VegetablesBuyText.TabIndex = 4;
             this.VegetablesBuyText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // SweetsBuyText
@@ -404,7 +404,7 @@
             this.SweetsBuyText.Location = new System.Drawing.Point(296, 170);
             this.SweetsBuyText.Name = "SweetsBuyText";
             this.SweetsBuyText.Size = new System.Drawing.Size(39, 20);
-            this.SweetsBuyText.TabIndex = 75;
+            this.SweetsBuyText.TabIndex = 3;
             this.SweetsBuyText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // MeatBuyText
@@ -412,7 +412,7 @@
             this.MeatBuyText.Location = new System.Drawing.Point(296, 147);
             this.MeatBuyText.Name = "MeatBuyText";
             this.MeatBuyText.Size = new System.Drawing.Size(39, 20);
-            this.MeatBuyText.TabIndex = 76;
+            this.MeatBuyText.TabIndex = 2;
             this.MeatBuyText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // DairyBuyText
@@ -420,7 +420,7 @@
             this.DairyBuyText.Location = new System.Drawing.Point(296, 118);
             this.DairyBuyText.Name = "DairyBuyText";
             this.DairyBuyText.Size = new System.Drawing.Size(39, 20);
-            this.DairyBuyText.TabIndex = 77;
+            this.DairyBuyText.TabIndex = 1;
             this.DairyBuyText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // CurrentWarehouseSpsaceText

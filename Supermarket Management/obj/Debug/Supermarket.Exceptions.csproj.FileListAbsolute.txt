@@ -19,3 +19,14 @@ D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Managemen
 D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Exceptions.csprojResolveAssemblyReference.cache
 D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.dll
 D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.pdb
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.dll.config
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.dll
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Management.pdb
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Data.dll
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Models.dll
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Data.pdb
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Models.pdb
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\bin\Debug\Supermarket.Models.dll.config
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Exceptions.csprojResolveAssemblyReference.cache
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.dll
+C:\Users\Konstantin\Documents\GitHub\SupermarketGame\Supermarket Management\obj\Debug\Supermarket.Management.pdb
