@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Supermarket.Management.Exceptions
+﻿namespace Supermarket.Management.Exceptions
 {
+    using System;
+
     public class WorkerLimitException : Exception
     {
         public const string WorkerLimit = "You cant have more than 5 active workers!";

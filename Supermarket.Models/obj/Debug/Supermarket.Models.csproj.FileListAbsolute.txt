@@ -13,3 +13,6 @@ C:\Users\vasko\Desktop\New folder (6)\SupermarketGame\Supermarket.Models\obj\Deb
 D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.csprojResolveAssemblyReference.cache
 D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.dll
 D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Models\obj\Debug\Supermarket.Models.pdb
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Models.dll.config
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Models.dll
+D:\SoftUni\C# Fundamentals\C# OOP Advanced\SupermarketGame\Supermarket.Models\bin\Debug\Supermarket.Models.pdb

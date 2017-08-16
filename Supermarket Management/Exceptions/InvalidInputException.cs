@@ -1,8 +1,8 @@
-﻿using System;
-
-namespace Supermarket.Management.Exceptions
+﻿namespace Supermarket.Management.Exceptions
 {
-   public class InvalidInputException : Exception
+    using System;
+
+    public class InvalidInputException : Exception
     {
         public const string InvalidInput = "Wrong input! Only numbers are accepted!";
 

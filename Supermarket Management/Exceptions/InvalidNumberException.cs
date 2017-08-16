@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Supermarket.Management.Exceptions
+﻿namespace Supermarket.Management.Exceptions
 {
+    using System;
+
     public class InvalidNumberException : Exception
     {
         public const string InvalidNumber = "Number cannot be negative!";

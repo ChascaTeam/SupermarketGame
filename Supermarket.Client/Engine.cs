@@ -1,14 +1,13 @@
-﻿using System.Collections.Generic;
-using Supermarket.Data;
-using Supermarket.Models.Client_Counter;
-using Supermarket.Models.Interfaces;
-using Supermarket.Models.Management;
-using Supermarket.Models.Market;
-using Supermarket.Models.RandomGenerators;
-
-
-namespace Supermarket.Client
+﻿namespace Supermarket.Client
 {
+    using System.Collections.Generic;
+    using Supermarket.Data;
+    using Supermarket.Models.Client_Counter;
+    using Supermarket.Models.Interfaces;
+    using Supermarket.Models.Management;
+    using Supermarket.Models.Market;
+    using Supermarket.Models.RandomGenerators;
+
     public class Engine
     {
         internal static StockExchange stockExchange;

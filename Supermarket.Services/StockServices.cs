@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Supermarket.Data;
-using Supermarket.Models.StockTypes;
-
-namespace Supermarket.Services
+﻿namespace Supermarket.Services
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using Supermarket.Data;
+    using Supermarket.Models.StockTypes;
+
     public class StockServices : StockData
     {
         public void AddStock(Stock stock)

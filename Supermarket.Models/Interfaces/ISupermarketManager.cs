@@ -1,7 +1,7 @@
-﻿using Supermarket.Models.Management;
-
-namespace Supermarket.Models.Interfaces
+﻿namespace Supermarket.Models.Interfaces
 {
+    using Supermarket.Models.Management;
+
     public interface ISupermarketManager
     {
         Warehouse Warehouse { get; }

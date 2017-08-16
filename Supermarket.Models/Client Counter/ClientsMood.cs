@@ -1,7 +1,7 @@
-﻿using Supermarket.Models.Interfaces;
-
-namespace Supermarket.Models.Client_Counter
+﻿namespace Supermarket.Models.Client_Counter
 {
+    using Supermarket.Models.Interfaces;
+
     public class ClientsMood : IClientCounter
     {
         public ClientsMood()
@@ -18,10 +18,12 @@ namespace Supermarket.Models.Client_Counter
         {
             this.SatisfiedNumber++;
         }
+
         public void AddUnsatisfied()
         {
             this.UnsatisfiedNumber++;
         }
+
         public void Clear()
         {
             this.SatisfiedNumber = 0;

@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using Supermarket.Models.Interfaces;
-using Supermarket.Models.StockTypes;
-
-namespace Supermarket.Models.CustomerTypes
+﻿namespace Supermarket.Models.CustomerTypes
 {
+    using System.Collections.Generic;
+    using Supermarket.Models.Interfaces;
+    using Supermarket.Models.StockTypes;
+
     public abstract class Customer : ICustomer
     {
         private decimal money;
@@ -22,23 +22,21 @@ namespace Supermarket.Models.CustomerTypes
 
         public decimal Money
         {
-            get => this.money;
-            set => this.money = value;
+            get { return this.money; }
+            set { this.money = value; }
         }
 
         public decimal PriceTolerance
         {
-            get => this.priceTolerance;
-            set => this.priceTolerance = value;
+            get { return this.priceTolerance; }
+            set { this.priceTolerance = value; }
         }
 
         //randomly generated list of products from the StockGenerator
         public List<Stock> WantedProducts
         {
-            get => this.wantedProducts;
-            set => this.wantedProducts = value;
+            get { return this.wantedProducts; }
+            set { this.wantedProducts = value; }
         }
-
-
     }
 }

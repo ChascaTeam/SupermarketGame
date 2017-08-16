@@ -1,8 +1,8 @@
-﻿using System;
-
-namespace Supermarket.Management.Exceptions
+﻿namespace Supermarket.Management.Exceptions
 {
-   public class WrongOrderException : Exception
+    using System;
+
+    public class WrongOrderException : Exception
     {
         public const string Overflow = "Your order is above the market limits!";
 

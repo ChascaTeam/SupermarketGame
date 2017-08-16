@@ -1,13 +1,13 @@
-﻿using System.Collections.Generic;
-using Supermarket.Models.Interfaces;
-
-namespace Supermarket.Models.Market
+﻿namespace Supermarket.Models.Market
 {
-  public class LaborExchange
+    using System.Collections.Generic;
+    using Supermarket.Models.Interfaces;
+
+    public class LaborExchange
     {
-        public LaborExchange(List<IWorkForce> availableProducts)
+        public LaborExchange(List<IWorkForce> availableWorkers)
         {
-            this.AvailableWorkers = availableProducts;
+            this.AvailableWorkers = availableWorkers;
         }
 
         public List<IWorkForce> AvailableWorkers { get; protected set; }

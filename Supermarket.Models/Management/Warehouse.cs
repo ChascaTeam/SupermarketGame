@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using Supermarket.Models.Interfaces;
-using Supermarket.Models.StockTypes;
-
-namespace Supermarket.Models.Management
+﻿namespace Supermarket.Models.Management
 {
+    using System.Collections.Generic;
+    using Supermarket.Models.Interfaces;
+    using Supermarket.Models.StockTypes;
+
     public class Warehouse : IWarehouse
     {
         private decimal warehouseRent;
@@ -11,7 +11,8 @@ namespace Supermarket.Models.Management
 
         public Warehouse()
         {
-            this.StoredProducts = new List<Stock> { new Alcohol(), new DairyProducts(), new Meat(), new Sweets(), new Vegetables() };
+            this.StoredProducts = new List<Stock>
+            { new Alcohol(), new DairyProducts(), new Meat(), new Sweets(), new Vegetables() };
             this.WarehouseRent = 25m;
             this.WarehouseVolume = 100;
         }
@@ -20,14 +21,14 @@ namespace Supermarket.Models.Management
 
         public int WarehouseVolume
         {
-            get => this.warehouseVolume;
-            protected set => this.warehouseVolume = value;
+            get { return this.warehouseVolume; }
+            protected set { this.warehouseVolume = value; }
         }
 
         public decimal WarehouseRent
         {
-            get => this.warehouseRent;
-            set => this.warehouseRent = value;
+            get { return this.warehouseRent; }
+            set { this.warehouseRent = value; }
         }
 
         public void IncreaseVolume(int volume)

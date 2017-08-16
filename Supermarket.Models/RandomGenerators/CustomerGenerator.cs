@@ -1,13 +1,19 @@
-﻿using System.Collections.Generic;
-using Supermarket.Models.Factories;
-using Supermarket.Models.Interfaces;
-
-namespace Supermarket.Models.RandomGenerators
+﻿namespace Supermarket.Models.RandomGenerators
 {
-   public class CustomerGenerator
+    using System.Collections.Generic;
+    using Supermarket.Models.Factories;
+    using Supermarket.Models.Interfaces;
+
+    public class CustomerGenerator
     {
-        private CustomerFactory customerFactory = new CustomerFactory();
-        private IntGenerator generator = new IntGenerator();
+        private CustomerFactory customerFactory;
+        private IntGenerator generator;
+
+        public CustomerGenerator()
+        {
+            this.customerFactory = new CustomerFactory();
+            this.generator = new IntGenerator();
+        }
 
         public List<ICustomer> GenerateCustomers()
         {
@@ -20,6 +26,5 @@ namespace Supermarket.Models.RandomGenerators
 
             return customers;
         }
-
     }
 }

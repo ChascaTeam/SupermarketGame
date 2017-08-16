@@ -2,7 +2,8 @@
 {
     public class AverageWorker : Worker
     {
-        public AverageWorker(string name, int customersPerDay, decimal salaryPerDay) : base(name, customersPerDay, salaryPerDay)
+        public AverageWorker(string name, int customersPerDay, decimal salaryPerDay) 
+            : base(name, customersPerDay, salaryPerDay)
         {
         }
     }

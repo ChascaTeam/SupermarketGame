@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
-
-using Supermarket.Models.StockTypes;
-
-namespace Supermarket.Data.Interfaces
+﻿namespace Supermarket.Data.Interfaces
 {
+    using System.Collections.Generic;
+    using Supermarket.Models.StockTypes;
+
     public interface IStockData
     {
         IList<Stock> Stock { get; }

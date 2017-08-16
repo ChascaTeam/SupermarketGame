@@ -1,7 +1,7 @@
-﻿using Supermarket.Models.Interfaces;
-
-namespace Supermarket.Models.Management
+﻿namespace Supermarket.Models.Management
 {
+    using Supermarket.Models.Interfaces;
+
     public class SupermarketManager : ISupermarketManager
     {
         private decimal currentCapital;
@@ -16,8 +16,8 @@ namespace Supermarket.Models.Management
 
         public decimal CurrentCapital
         {
-            get => this.currentCapital;
-            set => this.currentCapital = value;
+            get { return this.currentCapital; }
+            set { this.currentCapital = value; }
         }         
     }
 }

@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using Supermarket.Data.Interfaces;
-using Supermarket.Models.Interfaces;
-
-namespace Supermarket.Data
+﻿namespace Supermarket.Data
 {
+    using System.Collections.Generic;
+    using Supermarket.Data.Interfaces;
+    using Supermarket.Models.Interfaces;
+
     public class WorkerData : IWorkerData
     {
         private IList<IWorkForce> workers;
@@ -18,6 +18,5 @@ namespace Supermarket.Data
             get { return workers; }
             set { workers = value; }
         }
-
     }
 }

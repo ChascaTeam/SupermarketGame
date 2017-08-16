@@ -1,8 +1,8 @@
-﻿using Supermarket.Models.RandomGenerators;
-using Supermarket.Models.WorkerTypes;
-
-namespace Supermarket.Models.Factories
+﻿namespace Supermarket.Models.Factories
 {
+    using Supermarket.Models.RandomGenerators;
+    using Supermarket.Models.WorkerTypes;
+
     public class WorkerFactory
     {
         private readonly NameGenerator name = new NameGenerator();
@@ -25,5 +25,4 @@ namespace Supermarket.Models.Factories
             }
         }
     }
-
 }

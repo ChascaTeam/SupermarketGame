@@ -1,14 +1,11 @@
-﻿using System.Collections.Generic;
-using Supermarket.Data;
-using Supermarket.Models.Interfaces;
-
-
-namespace Supermarket.Services
+﻿namespace Supermarket.Services
 {
+    using System.Collections.Generic;
+    using Supermarket.Data;
+    using Supermarket.Models.Interfaces;
+
     public class CustomerServices : CustomerData
     {
-        
-
         public void AddCustomer(ICustomer customer)
         {
             Customers.Add(customer);

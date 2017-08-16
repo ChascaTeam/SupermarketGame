@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using Supermarket.Models.StockTypes;
-
-namespace Supermarket.Models.Interfaces
+﻿namespace Supermarket.Models.Interfaces
 {
+    using System.Collections.Generic;
+    using Supermarket.Models.StockTypes;
+
     public interface IWarehouse
     {
         List<Stock> StoredProducts { get; }

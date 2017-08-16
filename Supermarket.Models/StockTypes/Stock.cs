@@ -1,7 +1,7 @@
-﻿using Supermarket.Models.Interfaces;
-
-namespace Supermarket.Models.StockTypes
+﻿namespace Supermarket.Models.StockTypes
 {
+    using Supermarket.Models.Interfaces;
+
     public abstract class Stock : IStock
     {
         public string ProductName { get; set; }

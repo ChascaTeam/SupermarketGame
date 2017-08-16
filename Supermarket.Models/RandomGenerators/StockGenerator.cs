@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using Supermarket.Models.StockTypes;
-
-namespace Supermarket.Models.RandomGenerators
+﻿namespace Supermarket.Models.RandomGenerators
 {
+    using System.Collections.Generic;
+    using Supermarket.Models.StockTypes;
+
     public class StockGenerator : RNDGenerator
     {
         private IntGenerator generator = new IntGenerator();
@@ -10,7 +10,8 @@ namespace Supermarket.Models.RandomGenerators
         //Generates randomly stocks' quantities for customers' wanted list
         public List<Stock> GenerateStock(int start, int end)
         {
-            List<Stock> stock = new List<Stock> { new Alcohol(), new DairyProducts(), new Meat(), new Sweets(), new Vegetables() };
+            List<Stock> stock = new List<Stock>
+            { new Alcohol(), new DairyProducts(), new Meat(), new Sweets(), new Vegetables() };
           
             foreach (var product in stock)
             {
@@ -22,7 +23,8 @@ namespace Supermarket.Models.RandomGenerators
 
         public List<Stock> GenerateStockForShop()
         {
-            List<Stock> stock = new List<Stock> { new Alcohol(), new DairyProducts(), new Meat(), new Sweets(), new Vegetables() };
+            List<Stock> stock = new List<Stock>
+            { new Alcohol(), new DairyProducts(), new Meat(), new Sweets(), new Vegetables() };
 
             foreach (var product in stock)
             {
@@ -32,6 +34,5 @@ namespace Supermarket.Models.RandomGenerators
 
             return stock;
         }
-
     }
 }

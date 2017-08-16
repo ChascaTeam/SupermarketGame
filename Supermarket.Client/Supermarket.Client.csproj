@@ -106,7 +106,7 @@
     <Compile Include="Forms\MenuStartForm.Designer.cs">
       <DependentUpon>MenuStartForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\GameOverForm.resx">
       <DependentUpon>GameOverForm.cs</DependentUpon>

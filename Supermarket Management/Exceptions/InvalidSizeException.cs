@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Supermarket.Management.Exceptions
+﻿namespace Supermarket.Management.Exceptions
 {
+    using System;
+
     public class InvalidSizeException : Exception
     {
         public const string InvalidSize = "Not enough space in the Warehouse!";

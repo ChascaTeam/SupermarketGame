@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using Supermarket.Models.StockTypes;
-
-namespace Supermarket.Models.Market
+﻿namespace Supermarket.Models.Market
 {
+    using System.Collections.Generic;
+    using Supermarket.Models.StockTypes;
+
     public class StockExchange
     {
         public StockExchange(List<Stock> availableProducts)

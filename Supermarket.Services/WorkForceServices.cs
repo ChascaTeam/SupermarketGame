@@ -1,22 +1,18 @@
-﻿
-using System.Collections.Generic;
-using Supermarket.Data;
-using Supermarket.Models.Interfaces;
-
-
-namespace Supermarket.Services
+﻿namespace Supermarket.Services
 {
+    using System.Collections.Generic;
+    using Supermarket.Data;
+    using Supermarket.Models.Interfaces;
+
     public class WorkForceServices : WorkerData
     {
-       
-
-        //Hire worker
+        // Hire worker
         public void AddWorker(IWorkForce worker)
         {
             Workers.Add(worker);
         }
 
-        //Fire worker
+        // Fire worker
         public void RemoveWorker(IWorkForce worker)
         {
             Workers.Remove(worker);
@@ -34,7 +30,6 @@ namespace Supermarket.Services
 
         public IList<IWorkForce> GetAllWorkers()
         {
-
             return Workers;
         }
     }

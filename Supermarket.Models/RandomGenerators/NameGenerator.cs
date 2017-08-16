@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-
-namespace Supermarket.Models.RandomGenerators
+﻿namespace Supermarket.Models.RandomGenerators
 {
+    using System.Collections.Generic;
+
     public class NameGenerator : RNDGenerator
     {
         private List<string> vowels = new List<string> { "a", "o", "u", "e", "i", "y" };
-
         private List<string> consonants = new List<string> { "t", "r", "v", "p", "m", "n", "b", "z", "c", "g", "k", "l", "s", "d", "f" };
 
         public string GenerateName()

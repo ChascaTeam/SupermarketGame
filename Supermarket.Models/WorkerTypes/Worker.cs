@@ -1,7 +1,7 @@
-﻿using Supermarket.Models.Interfaces;
-
-namespace Supermarket.Models.WorkerTypes
+﻿namespace Supermarket.Models.WorkerTypes
 {
+    using Supermarket.Models.Interfaces;
+
     public abstract class Worker : IWorkForce
     {
         private string name;
@@ -15,11 +15,23 @@ namespace Supermarket.Models.WorkerTypes
             this.SalaryPerDay = salaryPerDay;
         }
 
-        public string Name { get { return this.name; } set { this.name = value; } }
+        public string Name
+        {
+            get { return this.name; }
+            set { this.name = value; }
+        }
 
-        public int CustomersPerDay { get { return this.customersPerDay; } set { this.customersPerDay = value; } }
+        public int CustomersPerDay
+        {
+            get { return this.customersPerDay; }
+            set { this.customersPerDay = value; }
+        }
 
-        public decimal SalaryPerDay { get { return this.salaryPerDay; } set { this.salaryPerDay = value; } }
+        public decimal SalaryPerDay
+        {
+            get { return this.salaryPerDay; }
+            set { this.salaryPerDay = value; }
+        }
 
         public override string ToString()
         {

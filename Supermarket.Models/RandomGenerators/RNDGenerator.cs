@@ -1,9 +1,9 @@
-﻿using System;
-using Supermarket.Models.Interfaces;
-
-namespace Supermarket.Models.RandomGenerators
+﻿namespace Supermarket.Models.RandomGenerators
 {
-   public abstract class RNDGenerator : IRandomNumberGenerator
+    using System;
+    using Supermarket.Models.Interfaces;
+
+    public abstract class RNDGenerator : IRandomNumberGenerator
     {
         private readonly Random random = new Random();
 

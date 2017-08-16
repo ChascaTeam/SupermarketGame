@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using Supermarket.Models.StockTypes;
-
-namespace Supermarket.Models.CustomerTypes
+﻿namespace Supermarket.Models.CustomerTypes
 {
+    using System.Collections.Generic;
+    using Supermarket.Models.StockTypes;
+
     public class VeryRichCustomer : Customer
     {
         public VeryRichCustomer(decimal money, List<Stock> wantedProducts, decimal priceTolerance)
