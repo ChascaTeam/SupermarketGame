@@ -15,8 +15,8 @@
 
         public IList<IWorkForce> Workers
         {
-            get { return workers; }
-            set { workers = value; }
+            get { return this.workers; }
+            set { this.workers = value; }
         }
     }
 }

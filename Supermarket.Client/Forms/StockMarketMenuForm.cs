@@ -10,15 +10,18 @@ namespace Supermarket.Client.Forms
     {
         public StockMarketMenuForm()
         {
-            InitializeComponent();
+            this.InitializeComponent();
+            //Shows quantity for the products in the warehouse
             this.AlcoholTxt.Text = Engine.manager.Warehouse.StoredProducts[0].Quantity.ToString();
             this.DairyText.Text = Engine.manager.Warehouse.StoredProducts[1].Quantity.ToString();
             this.MeatText.Text = Engine.manager.Warehouse.StoredProducts[2].Quantity.ToString();
             this.SweetsText.Text = Engine.manager.Warehouse.StoredProducts[3].Quantity.ToString();
             this.VegetablesText.Text = Engine.manager.Warehouse.StoredProducts[4].Quantity.ToString();
 
-            List<TextBox> quantityBoxes = new List<TextBox> { this.AlcoholQuantityText, this.DairyQuantityText, this.MeatQuantityText, this.SweetsQuantityText, this.VegetablesQuantityText };
-            List<TextBox> priceBoxes = new List<TextBox> { this.AlcoholPriceText, this.DiaryPriceText, this.MeatPriceText, this.SweetsPriceText, this.VegetablesPriceText };
+            List<TextBox> quantityBoxes = new List<TextBox> { this.AlcoholQuantityText, this.DairyQuantityText, this.MeatQuantityText,
+                this.SweetsQuantityText, this.VegetablesQuantityText };
+            List<TextBox> priceBoxes = new List<TextBox> { this.AlcoholPriceText, this.DiaryPriceText, this.MeatPriceText,
+                this.SweetsPriceText, this.VegetablesPriceText };
 
             for (int i = 0; i < 5; i++)
             {
@@ -46,8 +49,10 @@ namespace Supermarket.Client.Forms
                 return;
             }
 
-            List<TextBox> buyQuantityBoxes = new List<TextBox> { this.AlcoholBuyText, this.DairyBuyText, this.MeatBuyText, this.SweetsBuyText, this.VegetablesBuyText };
-            List<TextBox> priceBoxes = new List<TextBox> { this.AlcoholPriceText, this.DiaryPriceText, this.MeatPriceText, this.SweetsPriceText, this.VegetablesPriceText };
+            List<TextBox> buyQuantityBoxes = new List<TextBox> { this.AlcoholBuyText, this.DairyBuyText, this.MeatBuyText,
+                this.SweetsBuyText, this.VegetablesBuyText };
+            List<TextBox> priceBoxes = new List<TextBox> { this.AlcoholPriceText, this.DiaryPriceText, this.MeatPriceText,
+                this.SweetsPriceText, this.VegetablesPriceText };
             decimal totalPrice = 0;
             decimal totalSpace = 0;
 
@@ -128,7 +133,6 @@ namespace Supermarket.Client.Forms
                 {
                     throw new WrongOrderException();
                 }
-
             }
         }
     }

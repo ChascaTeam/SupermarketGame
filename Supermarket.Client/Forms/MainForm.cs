@@ -6,7 +6,7 @@ namespace Supermarket.Client.Forms
     {
         public MainForm()
         {
-            InitializeComponent();
+            this.InitializeComponent();
             this.SetContentHolderForm(new MenuStartForm());
         }
         public void SetContentHolderForm(Form a)

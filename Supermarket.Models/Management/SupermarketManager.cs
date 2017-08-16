@@ -5,6 +5,7 @@
     public class SupermarketManager : ISupermarketManager
     {
         private decimal currentCapital;
+        private Warehouse warehouse;
 
         public SupermarketManager(Warehouse warehouse, decimal currentCapital)
         {
@@ -12,7 +13,11 @@
             this.CurrentCapital = currentCapital;
         }
 
-        public Warehouse Warehouse { get; }
+        public Warehouse Warehouse
+        {
+            get { return this.warehouse; }
+           protected set { this.warehouse = value; }
+        }
 
         public decimal CurrentCapital
         {

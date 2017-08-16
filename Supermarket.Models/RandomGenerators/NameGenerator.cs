@@ -4,8 +4,8 @@
 
     public class NameGenerator : RNDGenerator
     {
-        private List<string> vowels = new List<string> { "a", "o", "u", "e", "i", "y" };
-        private List<string> consonants = new List<string> { "t", "r", "v", "p", "m", "n", "b", "z", "c", "g", "k", "l", "s", "d", "f" };
+        private readonly List<string> vowels = new List<string> { "a", "o", "u", "e", "i", "y" };
+        private readonly List<string> consonants = new List<string> { "t", "r", "v", "p", "m", "n", "b", "z", "c", "g", "k", "l", "s", "d", "f" };
 
         public string GenerateName()
         {

@@ -9,6 +9,7 @@
         private decimal money;
         private List<Stock> wantedProducts;
         private decimal priceTolerance;
+        private bool hasShoped;
 
         protected Customer(decimal money, List<Stock> wantedProducts, decimal priceTolerance)
         {
@@ -18,7 +19,12 @@
             this.HasShoped = false;
         }
 
-        public bool HasShoped { get; set; }
+        //Checks if the client bought stock
+        public bool HasShoped
+        {
+            get { return this.hasShoped; }
+            set { this.hasShoped = value; }
+        }
 
         public decimal Money
         {

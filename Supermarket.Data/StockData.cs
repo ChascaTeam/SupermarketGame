@@ -16,8 +16,8 @@
 
         public IList<Stock> Stock
         {
-            get { return stock; }
-            set { stock = value; }
+            get { return this.stock; }
+            set { this.stock = value; }
         }
     }
 }

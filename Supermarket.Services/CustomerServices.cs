@@ -8,17 +8,17 @@
     {
         public void AddCustomer(ICustomer customer)
         {
-            Customers.Add(customer);
+            this.Customers.Add(customer);
         }
 
         public void RemoveCustomer(ICustomer customer)
         {
-            Customers.Remove(customer);
+            this.Customers.Remove(customer);
         }
 
         public IList<ICustomer> GetAllCustomers()
         {
-            return Customers;
+            return this.Customers;
         }
     }
 }

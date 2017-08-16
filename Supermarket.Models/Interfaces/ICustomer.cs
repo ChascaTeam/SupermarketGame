@@ -5,7 +5,7 @@
 
     public interface ICustomer
     {
-        //Money can be random(to some extent) or hard coded
+        //Money are random(to some extent)
         decimal Money { get; set; }
 
         //How much a current client is willing to pay for a product.
@@ -14,6 +14,7 @@
         //Look at Customer for info
         List<Stock> WantedProducts { get; set; }
 
+        //Look at Customer for info
         bool HasShoped { get; set; }
     }
 }

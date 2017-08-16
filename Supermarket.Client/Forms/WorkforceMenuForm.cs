@@ -28,17 +28,16 @@ namespace Supermarket.Client.Forms
             for (int i = 0; i < 5; i++)
             {
                 if (checkBoxs[i].Checked && textBoxs[i].Text != "")
-                {                                            
-                        Engine.workers.Remove(Engine.workers[i +changedVal]);
-                        changedVal--;
-                        textBoxs[i].Text = "";                                       
+                {
+                    Engine.workers.Remove(Engine.workers[i + changedVal]);
+                    changedVal--;
+                    textBoxs[i].Text = "";
                 }
             }
         }
 
         private void FillTextBoxes()
         {
-            
             List<TextBox> textBoxs = new List<TextBox>{this.FirstWorkerText,this.SecondWorkerText,this.ThirdWorkerText,
                 this.FourthWorkerText,this.FifthWorkerText};
 

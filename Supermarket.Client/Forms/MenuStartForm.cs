@@ -9,7 +9,7 @@ namespace Supermarket.Client.Forms
     {
         public MenuStartForm()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private void StartButton_Click(object sender, EventArgs e)
@@ -18,6 +18,7 @@ namespace Supermarket.Client.Forms
             engine.Run();
             Engine.stockExchange = new StockExchange(new StockGenerator().GenerateStockForShop());
             Engine.laborExchange = new LaborExchange(new WorkForceGenerator().GenerateWorkersForHire());
+
             var mainForm = (MainForm)(this).Parent.Parent;
             mainForm.SetContentHolderForm(new MenuPlayForm());
         }

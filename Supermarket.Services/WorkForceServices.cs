@@ -9,20 +9,22 @@
         // Hire worker
         public void AddWorker(IWorkForce worker)
         {
-            Workers.Add(worker);
+            this.Workers.Add(worker);
         }
 
         // Fire worker
         public void RemoveWorker(IWorkForce worker)
         {
-            Workers.Remove(worker);
+            this.Workers.Remove(worker);
         }
 
+        //Not implemented
         public void IncreaseSalary(IWorkForce worker, decimal increaseBy)
         {
             worker.SalaryPerDay += increaseBy;
         }
 
+        //Not implemented
         public void DecreaseSalary(IWorkForce worker, decimal decreaseBy)
         {
             worker.SalaryPerDay -= decreaseBy;
@@ -30,7 +32,7 @@
 
         public IList<IWorkForce> GetAllWorkers()
         {
-            return Workers;
+            return this.Workers;
         }
     }
 }

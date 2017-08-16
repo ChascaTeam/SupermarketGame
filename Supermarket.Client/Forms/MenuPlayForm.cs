@@ -12,7 +12,7 @@ namespace Supermarket.Client.Forms
 
         public MenuPlayForm()
         {
-            InitializeComponent();            
+            this.InitializeComponent();            
             this.textBox1.Text = Engine.daysPassed.ToString();
             this.CurrentMoneyText.Text = Engine.manager.CurrentCapital.ToString();
             this.IncomeText.Text = Engine.PreviousDayIncome.ToString();
@@ -32,6 +32,7 @@ namespace Supermarket.Client.Forms
 
             Engine.manager.CurrentCapital += Engine.income;
             Engine.manager.CurrentCapital -= (Engine.manager.Warehouse.WarehouseRent + this.SalaryCostsPerDay());
+
             mainForm.SetContentHolderForm(new SummaryForm());
         }
 
@@ -81,6 +82,7 @@ namespace Supermarket.Client.Forms
             if (numOfClients < Engine.customers.Count)
             {
                 Engine.counter.UnsatisfiedNumber += Engine.customers.Count - numOfClients;
+
                 if (numOfClients == 0)
                 {
                     Engine.customers.Clear();
@@ -139,7 +141,7 @@ namespace Supermarket.Client.Forms
             }
         }
 
-        private decimal SpentMoney(decimal quantity, Stock product, ICustomer customer, int i)
+        private decimal SpentMoney(decimal quantity, IStock product, ICustomer customer, int i)
         {
             decimal spentMoney = 0m;
 

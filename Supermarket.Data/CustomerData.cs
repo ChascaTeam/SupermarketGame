@@ -15,8 +15,8 @@
 
         public IList<ICustomer> Customers
         {
-            get { return customers; }
-            set { customers = value; }
+            get { return this.customers; }
+            set { this.customers = value; }
         }
     }
 }

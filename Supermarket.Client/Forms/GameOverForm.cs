@@ -7,7 +7,7 @@ namespace Supermarket.Client.Forms
     {
         public GameOverForm()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private void TryAgainButton_Click(object sender, EventArgs e)

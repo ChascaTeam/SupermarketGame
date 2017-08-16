@@ -13,7 +13,7 @@ namespace Supermarket.Client.Forms
     {
         public SummaryForm()
         {
-            InitializeComponent();           
+            this.InitializeComponent();           
             this.DayText.Text = (Engine.daysPassed -1).ToString();
             this.RevenueText.Text = Engine.income.ToString();
             this.WagesText.Text = this.SalaryCostsPerDay().ToString();

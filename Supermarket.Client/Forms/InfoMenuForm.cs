@@ -6,7 +6,7 @@ namespace Supermarket.Client.Forms
     {
         public InfoMenuForm()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private void BackButton_Click(object sender, System.EventArgs e)

@@ -6,8 +6,8 @@
 
     public class WorkForceGenerator
     {
-        private WorkerFactory workerFactory = new WorkerFactory();
-        private IntGenerator generator = new IntGenerator();
+        private readonly WorkerFactory workerFactory = new WorkerFactory();
+        private readonly IntGenerator generator = new IntGenerator();
 
         public List<IWorkForce> GenerateWorkersForHire()
         {           

@@ -1,4 +1,6 @@
-﻿namespace Supermarket.Models.Management
+﻿using System.Linq;
+
+namespace Supermarket.Models.Management
 {
     using System.Collections.Generic;
     using Supermarket.Models.Interfaces;
@@ -38,14 +40,7 @@
 
         public int FilledVolume()
         {
-            int stockInStore = 0;
-
-            foreach (var product in this.StoredProducts)
-            {
-                stockInStore += product.Quantity;
-            }
-
-            return stockInStore;
+            return this.StoredProducts.Sum(product => product.Quantity);
         }
     }
 }
