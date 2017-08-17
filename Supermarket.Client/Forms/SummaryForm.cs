@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Windows.Forms;
-using Supermarket.Models.Interfaces;
 using Supermarket.Models.Market;
 using Supermarket.Models.RandomGenerators;
-using Supermarket.Models.StockTypes;
+
 
 namespace Supermarket.Client.Forms
 {
@@ -13,8 +10,8 @@ namespace Supermarket.Client.Forms
     {
         public SummaryForm()
         {
-            this.InitializeComponent();           
-            this.DayText.Text = (Engine.daysPassed -1).ToString();
+            this.InitializeComponent();
+            this.DayText.Text = (Engine.daysPassed - 1) + ", " + Engine.dayCounter.GetDayOfWeek(Engine.daysPassed - 1);
             this.RevenueText.Text = Engine.income.ToString();
             this.WagesText.Text = this.SalaryCostsPerDay().ToString();
             this.RentText.Text = Engine.manager.Warehouse.WarehouseRent.ToString();

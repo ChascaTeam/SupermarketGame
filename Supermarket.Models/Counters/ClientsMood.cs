@@ -1,4 +1,4 @@
-﻿namespace Supermarket.Models.Client_Counter
+﻿namespace Supermarket.Models.Counters
 {
     using Supermarket.Models.Interfaces;
 

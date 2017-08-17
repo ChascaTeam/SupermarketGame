@@ -102,6 +102,8 @@
             // 
             // AlcoholTxt
             // 
+            this.AlcoholTxt.Enabled = false;
+            this.AlcoholTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AlcoholTxt.Location = new System.Drawing.Point(72, 92);
             this.AlcoholTxt.Name = "AlcoholTxt";
             this.AlcoholTxt.ReadOnly = true;
@@ -120,6 +122,8 @@
             // 
             // DairyText
             // 
+            this.DairyText.Enabled = false;
+            this.DairyText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DairyText.Location = new System.Drawing.Point(72, 118);
             this.DairyText.Name = "DairyText";
             this.DairyText.ReadOnly = true;
@@ -138,6 +142,8 @@
             // 
             // MeatText
             // 
+            this.MeatText.Enabled = false;
+            this.MeatText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MeatText.Location = new System.Drawing.Point(72, 144);
             this.MeatText.Name = "MeatText";
             this.MeatText.ReadOnly = true;
@@ -156,6 +162,8 @@
             // 
             // SweetsText
             // 
+            this.SweetsText.Enabled = false;
+            this.SweetsText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SweetsText.Location = new System.Drawing.Point(72, 170);
             this.SweetsText.Name = "SweetsText";
             this.SweetsText.ReadOnly = true;
@@ -174,6 +182,8 @@
             // 
             // VegetablesText
             // 
+            this.VegetablesText.Enabled = false;
+            this.VegetablesText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.VegetablesText.Location = new System.Drawing.Point(72, 196);
             this.VegetablesText.Name = "VegetablesText";
             this.VegetablesText.ReadOnly = true;
@@ -211,6 +221,8 @@
             // 
             // AlcoholQuantityText
             // 
+            this.AlcoholQuantityText.Enabled = false;
+            this.AlcoholQuantityText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AlcoholQuantityText.Location = new System.Drawing.Point(206, 92);
             this.AlcoholQuantityText.Name = "AlcoholQuantityText";
             this.AlcoholQuantityText.ReadOnly = true;
@@ -220,6 +232,8 @@
             // 
             // DairyQuantityText
             // 
+            this.DairyQuantityText.Enabled = false;
+            this.DairyQuantityText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DairyQuantityText.Location = new System.Drawing.Point(206, 118);
             this.DairyQuantityText.Name = "DairyQuantityText";
             this.DairyQuantityText.ReadOnly = true;
@@ -229,6 +243,8 @@
             // 
             // MeatQuantityText
             // 
+            this.MeatQuantityText.Enabled = false;
+            this.MeatQuantityText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MeatQuantityText.Location = new System.Drawing.Point(206, 144);
             this.MeatQuantityText.Name = "MeatQuantityText";
             this.MeatQuantityText.ReadOnly = true;
@@ -238,6 +254,8 @@
             // 
             // SweetsQuantityText
             // 
+            this.SweetsQuantityText.Enabled = false;
+            this.SweetsQuantityText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SweetsQuantityText.Location = new System.Drawing.Point(206, 170);
             this.SweetsQuantityText.Name = "SweetsQuantityText";
             this.SweetsQuantityText.ReadOnly = true;
@@ -247,6 +265,8 @@
             // 
             // VegetablesQuantityText
             // 
+            this.VegetablesQuantityText.Enabled = false;
+            this.VegetablesQuantityText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.VegetablesQuantityText.Location = new System.Drawing.Point(206, 196);
             this.VegetablesQuantityText.Name = "VegetablesQuantityText";
             this.VegetablesQuantityText.ReadOnly = true;
@@ -256,6 +276,8 @@
             // 
             // AlcoholPriceText
             // 
+            this.AlcoholPriceText.Enabled = false;
+            this.AlcoholPriceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AlcoholPriceText.Location = new System.Drawing.Point(251, 92);
             this.AlcoholPriceText.Name = "AlcoholPriceText";
             this.AlcoholPriceText.ReadOnly = true;
@@ -265,6 +287,8 @@
             // 
             // DiaryPriceText
             // 
+            this.DiaryPriceText.Enabled = false;
+            this.DiaryPriceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DiaryPriceText.Location = new System.Drawing.Point(251, 118);
             this.DiaryPriceText.Name = "DiaryPriceText";
             this.DiaryPriceText.ReadOnly = true;
@@ -274,6 +298,8 @@
             // 
             // MeatPriceText
             // 
+            this.MeatPriceText.Enabled = false;
+            this.MeatPriceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MeatPriceText.Location = new System.Drawing.Point(251, 147);
             this.MeatPriceText.Name = "MeatPriceText";
             this.MeatPriceText.ReadOnly = true;
@@ -283,6 +309,8 @@
             // 
             // SweetsPriceText
             // 
+            this.SweetsPriceText.Enabled = false;
+            this.SweetsPriceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SweetsPriceText.Location = new System.Drawing.Point(251, 170);
             this.SweetsPriceText.Name = "SweetsPriceText";
             this.SweetsPriceText.ReadOnly = true;
@@ -292,6 +320,8 @@
             // 
             // VegetablesPriceText
             // 
+            this.VegetablesPriceText.Enabled = false;
+            this.VegetablesPriceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.VegetablesPriceText.Location = new System.Drawing.Point(251, 196);
             this.VegetablesPriceText.Name = "VegetablesPriceText";
             this.VegetablesPriceText.ReadOnly = true;
@@ -358,6 +388,8 @@
             // 
             // WarehouseSpaceNeededText
             // 
+            this.WarehouseSpaceNeededText.Enabled = false;
+            this.WarehouseSpaceNeededText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.WarehouseSpaceNeededText.Location = new System.Drawing.Point(237, 277);
             this.WarehouseSpaceNeededText.Name = "WarehouseSpaceNeededText";
             this.WarehouseSpaceNeededText.ReadOnly = true;
@@ -425,6 +457,8 @@
             // 
             // CurrentWarehouseSpsaceText
             // 
+            this.CurrentWarehouseSpsaceText.Enabled = false;
+            this.CurrentWarehouseSpsaceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CurrentWarehouseSpsaceText.Location = new System.Drawing.Point(237, 303);
             this.CurrentWarehouseSpsaceText.Name = "CurrentWarehouseSpsaceText";
             this.CurrentWarehouseSpsaceText.ReadOnly = true;
@@ -443,6 +477,8 @@
             // 
             // TotalPriceText
             // 
+            this.TotalPriceText.Enabled = false;
+            this.TotalPriceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TotalPriceText.Location = new System.Drawing.Point(237, 254);
             this.TotalPriceText.Name = "TotalPriceText";
             this.TotalPriceText.ReadOnly = true;

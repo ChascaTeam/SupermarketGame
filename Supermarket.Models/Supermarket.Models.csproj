@@ -45,8 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client Counter\ClientsMood.cs" />
-    <Compile Include="Client Counter\WeekDay.cs" />
+    <Compile Include="Counters\ClientsMood.cs" />
+    <Compile Include="Counters\DayOfWeekCounter.cs" />
+    <Compile Include="Counters\WeekDay.cs" />
     <Compile Include="Interfaces\IClientCounter.cs" />
     <Compile Include="CustomerTypes\AverageCustomer.cs" />
     <Compile Include="CustomerTypes\Customer.cs" />

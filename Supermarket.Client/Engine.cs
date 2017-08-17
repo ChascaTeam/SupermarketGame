@@ -1,8 +1,10 @@
-﻿namespace Supermarket.Client
+﻿using System;
+
+namespace Supermarket.Client
 {
     using System.Collections.Generic;
     using Supermarket.Data;
-    using Supermarket.Models.Client_Counter;
+    using Supermarket.Models.Counters;
     using Supermarket.Models.Interfaces;
     using Supermarket.Models.Management;
     using Supermarket.Models.Market;
@@ -19,6 +21,7 @@
         internal static int daysPassed;
         internal static IClientCounter counter;
         internal static SupermarketManager manager;
+        internal static DayOfWeekCounter dayCounter;
 
         public void Run()
         {
@@ -31,6 +34,9 @@
             daysPassed = 1;
             counter = new ClientsMood();
             manager = new SupermarketManager(new Warehouse(), 1000);
+            dayCounter = new DayOfWeekCounter();
+            dayCounter.GetDayOfWeek(7);
+
         }
     }
 }

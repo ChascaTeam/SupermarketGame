@@ -13,7 +13,7 @@ namespace Supermarket.Client.Forms
         public MenuPlayForm()
         {
             this.InitializeComponent();            
-            this.textBox1.Text = Engine.daysPassed.ToString();
+            this.textBox1.Text = Engine.daysPassed + ", " + Engine.dayCounter.GetDayOfWeek(Engine.daysPassed);
             this.CurrentMoneyText.Text = Engine.manager.CurrentCapital.ToString();
             this.IncomeText.Text = Engine.PreviousDayIncome.ToString();
         }
